@@ -2,6 +2,8 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
+  srcDir: 'app',
+  buildDir: 'dist/',
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
@@ -9,4 +11,6 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+  modules: ["@nuxt/image"]
 })
