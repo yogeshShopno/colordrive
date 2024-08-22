@@ -9,7 +9,7 @@ export default {
 </script>
 <template>
   <div>
-    <h1>About us Page</h1>
+    <h1>About us Page tes </h1>
   </div>
 </template>
 <style scoped>
