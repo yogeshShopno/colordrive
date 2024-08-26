@@ -40,15 +40,15 @@ export default defineNuxtConfig({
       ],
     },
   },
-  vite: {
-    build: {
-      rollupOptions: {
-        output: {
-          // Disable the renaming of assets
-          assetFileNames: '[name][extname]',
-        }
-      }
-    }
-  },
+  // vite: {
+  //   build: {
+  //     rollupOptions: {
+  //       output: {
+  //         // Disable the renaming of assets
+  //         assetFileNames: '[name][extname]',
+  //       }
+  //     }
+  //   }
+  // },
   modules: ["@nuxt/image"]
 })
