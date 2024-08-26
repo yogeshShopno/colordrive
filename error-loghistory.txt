@@ -1,0 +1,5 @@
+
+WARN  11 deprecated subdependencies found: chokidar@2.1.8, fsevents@1.2.13, glob@7.2.3, inflight@1.0.6, resolve-url@0.2.1, rimraf@2.7.1, source-map-resolve@0.5.3, source-map-url@0.4.1, stable@0.1.8, urix@0.1.0, uuid@3.4.0
+Already up to date
+Progress: resolved 781, reused 779, downloaded 0, added 0, done
+Done in 1.8s
