@@ -1,22 +1,17 @@
-<script>
-export default {
-  data() {
-    return {
-      message: "Hello, Vue!"
-    };
-  }
-};
+<script setup>
+//add javascript of this template only
+definePageMeta({
+  layout: "",
+})
 </script>
 <template>
   <div>
-    <h1>About us Page tes </h1>
+    <NuxtLayout name="custom">
+    <h1>About Us</h1>
+    <p>This is the about us page content.</p>
+    </NuxtLayout>
   </div>
 </template>
 <style scoped>
-h1 {
-  color: blue;
-}
-p {
-  font-size: 18px;
-}
+/* Your CSS here */
 </style>

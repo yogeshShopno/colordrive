@@ -1,22 +1,14 @@
-<script>
-export default {
-  data() {
-    return {
-      message: "Hello, Vue!"
-    };
-  }
-};
+<script setup>
+  
 </script>
 <template>
   <div>
-    <h1>Thank You Page</h1>
+   
+    <h1>Thank You</h1>
+    <p>This is the Thank You page content.</p>
+    
   </div>
 </template>
 <style scoped>
-h1 {
-  color: blue;
-}
-p {
-  font-size: 18px;
-}
+/* Your CSS here */
 </style>

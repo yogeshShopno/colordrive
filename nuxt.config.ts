@@ -21,20 +21,20 @@ export default defineNuxtConfig({
       meta: [
         {
           'http-equiv': 'Content-Security-Policy',
-          content: "script-src 'self' 'unsafe-eval'; object-src 'none';"
+          content: "script-src 'self' 'unsafe-inline'; object-src 'none';" // Add 'unsafe-eval' here if necessary
         },
       ],
       script: [
         {
-          src: '/app/assets/js/jquery-3.6.0.min.js',
+          src: '/_nuxt/assets/js/jquery-3.6.0.min.js',
           type: 'text/javascript',
         },
         {
-          src: '/app/assets/js/owl.carousel.min.js',
+          src: '/_nuxt/assets/js/owl.carousel.min.js',
           type: 'text/javascript',
         },
         {
-          src: '/assets/js/script.js',
+          src: '/_nuxt/assets/js/script.js',
           type: 'text/javascript',
         },
       ],
