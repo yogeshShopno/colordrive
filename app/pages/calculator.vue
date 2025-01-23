@@ -51,22 +51,22 @@
                   <div class="calccardspacemini">
                     <div class="grid grid-cols-3 sm:grid-cols-4 grid-flow-col gap-4">
                       <div class="row-span-6">
-                        <div class="calccardspacemini0">
-                          <div class="imgcalcdiv align-center bg-gray-300 flex justify-center p-4 rounded-md">
-                            <img src="assets/images/calculator/homeicon.png" alt="Interior Painting" width=""
+                        <div class="calccardspacemini0 active">
+                          <a href="" class="imgcalcdiv align-center bg-gray-300 flex justify-center p-4 rounded-md">
+                            <img src="assets/images/calculator/homeicon2.png" alt="Interior Painting" width=""
                               class="br-16 max-w-full h-auto" />
-                          </div>
+                          </a>
                           <div class="lablediv mt-2 text-center">
                             <p class="text-sm">Interior</p>
                           </div>
                         </div>
                       </div>
                       <div class="row-span-6">
-                        <div class="calccardspacemini0">
-                          <div class="imgcalcdiv align-center bg-gray-300 flex justify-center p-4 rounded-md">
+                        <div class="calccardspacemini0 ">
+                          <a href="/exterior-cal1" class="imgcalcdiv align-center bg-gray-300 flex justify-center p-4 rounded-md">
                             <img src="assets/images/calculator/homeicon.png" alt="Interior Painting" width=""
                               class="br-16 max-w-full h-auto" />
-                          </div>
+                          </a>
                           <div class="lablediv mt-2 text-center">
                             <p class="text-sm">Exterior</p>
                           </div>
@@ -85,7 +85,7 @@
                     <div class="grid grid-cols-2 sm:grid-cols-5 gap-4">
                       <div class="row-span-6">
                         <div class="calccardspacemini0">
-                          <div class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-md">
+                          <div class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-2xl">
                             <img src="assets/images/calculator/slectspace.png" alt="Interior Painting" width=""
                               class="br-16 max-w-full w-full h-auto" />
                           </div>
@@ -93,7 +93,7 @@
                       </div>
                       <div class="row-span-6">
                         <div class="calccardspacemini0">
-                          <div class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-md">
+                          <div class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-2xl">
                             <img src="assets/images/calculator/slectspace2.png" alt="Interior Painting" width=""
                               class="br-16 max-w-full h-auto w-full" />
                           </div>
@@ -101,7 +101,7 @@
                       </div>
                       <div class="row-span-6">
                         <div class="calccardspacemini0">
-                          <div class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-md">
+                          <div class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-2xl">
                             <img src="assets/images/calculator/slectspace3.png" alt="Interior Painting" width=""
                               class="br-16 max-w-full h-auto w-full" />
                           </div>
@@ -109,7 +109,7 @@
                       </div>
                       <div class="row-span-6">
                         <div class="calccardspacemini0">
-                          <div class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-md">
+                          <div class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-2xl">
                             <img src="assets/images/calculator/slectspace4.png" alt="Interior Painting" width=""
                               class="br-16 max-w-full h-auto w-full" />
                           </div>

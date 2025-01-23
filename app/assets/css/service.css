@@ -107,3 +107,37 @@
 .mt-50px{
   margin-top: 50px;
 }
+
+.calccardspacemini0.active{
+  .imgcalcdiv{
+    border: 1px solid #FC2F93;
+  }
+}
+
+.calccardspacemini0:hover{
+  .imgcalcdiv{
+    border: 1px solid #FC2F93;
+    transition: all .3s ease;
+  }
+}
+
+.imgcalcdiv{
+  transition: all .3s ease;
+  border: 1px solid transparent;
+}
+
+.product-card{
+  border: 1px solid transparent;
+  transition: all .3s ease;
+  &:hover{
+    border: 1px solid #FC2F93;
+  }
+}
+
+.sqft-w{
+  max-width: 80px;
+}
+
+.selectoptdiv *{
+  transition: all .3s ease;
+}

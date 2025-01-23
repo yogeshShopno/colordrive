@@ -140,7 +140,7 @@
                                     <div class="calccardspacemini">
                                         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
                                             <div class="row-span-6">
-                                                <div class="calccardspacemini0 bg-white custshadow p-4 rounded-lg">
+                                                <div class="product-card bg-white custshadow p-4 rounded-lg">
                                                     <div class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md">
                                                         <img src="assets/images/calculator/paintbucket.png" alt="">
                                                     </div>
@@ -151,7 +151,7 @@
                                                 </div>
                                             </div>
                                             <div class="row-span-6">
-                                                <div class="calccardspacemini0 bg-white custshadow p-4 rounded-lg">
+                                                <div class="product-card bg-white custshadow p-4 rounded-lg">
                                                     <div class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md">
                                                         <img src="assets/images/calculator/paintbucket.png" alt="">
                                                     </div>
@@ -162,7 +162,7 @@
                                                 </div>
                                             </div>
                                             <div class="row-span-6">
-                                                <div class="calccardspacemini0 bg-white custshadow p-4 rounded-lg">
+                                                <div class="product-card bg-white custshadow p-4 rounded-lg">
                                                     <div class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md">
                                                         <img src="assets/images/calculator/paintbucket.png" alt="">
                                                     </div>
@@ -173,7 +173,7 @@
                                                 </div>
                                             </div>
                                             <div class="row-span-6">
-                                                <div class="calccardspacemini0 bg-white custshadow p-4 rounded-lg">
+                                                <div class="product-card bg-white custshadow p-4 rounded-lg">
                                                     <div class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md">
                                                         <img src="assets/images/calculator/paintbucket.png" alt="">
                                                     </div>
@@ -184,7 +184,7 @@
                                                 </div>
                                             </div>
                                             <div class="row-span-6">
-                                                <div class="calccardspacemini0 bg-white custshadow p-4 rounded-lg">
+                                                <div class="product-card bg-white custshadow p-4 rounded-lg">
                                                     <div class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md">
                                                         <img src="assets/images/calculator/paintbucket.png" alt="">
                                                     </div>
@@ -195,7 +195,7 @@
                                                 </div>
                                             </div>
                                             <div class="row-span-6">
-                                                <div class="calccardspacemini0 bg-white custshadow p-4 rounded-lg">
+                                                <div class="product-card bg-white custshadow p-4 rounded-lg">
                                                     <div class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md">
                                                         <img src="assets/images/calculator/paintbucket.png" alt="">
                                                     </div>
@@ -206,7 +206,7 @@
                                                 </div>
                                             </div>
                                             <div class="row-span-6">
-                                                <div class="calccardspacemini0 bg-white custshadow p-4 rounded-lg">
+                                                <div class="product-card bg-white custshadow p-4 rounded-lg">
                                                     <div class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md">
                                                         <img src="assets/images/calculator/paintbucket.png" alt="">
                                                     </div>
@@ -217,7 +217,7 @@
                                                 </div>
                                             </div>
                                             <div class="row-span-6">
-                                                <div class="calccardspacemini0 bg-white custshadow p-4 rounded-lg">
+                                                <div class="product-card bg-white custshadow p-4 rounded-lg">
                                                     <div class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md">
                                                         <img src="assets/images/calculator/paintbucket.png" alt="">
                                                     </div>
