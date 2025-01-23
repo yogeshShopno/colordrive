@@ -111,7 +111,7 @@
                     <h5 class="font-bold">Select Paint Category</h5>
                   </div>
                   <div class="calccardspacemini">
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 xs:grid-cols-2 gap-4">
                       <div class="row-span-6 h-full">
                         <div class="calccardspacemini0 h-full">
                           <div

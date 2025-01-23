@@ -35,7 +35,7 @@
         <div class="firstsecdiv">
           <div class="bg-white mainboxshadow rounded-2xl p-5">
             <div>
-              <div class="calcseccardsdiv mt-5">
+              <div class="calcseccardsdiv">
                 <div class="calcspace">
                   <div class="calccardtitle mb-3">
                     <h5 class="font-bold">Select Space</h5>
@@ -91,7 +91,7 @@
                   </div>
                   <div class="calccardspacemini">
                     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                      <div class="row-span-6">
+                      <div class="row-span-612">
                         <div class="selectoptdiv">
                           <label class="w-full flex items-center">
                             <input type="checkbox" class="hidden peer" />
@@ -103,7 +103,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="row-span-6">
+                      <div class="row-span-612">
                         <div class="selectoptdiv">
                           <label class="w-full flex items-center">
                             <input type="checkbox" class="hidden peer" />
@@ -115,7 +115,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="row-span-6">
+                      <div class="row-span-612">
                         <div class="selectoptdiv">
                           <label class="w-full flex items-center">
                             <input type="checkbox" class="hidden peer" />
@@ -127,7 +127,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="row-span-6">
+                      <div class="row-span-612">
                         <div class="selectoptdiv">
                           <label class="w-full flex items-center">
                             <input type="checkbox" class="hidden peer" />
@@ -145,7 +145,7 @@
               </div>
               <div class="calcseccardsdiv mt-5">
                 <div class="calccardspacemini">
-                  <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <div class="calcspace">
                       <div class="calccardtitle mb-3">
                         <h5 class="font-semibold">Plot Length (Sq Ft)</h5>
