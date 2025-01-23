@@ -1,5 +1,28 @@
 <script setup>
+function toggleAccordion(button) {
+  const content = button.nextElementSibling;
+  const icon = button.querySelector('.plus-minus-icon');
 
+  // Check if the content is expanded
+  const isExpanded = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+  // Close all other accordions (optional, for single open behavior)
+  document.querySelectorAll('.accordion-content').forEach((item) => {
+    item.style.maxHeight = '0px';
+    const itemIcon = item.previousElementSibling.querySelector('.plus-minus-icon');
+    if (itemIcon) itemIcon.textContent = '+';
+  });
+
+  // Toggle current accordion
+  if (isExpanded) {
+    content.style.maxHeight = '0px';
+    icon.textContent = '+';
+  } else {
+    content.style.maxHeight = content.scrollHeight + 'px'; // Smooth expand
+    icon.textContent = '-';
+  } 
+  // FAQ js
+}
 </script>
 
 
