@@ -80,7 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       content.style.maxHeight = content.scrollHeight + 'px'; // Smooth expand
       icon.textContent = '-';
-    }
+    } 
+    // FAQ js
   }
 
   
