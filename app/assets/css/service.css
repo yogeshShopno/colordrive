@@ -141,3 +141,11 @@
 .selectoptdiv *{
   transition: all .3s ease;
 }
+
+.sliderdiv .swiper-button-prev, 
+.sliderdiv .swiper-button-next {
+  height: 35px !important;
+  width: 35px !important;
+  border-radius: 50px;
+  border: 2px solid #FC2F93 !important;
+}

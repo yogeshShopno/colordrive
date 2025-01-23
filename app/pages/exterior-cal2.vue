@@ -111,7 +111,9 @@
                     <h5 class="font-bold">Select Paint Category</h5>
                   </div>
                   <div class="calccardspacemini">
-                    <div class="grid grid-cols-1 sm:grid-cols-3 xs:grid-cols-2 gap-4">
+                    <div
+                      class="grid grid-cols-1 sm:grid-cols-3 xs:grid-cols-2 gap-4"
+                    >
                       <div class="row-span-6 h-full">
                         <div class="calccardspacemini0 h-full">
                           <div
@@ -412,7 +414,7 @@
               <div class="flex justify-between align-center">
                 <div class="buttonsnextprev">
                   <a
-                    href="/calculator"
+                    href="/exterior-cal1"
                     id="prevBtn"
                     class="bg-white text-gray-800 border rounded-full px-8 py-2 focus:outline-none hover:bg-gray-100"
                   >
@@ -555,7 +557,7 @@
               <div class="faqcustshadow rounded-lg px-4 pt-4">
                 <button
                   class="w-full text-left pb-3 border-b focus:outline-none flex items-center justify-between"
-                  onclick="toggleAccordion(this)" 
+                  onclick="toggleAccordion(this)"
                 >
                   <span class="text-lg font-semibold"
                     >Questions text goes here</span

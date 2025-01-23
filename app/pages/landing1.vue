@@ -15,74 +15,98 @@
                     <div class="mt-4">
                         <div class="grid gap-x-8 gap-y-4 grid-cols-2 md:grid-cols-4">
                             <div>
-                                <div class="box1 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2"></div>
-                                <h5 class="text-center mt-2">Interior Painting</h5>
+                                <a href="/calculator">
+                                    <div class="box1 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2"></div>
+                                    <h5 class="text-center mt-2">Interior Painting 111</h5>
+                                </a>
                             </div>
                             <div>
-                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
-                                    <img src="assets/images/Exterior Painting.svg" alt="Exterior Painting" />
-                                </div>
-                                <h5 class="text-center mt-2">Exterior Painting</h5>
+                                <a href="/exterior-cal1">
+                                    <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                        <img src="assets/images/Exterior Painting.svg" alt="Exterior Painting" />
+                                    </div>
+                                    <h5 class="text-center mt-2">Exterior Painting</h5>
+                                </a>
                             </div>
                             <div>
-                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
-                                    <img src="assets/images/Wall Design Painting.svg" alt="Wall Design Painting" />
-                                </div>
-                                <h5 class="text-center mt-2">Wall Design Painting</h5>
+                                <a href="">
+                                    <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                        <img src="assets/images/Wall Design Painting.svg" alt="Wall Design Painting" />
+                                    </div>
+                                    <h5 class="text-center mt-2">Wall Design Painting</h5>
+                                </a>
                             </div>
                             <div>
-                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
-                                    <img src="assets/images/Waterproofing Solutions.svg" alt="Waterproofing Solutions" />
-                                </div>
-                                <h5 class="text-center mt-2">Waterproofing Solutions</h5>
+                                <a href="/water-proff1">
+                                    <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                        <img src="assets/images/Waterproofing Solutions.svg" alt="Waterproofing Solutions" />
+                                    </div>
+                                    <h5 class="text-center mt-2">Waterproofing Solutions</h5>
+                                </a>
                             </div>
                         </div>
                         <div class="grid gap-x-8 gap-y-4 grid-cols-2 md:grid-cols-4 mt-5">
                             <div>
-                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
-                                    <img alt="Fasle Ceiling Designs" src="assets/images/Rental Painting.svg" />
-                                </div>
-                                <h5 class="text-center mt-2">Fasle Ceiling Designs</h5>
+                                <a href="">
+                                    <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                        <img alt="Fasle Ceiling Designs" src="assets/images/Rental Painting.svg" />
+                                    </div>
+                                    <h5 class="text-center mt-2">Fasle Ceiling Designs</h5>
+                                </a>
                             </div>
                             <div>
-                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
-                                    <img src="assets/images/Fasle Ceiling Designs.svg" alt="House Wallpaper" />
-                                </div>
-                                <h5 class="text-center mt-2">House Wallpaper</h5>
+                                <a href="">
+                                    <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                        <img src="assets/images/Fasle Ceiling Designs.svg" alt="House Wallpaper" />
+                                    </div>
+                                    <h5 class="text-center mt-2">House Wallpaper</h5>
+                                </a>
                             </div>
                             <div>
-                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-200">
-                                    <img src="assets/images/House Wallpaper.svg" alt="Fasle Ceiling Designs" />
-                                </div>
-                                <h5 class="text-center mt-2">Fasle Ceiling Designs</h5>
+                                <a href="">
+                                    <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-200">
+                                        <img src="assets/images/House Wallpaper.svg" alt="Fasle Ceiling Designs" />
+                                    </div>
+                                    <h5 class="text-center mt-2">Fasle Ceiling Designs</h5>
+                                </a>
                             </div>
                             <div class="more-services">
-                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
-                                    <h5 class="text-center">More Services</h5>
-                                </div>
+                                <a href="">
+                                    <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                        <h5 class="text-center">More Services</h5>
+                                    </div>
+                                </a>
                             </div>
 
                             <div class="service-new hidden">
-                                <div class="box1 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2"></div>
-                                <h5 class="text-center mt-2">Interior Painting</h5>
+                                <a href="/calculator">
+                                    <div class="box1 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2"></div>
+                                    <h5 class="text-center mt-2">Interior Painting</h5>
+                                </a>
                             </div>
                             <div class="service-new hidden">
-                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
-                                    <img src="assets/images/Exterior Painting.svg" alt="Exterior Painting" />
-                                </div>
-                                <h5 class="text-center mt-2">Exterior Painting</h5>
+                                <a href="/exterior-cal1">
+                                    <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                        <img src="assets/images/Exterior Painting.svg" alt="Exterior Painting" />
+                                    </div>
+                                    <h5 class="text-center mt-2">Exterior Painting</h5>
+                                </a>
                             </div>
                             <div class="service-new hidden">
-                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
-                                    <img src="assets/images/Wall Design Painting.svg" alt="Wall Design Painting" />
-                                </div>
-                                <h5 class="text-center mt-2">Wall Design Painting</h5>
+                                <a href="">
+                                    <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                        <img src="assets/images/Wall Design Painting.svg" alt="Wall Design Painting" />
+                                    </div>
+                                    <h5 class="text-center mt-2">Wall Design Painting</h5>
+                                </a>
                             </div>
                             <div class="service-new hidden">
-                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
-                                    <img src="assets/images/Waterproofing Solutions.svg" alt="Waterproofing Solutions" />
-                                </div>
-                                <h5 class="text-center mt-2">Waterproofing Solutions</h5>
+                                <a href="/water-proff1">
+                                    <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                        <img src="assets/images/Waterproofing Solutions.svg" alt="Waterproofing Solutions" />
+                                    </div>
+                                    <h5 class="text-center mt-2">Waterproofing Solutions</h5>
+                                </a>
                             </div>
                         </div>
 
