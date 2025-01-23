@@ -1,0 +1,33 @@
+
+/* contact */
+#contact-benner {background-image: url(../images/contact/contact-banner.webp);background-position: center;background-repeat: no-repeat;background-size: cover;}
+#contact-benner h1 {font-size: 60px;font-weight: 700;}
+.text1 .swiper-button-prev::after, .text1 .swiper-button-next::after{font-size: 15px !important; font-weight: 800; color: #FC2F93;}
+.text1 .swiper-button-prev, .text1 .swiper-button-next{height: 35px !important; width: 35px !important; border-radius: 50px; border: 2px solid #FC2F93;}
+.text1 .swiper-button-next{right: 0px !important}
+.text1 .swiper-button-prev{left: 0px !important;}
+.bg-yellow-700{background-color: #FFDA61 !important;}
+.bg-yellow-700:hover{background-color: #f0cc55 !important;}
+.shadow-2{box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.1);}
+/* contact */
+
+/* testimonials  */
+#testimonials .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{display: block;}
+#testimonials .owl-carousel .owl-dots.disabled, .owl-carousel .owl-dots{display: none;}
+#testimonials .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav button{height: 30px; width: 30px; border-radius: 60px; }
+#testimonials .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav button span{color: #656565; font-size: 24px;}
+#testimonials .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav .owl-prev{background: rgba(0, 0, 0, 0.05) !important; border: 2.204545497894287px solid #eeeeee !important; position: absolute;top: 50%;left: -50px;transform: translateY(-50%);display: flex;justify-content: center; align-items: center;}
+#testimonials .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav .owl-next{background: rgba(0, 0, 0, 0.05) !important; border: 2.204545497894287px solid #eeeeee !important; position: absolute;top: 50%;right: -50px;transform: translateY(-50%);display: flex;justify-content: center;align-items: center;}
+/* testimonials  */
+
+@media only screen and (max-width: 991px) {
+    #contact-benner h1 {font-size: 48px;}
+    .star {width: 85% !important;}
+    #services h1{font-size: 48px;}
+    #testimonials .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav .owl-prev{left: 0px;}
+    #testimonials .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav .owl-next{right: 0px;}
+}
+
+@media only screen and (max-width: 767px) {
+    .star {width: 35% !important;}
+}

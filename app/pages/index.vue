@@ -1,938 +1,1036 @@
 <script setup>
-//add javascript of this template only
 </script>
+
 <template>
-  <div>
+<div>
+
+    <!-- Add this to your HTML template -->
+    <div id="booking-popup" class="px-2 md:px-0 fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden ">
+        <div class="bg-white p-4 rounded-lg md:w-7/12 xl:w-4/12 relative">
+            <div>
+                <button type="button" class="text-white mr-2 absolute btn-position close-btn z-50" onclick="toggleModal3()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="overflow">
+                <h2>Enquire Now</h2>
+                <h6 class="font-semibold text-xl">
+                    Create your dream home with our painting experts
+                </h6>
+                <p class="my-3 text-gray text-sm">
+                    Fill the form below to book a free site evaluation by a Beautiful
+                    Homes Painting Service expert.
+                </p> 
+                <form id="enquiryForm">
+                    <div class="sm:flex sm:flex-wrap">
+                        <div class="mb-5 sm:w-1/2 px-1">
+                            <label for="fname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                Name</label>
+                            <input type="text" id="fname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Name" required />
+                        </div>
+                        <div class="mb-5 sm:w-1/2 px-1">
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                Email</label>
+                            <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Email" required />
+                        </div>
+                        <div class="mb-5 w-full">
+                            <label for="phone-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mobile</label>
+                            <input type="text" id="phone-input" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Mobile" required />
+                        </div>
+                        <div class="mb-5 w-full">
+                            <label for="default" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select City</label>
+                            <select id="default" class="z-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option selected>Select City</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                            </select>
+                        </div>
+                        <div class="mb-5 w-full">
+                            <label for="default" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Service customer
+                            </label>
+                            <select id="default" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option selected>Choose a Services</option>
+                                <option value="US">Interior Painting</option>
+                                <option value="CA">Exterior Painting</option>
+                                <option value="FR">Wall Design Painting</option>
+                                <option value="DE">Waterproofing Solutions</option>
+                                <option value="DE">Rental Painting</option>
+                                <option value="DE">Fasle Ceiling Designs</option>
+                                <option value="DE">House Wallpaper</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-5">
+                        <div class="flex items-center h-5">
+                            <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
+                        </div>
+                        <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">T&C and Privacy Policy</label>
+                    </div>
+                    <button type="submit" class="text-white main-btn font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center before:ease relative overflow-hidden transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-pink-500 hover:before:-translate-x-40">
+                        <span relative="relative z-10">Book Enquiry</span>
+                    </button>
+                </form>
+                <!-- Success and error messages -->
+                <div id="message3" class="mt-4 hidden text-center"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- slider start -->
-  <section id="main-hero" class="px-4">
-    <div class="container flex flex-col lg:flex-row mx-auto items-end">
-      <div class="w-full lg:w-7/12 xl:w-7/12 py-100">
-        <div class="border p-5 border-black rounded-2xl">
-          <h3>What are you looking for?</h3>
-          <div class="mt-4">
-            <div class="grid gap-x-8 gap-y-4 grid-cols-2 md:grid-cols-4 ">
-              <div>
-                <div
-                  class="box1 justify-center flex rounded-2xl py-3 items-center  shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+    <section id="home" class="px-4 py-100">
+        <div class="container flex flex-col lg:flex-row mx-auto items-center gap-12">
+            <div class="w-full lg:w-7/12 xl:w-7/12">
+                <div class="mt-10 text-center sm:text-start my-5">
+                    <h2 class="text-gray">Looking For </h2>
+                    <h1 class="font-bold">Home Renovation Services</h1>
+                    <p class="text-gray">
+                        Experience vibrant walls and advanced NANO technology-based
+                        waterproofing
+                    </p>
                 </div>
-                <h5 class="text-center mt-2"> Interior Painting </h5>
-              </div>
-              <div>
-                <div
-                  class="box2 justify-center flex rounded-2xl py-3 items-center  shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
-                  <img src="assets/images/Exterior Painting.svg">
+                <div class="border p-5 border-black rounded-2xl">
+                    <h3>What are you looking for?</h3>
+                    <div class="mt-4">
+                        <div class="grid gap-x-8 gap-y-4 grid-cols-2 md:grid-cols-4">
+                            <div>
+                                <div class="box1 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2"></div>
+                                <h5 class="text-center mt-2">Interior Painting</h5>
+                            </div>
+                            <div>
+                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                    <img src="assets/images/Exterior Painting.svg" alt="Exterior Painting" />
+                                </div>
+                                <h5 class="text-center mt-2">Exterior Painting</h5>
+                            </div>
+                            <div>
+                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                    <img src="assets/images/Wall Design Painting.svg" alt="Wall Design Painting" />
+                                </div>
+                                <h5 class="text-center mt-2">Wall Design Painting</h5>
+                            </div>
+                            <div>
+                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                    <img src="assets/images/Waterproofing Solutions.svg" alt="Waterproofing Solutions" />
+                                </div>
+                                <h5 class="text-center mt-2">Waterproofing Solutions</h5>
+                            </div>
+                        </div>
+                        <div class="grid gap-x-8 gap-y-4 grid-cols-2 md:grid-cols-4 mt-5">
+                            <div>
+                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                    <img alt="Fasle Ceiling Designs" src="assets/images/Rental Painting.svg" />
+                                </div>
+                                <h5 class="text-center mt-2">Fasle Ceiling Designs</h5>
+                            </div>
+                            <div>
+                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                    <img src="assets/images/Fasle Ceiling Designs.svg" alt="House Wallpaper" />
+                                </div>
+                                <h5 class="text-center mt-2">House Wallpaper</h5>
+                            </div>
+                            <div>
+                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-200">
+                                    <img src="assets/images/House Wallpaper.svg" alt="Fasle Ceiling Designs" />
+                                </div>
+                                <h5 class="text-center mt-2">Fasle Ceiling Designs</h5>
+                            </div>
+                            <div class="more-services1">
+                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                    <h5 class="text-center">More Services</h5>
+                                </div>
+                            </div>
+
+                            <div class="service-new1 hidden">
+                                <div class="box1 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2"></div>
+                                <h5 class="text-center mt-2">Interior Painting</h5>
+                            </div>
+                            <div class="service-new1 hidden">
+                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                    <img src="assets/images/Exterior Painting.svg" alt="Exterior Painting" />
+                                </div>
+                                <h5 class="text-center mt-2">Exterior Painting</h5>
+                            </div>
+                            <div class="service-new1 hidden">
+                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                    <img src="assets/images/Wall Design Painting.svg" alt="Wall Design Painting" />
+                                </div>
+                                <h5 class="text-center mt-2">Wall Design Painting</h5>
+                            </div>
+                            <div class="service-new1 hidden">
+                                <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
+                                    <img src="assets/images/Waterproofing Solutions.svg" alt="Waterproofing Solutions" />
+                                </div>
+                                <h5 class="text-center mt-2">Waterproofing Solutions</h5>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <h5 class="text-center mt-2"> Exterior Painting </h5>
-              </div>
-              <div>
-                <div
-                  class="box2 justify-center flex rounded-2xl py-3 items-center  shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
-                  <img src="assets/images/Wall Design Painting.svg">
-                </div>
-                <h5 class="text-center mt-2"> Wall Design Painting </h5>
-              </div>
-              <div>
-                <div
-                  class="box2 justify-center flex rounded-2xl py-3 items-center  shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
-                  <img src="assets/images/Waterproofing Solutions.svg">
-                </div>
-                <h5 class="text-center mt-2"> Waterproofing Solutions </h5>
-              </div>
             </div>
-            <div class="grid gap-x-8 gap-y-4 grid-cols-2 md:grid-cols-4 mt-5">
-              <div>
-                <div
-                  class="box2 justify-center flex rounded-2xl py-3 items-center  shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
-                  <img src="assets/images/Rental Painting.svg">
-                </div>
-                <h5 class="text-center mt-2"> Fasle Ceiling Designs </h5>
-              </div>
-              <div>
-                <div
-                  class="box2 justify-center flex rounded-2xl py-3 items-center  shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
-                  <img src="assets/images/Fasle Ceiling Designs.svg">
-                </div>
-                <h5 class="text-center mt-2"> House Wallpaper </h5>
-              </div>
-              <div>
-                <div
-                  class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-200">
-                  <img src="assets/images/House Wallpaper.svg">
-                </div>
-                <h5 class="text-center mt-2"> Fasle Ceiling Designs </h5>
-              </div>
-              <div>
-                <div
-                  class="box2 justify-center flex rounded-2xl py-3 items-center  shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
-                  <h5 class="text-center"> More Services</h5>
-                </div>
-              </div>
+            <div class="w-full lg:w-5/12 xl:w-5/12 justify-center flex relative mt-6 lg:mt-0">
+                <img src="assets/images/home/hero-img.webp" alt="herp-img" />
             </div>
-          </div>
         </div>
-        <div class="mt-10 text-center sm:text-start">
-          <h2>Looking For </h2>
-          <h1 class="font-bold">Home Renovation</h1>
+    </section>
+    <!-- slider end -->
+
+    <!-- Offers and Discounts start -->
+    <section class="py-100 px-4 z-0 position-relative" id="gallery">
+        <div class="container mx-auto">
+            <h2 class="text-center font-bold mb-4">Offers And Discounts</h2>
+
+            <Swiper class="catalogue" :slides-per-view="1" :loop="true" :breakpoints="{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            991: { slidesPerView: 3 },
+            1100: { slidesPerView: 4 },
+          }" :space-between="30" :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation]" :autoplay="{
+            delay: 3000,
+            disableOnInteraction: true,
+          }" :pauseAutoplayOnMouseEnter="true" :navigation="true" :pagination="{
+            clickable: true,
+          }">
+                <SwiperSlide class="h-100">
+                    <div class="relative">
+                        <img src="assets/images/home/offer1.webp" alt="Wall Texture Gallery" class="gallery-img" width="100%" />
+                        <div class="absolute offer py-2 px-3">
+                            <p>10% Off</p>
+                        </div>
+
+                        <div class="bg-gallery p-4 sm:p-2 lg:p-4 absolute w-full text-center text-white text-xl">
+                            <h4>Painting Services</h4>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide class="h-100">
+                    <div class="relative">
+                        <img src="assets/images/home/offer2.webp" alt="Stencil Designs" class="gallery-img" width="100%" />
+
+                        <div class="absolute offer py-2 px-3">
+                            <p>10% Off</p>
+                        </div>
+                        <div class="bg-gallery p-4 sm:p-2 lg:p-4 absolute w-full text-center text-white text-xl">
+                            <h4>Wall Designing</h4>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide class="h-100">
+                    <div class="relative">
+                        <img src="assets/images/home/offer3.webp" alt="Interior Painting" class="gallery-img" width="100%" />
+                        <div class="absolute offer py-2 px-3">
+                            <p>10% Off</p>
+                        </div>
+                        <div class="bg-gallery p-4 sm:p-2 lg:p-4 absolute w-full text-center text-white text-xl">
+                            <h4>Wood Coating & Finishing</h4>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide class="h-100">
+                    <div class="relative">
+                        <img src="assets/images/home/offer4.webp" alt="Exterior Painting" class="gallery-img" width="100%" />
+                        <div class="absolute offer py-2 px-3">
+                            <p>10% Off</p>
+                        </div>
+                        <div class="bg-gallery p-4 sm:p-2 lg:p-4 absolute w-full text-center text-white text-xl">
+                            <h4>Waterproofing</h4>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide class="h-100">
+                    <div class="relative">
+                        <img src="assets/images/home/offer1.webp" alt="Wall Texture Gallery" class="gallery-img" width="100%" />
+                        <div class="absolute offer py-2 px-3">
+                            <p>10% Off</p>
+                        </div>
+
+                        <div class="bg-gallery p-4 sm:p-2 lg:p-4 absolute w-full text-center text-white text-xl">
+                            <h4>Painting Services</h4>
+                        </div>
+                    </div>
+                </SwiperSlide>
+            </Swiper>
         </div>
-        <div class="mt-4">
-          <div class="grid gap-x-8 gap-y-4 sm:grid-cols-2 md:grid-cols-3 ">
-            <div class="flex items-center">
-              <img src="assets/images/google.svg" alt="google">
-              <div class="ms-3">
-                <h4> 4.8 </h4>
-                <p> Google Rating </p>
-              </div>
-            </div>
-            <div class="flex items-center">
-              <img src="assets/images/warranty.svg" alt="google">
-              <div class="ms-3">
-                <h4> 2 Year </h4>
-                <p> Warranty </p>
-              </div>
-            </div>
-            <div class="flex items-center">
-              <img src="assets/images/home_nicely_painted.svg" alt="google">
-              <div class="ms-3">
-                <h4> 1 Lakh </h4>
-                <p> Homes Nicely Painted </p>
-              </div>
-            </div>
+    </section>
+    <!-- Offers and Discounts end -->
 
+    <!-- Testimonials start -->
+    <section id="testimonials " class="z-0 position-relative">
+        <div class="container mx-auto">
+            <h2 class="text-center font-bold mb-4">Testimonials</h2>
 
-          </div>
+            <Swiper class="catalogue" :slides-per-view="1" :loop="true" :breakpoints="{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }" :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation]" :autoplay="{
+            delay: 3000,
+            disableOnInteraction: true,
+          }" :pauseAutoplayOnMouseEnter="true" :navigation="true" :pagination="{
+            clickable: true,
+          }">
+                <SwiperSlide class="h-100">
+                    <div class="m-4 text-center pt-6 h-100">
+                        <div class="bg-white shadow-mds p-3 sm:p-5 rounded-2xl relative h-100">
+                            <div class="flex justify-center absolute review1">
+                                <!-- <img src="assets/images/Review1.webp" alt="Review1" class="w-22" /> -->
+                                <div class="review-content">
+                                    R
+                                </div>
+                            </div>
+                            <div class="mt-7">
+                                <h5 class="font-semibold text-xl mb-1">Raman Mohan</h5>
+                                <p class="text-gray">September 20, 2024</p>
+                                <div class="flex justify-center">
+                                    <img src="assets/images/stars.svg" alt="stars" class="my-4 star" />
+                                </div>
+                                <p class="review-txt">
+                                    I could not find anything that would limit my rating of
+                                    their work to four stars. This was our fourth experience
+                                    with them. Their workmen are experts in their job. They
+                                    won’t settle for the second best in whatever you choose for
+                                    your home painting. Great job. Thanks team AapkaPainter.com.
+                                    Good luck!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide class="h-100">
+                    <div class="m-4 text-center pt-6 h-100">
+                        <div class="bg-white shadow-mds p-3 sm:p-5 rounded-2xl relative h-100">
+                            <div class="flex justify-center absolute review1">
+                                <!-- <img src="assets/images/Review2.webp" alt="Review1" class="w-22" /> -->
+                                <div class="review-content">
+                                    A
+                                </div>
+                            </div>
+                            <div class="mt-7">
+                                <h5 class="font-semibold text-xl mb-1">Adil Khan</h5>
+                                <p class="text-gray">September 20, 2024</p>
+                                <div class="flex justify-center">
+                                    <img src="assets/images/stars.svg" alt="stars" class="my-4 star" />
+                                </div>
+                                <p class="review-txt">
+                                    Smooth services given by apka painter team, great work by Mr
+                                    Shishir project manager and Mr Veerpal who has taken care
+                                    the work smoothly within given timeframe. They are happy to
+                                    give any further help post completion of work. Highly
+                                    recommended.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide class="h-100">
+                    <div class="m-4 text-center pt-6 h-100">
+                        <div class="bg-white shadow-mds p-3 sm:p-5 rounded-2xl relative h-100">
+                            <div class="flex justify-center absolute review1">
+                                <!-- <img src="assets/images/Review3.webp" alt="Review1" class="w-22" /> -->
+                                <div class="review-content">
+                                    G
+                                </div>
+                            </div>
+                            <div class="mt-7">
+                                <h5 class="font-semibold text-xl mb-1">
+                                    Gurusubrahmaniyan Sri
+                                </h5>
+                                <p class="text-gray">September 20, 2024</p>
+                                <div class="flex justify-center">
+                                    <img src="assets/images/stars.svg" alt="stars" class="my-4 star" />
+                                </div>
+                                <p class="review-txt">
+                                    Overall verygood work. The site supervisor Mr. Ranjit is
+                                    very kind and accomotative. Well done and please do get the
+                                    job thro them as they are sincere and does their work to the
+                                    full satisfaction of the customer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide class="h-100">
+                    <div class="m-4 text-center pt-6 h-100">
+                        <div class="bg-white shadow-mds p-3 sm:p-5 rounded-2xl relative h-100">
+                            <div class="flex justify-center absolute review1">
+                                <!-- <img src="assets/images/Review2.webp" alt="Review1" class="w-22" /> -->
+                                <div class="review-content">
+                                    A
+                                </div>
+                            </div>
+                            <div class="mt-7">
+                                <h5 class="font-semibold text-xl mb-1">Adil Khan</h5>
+                                <p class="text-gray">September 20, 2024</p>
+                                <div class="flex justify-center">
+                                    <img src="assets/images/stars.svg" alt="stars" class="my-4 star" />
+                                </div>
+                                <p class="review-txt">
+                                    Smooth services given by apka painter team, great work by Mr
+                                    Shishir project manager and Mr Veerpal who has taken care
+                                    the work smoothly within given timeframe. They are happy to
+                                    give any further help post completion of work. Highly
+                                    recommended.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+            </Swiper>
         </div>
+    </section>
+    <!-- Testimonials end -->
 
-      </div>
-      <div class="w-full lg:w-5/12 xl:w-5/12 justify-center flex relative mt-6 lg:mt-0">
-        <div class="absolute" id="inquire">
-          <h1>ENQUIRE NOW</h1>
-        </div>
-        <div class="p-5 bg-white rounded-tlb lg:w-10/12  xl:w-8/12 ">
-          <h6 class="font-semibold text-xl">Create your dream home with our painting experts</h6>
-          <p class="my-3 text-gray-200 text-sm">Fill the form below to book a free site evaluation by a Beautiful Homes
-            Painting Service expert.</p>
-          <div>
-            <form>
-              <div class="sm:flex sm:flex-wrap ">
-                <div class="mb-5 sm:w-1/2 px-1">
-                  <label for="fname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                    Name</label>
-                  <input type="text" id="fname"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Name" required />
-                </div>
-                <div class="mb-5 sm:w-1/2 px-1">
-                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                    Email</label>
-                  <input type="email" id="email"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Email" required />
-                </div>
-                <div class="mb-5 w-full">
-                  <label for="phone-input"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mobile</label>
-                  <input type="text" id="phone-input" aria-describedby="helper-text-explanation"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Mobile" required />
-
-                </div>
-                <div class="mb-5 w-full">
-                  <label for="default" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select
-                    City</label>
-                  <select id="default"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                    <option selected>Select City</option>
-                    <option value="US">United States</option>
-                    <option value="CA">Canada</option>
-                    <option value="FR">France</option>
-                    <option value="DE">Germany</option>
-                  </select>
-                </div>
-                <div class="mb-5 w-full">
-                  <label for="default" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Service
-                    customer </label>
-                  <select id="default"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                    <option selected>Choose a Services </option>
-                    <option value="US">Interior Painting</option>
-                    <option value="CA">Exterior Painting</option>
-                    <option value="FR">Wall Design Painting</option>
-                    <option value="DE">Waterproofing Solutions</option>
-                    <option value="DE">Rental Painting</option>
-                    <option value="DE">Fasle Ceiling Designs</option>
-                    <option value="DE">House Wallpaper</option>
-                  </select>
-                </div>
-              </div>
-              <div class="flex items-start mb-5">
-                <div class="flex items-center h-5">
-                  <input id="remember" type="checkbox" value=""
-                    class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
-                    required />
-                </div>
-                <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">T&C and Privacy
-                  Policy</label>
-              </div>
-              <button type="submit"
-                class="text-white main-btn font-medium 
-                rounded-lg text-sm w-full px-5 py-2.5 text-center before:ease relative overflow-hidden transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-pink-500 hover:before:-translate-x-40">
-                <span relative="relative z-10">Book Enquiry</span></button>
-
-
-            </form>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- slider end -->
-
-
-<!-- <HomeTestimonials/> -->
-
-
-
-
-
-  <!-- Testimonials start -->
-  <section id="testimonials " class="py-100 px-4">
-    <div class="container mx-auto">
-      <h2 class="text-center font-bold mb-4"> Testimonials </h2>
-      <div>
-        <div class="testimonials owl-carousel owl-theme flex justify-between">
-          <div class="item m-4 text-center pt-5">
-            <div class="bg-white shadow-mds p-5 rounded-2xl relative ">
-              <div class="flex justify-center absolute review1">
-                <img src="assets/images/Review1.webp" alt="Review1" class="w-22">
-              </div>
-              <div class="mt-7">
-                <h5>Cha Ji-Hun</h5>
-                <div class="flex justify-center">
-                  <img src="assets/images/stars.svg" alt="stars" class="my-4 star">
-
-                </div>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque posuere vivamus egestas
-                  porttitor.</p>
-              </div>
-
-            </div>
-          </div>
-          <div class="item m-4 text-center pt-5">
-            <div class="bg-white shadow-mds p-5 rounded-2xl relative ">
-              <div class="flex justify-center absolute review1">
-                <img src="assets/images/Review2.webp" alt="Review1" class="w-22">
-              </div>
-              <div class="mt-7">
-                <h5>Cha Ji-Hun</h5>
-                <div class="flex justify-center">
-                  <img src="assets/images/stars.svg" alt="stars" class="my-4 star">
-
-                </div>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque posuere vivamus egestas
-                  porttitor.</p>
-              </div>
-
-            </div>
-          </div>
-          <div class="item m-4 text-center pt-5">
-            <div class="bg-white shadow-mds p-5 rounded-2xl relative ">
-              <div class="flex justify-center absolute review1">
-                <img src="assets/images/Review3.webp" alt="Review1" class="w-22">
-              </div>
-              <div class="mt-7">
-                <h5>Cha Ji-Hun</h5>
-                <div class="flex justify-center">
-                  <img src="assets/images/stars.svg" alt="stars" class="my-4 star">
-
-                </div>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque posuere vivamus egestas
-                  porttitor.</p>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Testimonials end -->
-
-  <!-- Quick links start -->
-  <section class="px-4" id="quick-link">
-    <div class="container mx-auto">
-      <h2 class="text-center font-bold mb-4"> Quick links </h2>
-      <div class="grid gap-x-8 gap-y-4  sm:grid-cols-2 md:grid-cols-3 ">
-        <div class="flex items-center bg-light rounded-2xl">
-          <img src="assets/images/Calculate Price.webp" alt="Calculate Price" class="br-2xl">
-          <div class="ms-3">
-            <h4>Calculate Price </h4>
-            <!-- <p> Google Rating </p> -->
-          </div>
-        </div>
-        <div class="flex items-center bg-light rounded-2xl">
-          <img src="assets/images/Colour Consultancy.webp" alt="Calculate Price" class="br-2xl">
-          <div class="ms-3">
-            <h4>Colour Consultancy </h4>
-            <!-- <p> Google Rating </p> -->
-          </div>
-        </div>
-        <div class="flex items-center bg-light rounded-2xl">
-          <img src="assets/images/Explore design ideas.webp" alt="Calculate Price" class="br-2xl">
-          <div class="ms-3">
-            <h4>Explore design ideas </h4>
-            <!-- <p> Google Rating </p> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Quick links end -->
-
-  <!-- Inspirational Gallery start -->
-  <section class="py-100 px-4" id="gallery">
-    <div class="container mx-auto">
-      <h2 class="text-center font-bold mb-4"> Inspirational Gallery </h2>
-      <div class="grid gap-x-8 gap-y-4 sm:grid-cols-2 md:grid-cols-4 ">
-        <div class="relative">
-          <img src="assets/images/gallery1.webp" alt="gallery1" class="gallery-img" width="100%">
-          <div class="bg-gallery p-4 sm:p-2 lg:p-4 absolute w-full text-center text-white text-xl">
-            <h4>Wall Texture Gallery </h4>
-          </div>
-        </div>
-        <div class="relative">
-          <img src="assets/images/gallery2.webp" alt="gallery1" class="gallery-img" width="100%">
-          <div class="bg-gallery p-4 sm:p-2 lg:p-4 absolute w-full text-center text-white text-xl">
-            <h4>Stencil Designs
-            </h4>
-          </div>
-        </div>
-        <div class="relative">
-          <img src="assets/images/gallery3.webp" alt="gallery1" class="gallery-img" width="100%">
-          <div class="bg-gallery p-4 sm:p-2 lg:p-4 absolute w-full text-center text-white text-xl">
-            <h4>Interior Painting</h4>
-          </div>
-        </div>
-        <div class="relative">
-          <img src="assets/images/gallery4.webp" alt="gallery1" class="gallery-img" width="100%">
-          <div class="bg-gallery p-4 sm:p-2 lg:p-4 absolute w-full text-center text-white text-xl">
-            <h4>Exterior Painting </h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Inspirational Gallery end -->
-
-  <!-- How We Work Start -->
-  <section id="work" class="px-4">
-    <div class="container mx-auto">
-      <h2 class="text-center font-bold mb-4"> How We Work? </h2>
-      <div class="grid gap-x-8 gap-y-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-6 ">
-        <div>
-          <div class="flex justify-center relative">
-            <img src="assets/images/work1.svg" alt="gallery1" class="work1">
-            <img src="assets/images/arrow.svg" alt="arrow" class="arrow">
-          </div>
-          <div class="pt-3 w-full text-center text-xl">
-            <h4> Booking </h4>
-          </div>
-        </div>
-        <div>
-          <div class="flex justify-center relative">
-            <img src="assets/images/work2.svg" alt="gallery1" class="work1">
-            <img src="assets/images/arrow.svg" alt="arrow" class="arrow arrow2">
-          </div>
-          <div class="pt-3 w-full text-center text-xl">
-            <h4> Mesurement </h4>
-          </div>
-        </div>
-        <div>
-          <div class="flex justify-center relative">
-            <img src="assets/images/work3.svg" alt="gallery1" class="work1">
-            <img src="assets/images/arrow.svg" alt="arrow" class="arrow d-none">
-          </div>
-          <div class="pt-3 w-full text-center text-xl">
-            <h4> Product Selection </h4>
-          </div>
-        </div>
-        <div>
-          <div class="flex justify-center relative">
-            <img src="assets/images/work4.svg" alt="gallery1" class="work1">
-            <img src="assets/images/arrow.svg" alt="arrow" class="arrow arrow4">
-          </div>
-          <div class="pt-3 w-full text-center text-xl">
-            <h4> Cost Estimation </h4>
-          </div>
-        </div>
-        <div>
-          <div class="flex justify-center relative">
-            <img src="assets/images/work5.svg" alt="gallery1" class="work1">
-            <img src="assets/images/arrow.svg" alt="arrow" class="arrow">
-          </div>
-          <div class="pt-3 w-full text-center text-xl">
-            <h4> Work Completion </h4>
-          </div>
-        </div>
-        <div>
-          <div class="flex justify-center relative">
-            <img src="assets/images/work6.svg" alt="gallery1" class="work1">
-          </div>
-          <div class="pt-3 w-full text-center text-xl">
-            <h4> Customer Satisfaction </h4>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-  </section>
-  <!-- How We Work end -->
-
-  <!-- Colour Drive Assurance Shields start -->
-  <section id="assurance" class="py-100 px-4">
-    <div class="container mx-auto">
-      <h2 class="text-center font-bold mb-4"> Colour Drive Assurance Shields </h2>
-      <div class="grid gap-x-8 gap-y-4  sm:grid-cols-2 md:grid-cols-3">
-        <div class="relative">
-          <img src="assets/images/assurance1.webp" alt="assurance1" class="assurance-img">
-          <div class="bg-assurance p-2 lg:p-4 absolute w-full text-center text-white text-xl">
-            <h4>Before Painting and After Painting </h4>
-          </div>
-        </div>
-        <div class="relative">
-          <img src="assets/images/assurance2.webp" alt="assurance1" class="assurance-img">
-          <div class="bg-assurance p-2 lg:p-4 absolute w-full text-center text-white text-xl">
-            <h4>Before Waterproofing and After Waterproofing
-            </h4>
-          </div>
-        </div>
-        <div class="relative">
-          <img src="assets/images/assurance3.webp" alt="assurance1" class="assurance-img">
-          <div class="bg-assurance p-2 lg:p-4 absolute w-full text-center text-white text-xl">
-            <h4>Before Normal Painting and After Design Painting on one wall</h4>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- Colour Drive Assurance Shields  end-->
-
-  <!-- Home Design Inspiration Gallery -->
-  <section id="inspiration-img" class="px-4">
-    <div class="container mx-auto relative">
-      <div class="absolute design-inspiration gallery-design">
-        <h2 class="text-center font-bold"> Home Design Inspiration Gallery </h2>
-        <p class="text-center mb-4">Give your home a new look with these interior design ideas curated for you</p>
-      </div>
-
-      <div class="flex items-center gap-4 gallery-design">
-        <div class="w-5/12 ">
-          <div class="flex items-end gap-4 mb-4">
-            <div class="w-5/12 relative">
-              <img src="assets/images/inspiration1.webp" alt="Inspiration" class="inspiration">
-              <div class="inspiration-btn px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-                <h6>Master Room </h6>
-              </div>
-            </div>
-            <div class="w-7/12 relative">
-              <img src="assets/images/inspiration2.webp" alt="Inspiration" class="inspiration">
-              <div class="inspiration-btn px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-                <h6>Living Room </h6>
-              </div>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <div class="w-7/12 relative">
-              <img src="assets/images/inspiration6.webp" alt="Inspiration" class="inspiration">
-              <div class="inspiration-btn px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-                <h6>Home By Livspace </h6>
-              </div>
-            </div>
-            <div class="w-5/12 relative">
-              <img src="assets/images/inspiration7.webp" alt="Inspiration" class="inspiration">
-              <div class="inspiration-btn1 px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-                <h6>Kitchen</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-2/12 relative">
-          <img src="assets/images/inspiration3.webp" alt="Inspiration" class="inspiration">
-          <div class="inspiration-btn px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-            <h6>False Ceiling</h6>
-          </div>
-        </div>
-        <div class="w-5/12">
-          <div class="flex items-end gap-4 mb-4">
-            <div class="w-7/12 relative">
-              <img src="assets/images/inspiration4.webp" alt="Inspiration" class="inspiration">
-              <div class="inspiration-btn px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-                <h6>Kids Room </h6>
-              </div>
-            </div>
-            <div class="w-5/12 relative">
-              <img src="assets/images/inspiration5.webp" alt="Inspiration" class="inspiration">
-              <div class="inspiration-btn px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-                <h6>Home Office</h6>
-              </div>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <div class="w-5/12 relative">
-              <img src="assets/images/inspiration8.webp" alt="Inspiration" class="inspiration">
-              <div class="inspiration-btn px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-                <h6>Wardrobe</h6>
-              </div>
-            </div>
-            <div class="w-7/12 relative">
-              <img src="assets/images/inspiration9.webp" alt="Inspiration" class="inspiration">
-              <div class="inspiration-btn2 px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-                <h6>Dining Room</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="gallery-design-block">
-        <div>
-          <h2 class="text-center font-bold"> Home Design Inspiration Gallery </h2>
-          <p class="text-center mb-4">Give your home a new look with these interior design ideas curated for you</p>
-        </div>
-
-        <div class="grid gap-x-8 gap-y-4 sm:grid-cols-2 md:grid-cols-3 items-center">
-          <div class="relative">
-            <img src="assets/images/res-gallery.webp" class="rounded-2xl">
-            <div class="inspiration-btn px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-              <h6>Dining Room </h6>
-            </div>
-          </div>
-          <div class="relative">
-            <img src="assets/images/res-gallery2.webp" class="rounded-2xl">
-            <div class="inspiration-btn px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-              <h6>Wardrobe </h6>
-            </div>
-          </div>
-          <div class="relative">
-            <img src="assets/images/res-galler3.webp" class="rounded-2xl">
-            <div class="inspiration-btn px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-              <h6>Kitchen </h6>
-            </div>
-          </div>
-          <div class="relative">
-            <img src="assets/images/res-galler4.webp" class="rounded-2xl">
-            <div class="inspiration-btn px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-              <h6>Home By Livspace</h6>
-            </div>
-          </div>
-          <div class="relative">
-            <img src="assets/images/res-galler5.webp" class="rounded-2xl">
-            <div class="inspiration-btn px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-              <h6>Kids Room</h6>
-            </div>
-          </div>
-          <div class="relative">
-            <img src="assets/images/res-gallery6.webp" class="rounded-2xl">
-            <div class="inspiration-btn px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-              <h6>False Ceiling</h6>
-            </div>
-          </div>
-          <div class="relative">
-            <img src="assets/images/res-gallery7.webp" class="rounded-2xl">
-            <div class="inspiration-btn px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-              <h6>Living Room</h6>
-            </div>
-          </div>
-          <div class="relative">
-            <img src="assets/images/res-galler8.webp" class="rounded-2xl">
-            <div class="inspiration-btn px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-              <h6>Master Room </h6>
-            </div>
-          </div>
-          <div class="relative">
-            <img src="assets/images/res-gallery9.webp" class="rounded-2xl">
-            <div class="inspiration-btn px-4 py-1 xl:py-2 absolute text-center text-white text-xl">
-              <h6>Home Office</h6>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- Home Design Inspiration Gallery -->
-
-  <!-- CTA start -->
-  <section class="py-100 px-4">
-    <div class="container mx-auto" id="cta-bg">
-      <div class="grid gap-x-8 gap-y-4 grid-cols-2 items-center flex-column">
-        <div>
-          <img src="assets/images/ctag-img.webp" alt="cta" class="hidden lg:block">
-          <img src="assets/images/cta-mob.webp" alt="cta" class="block lg:hidden rounded-2xl">
-        </div>
-        <div class="text-center md:text-start">
-          <h5 class="text-white">Unable To Decide Upon a Colour?</h5>
-          <h2 class="text-white font-semibold">Get Quotation (Calculate Price) </h2>
-          <h4>Self serve</h4>
-          <button type="submit"
-            class="mb-4 xl:mb-0 mt-4 text-black bg-white cta-btn font-medium 
-                  rounded-lg text-sm px-5 py-2.5 text-center before:ease relative overflow-hidden transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-pink-500 hover:before:-translate-x-40">
-            <span relative="relative z-10">Estimate Cost</span></button>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- CTA start -->
-
-  <!--Video Testimonials start -->
-  <section id="video-testimonials" class="px-4">
-    <div class="container mx-auto">
-      <h2 class="text-center font-bold mb-4"> Video Testimonials </h2>
-      <div>
-        <div class="video-testimonials owl-carousel owl-theme flex justify-between">
-          <div class="item m-4 ">
-            <div class="bg-white p-5 video-box rounded-2xl">
-              <img src="assets/images/video1.webp" alt="video-box" class="rounded-2xl">
-              <div class="mt-4">
-                <div class="flex items-center">
-                  <img src="assets/images/user-img.webp" alt="user" class="w-22">
-                  <div class="ms-3">
-                    <h5 class="font-bold text-xl">Darin Nguyen</h5>
-                    <p>@staking</p>
-                  </div>
-                </div>
-                <p class="text-xl text-black mt-3">Faucibus eu condimentum maecenas sollicitudin vitae.</p>
-              </div>
-            </div>
-          </div>
-          <div class="item m-4 ">
-            <div class="bg-white p-5 video-box rounded-2xl">
-              <img src="assets/images/video1.webp" alt="video-box" class="rounded-2xl">
-              <div class="mt-4">
-                <div class="flex items-center">
-                  <img src="assets/images/user-img.webp" alt="user" class="w-22">
-                  <div class="ms-3">
-                    <h5 class="font-bold text-xl">Darin Nguyen</h5>
-                    <p>@staking</p>
-                  </div>
-                </div>
-                <p class="text-xl text-black mt-3">Faucibus eu condimentum maecenas sollicitudin vitae.</p>
-              </div>
-            </div>
-          </div>
-          <div class="item m-4 ">
-            <div class="bg-white p-5 video-box rounded-2xl">
-              <img src="assets/images/video1.webp" alt="video-box" class="rounded-2xl">
-              <div class="mt-4">
-                <div class="flex items-center">
-                  <img src="assets/images/user-img.webp" alt="user" class="w-22">
-                  <div class="ms-3">
-                    <h5 class="font-bold text-xl">Darin Nguyen</h5>
-                    <p>@staking</p>
-                  </div>
-                </div>
-                <p class="text-xl text-black mt-3">Faucibus eu condimentum maecenas sollicitudin vitae.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Video Testimonials end -->
-
-  <!-- Why You should choose CD -->
-  <section class="py-100 px-4" id="cd">
-    <div class="container mx-auto">
-      <div class="flex gap-4 mb-4 flex-col md:flex-row">
-        <div class="w-full lg:w-4/12 xl:w-6/12 shadow1 p-6">
-          <h2 class="font-semibold">Why You should choose CD
-          </h2>
-          <p class="my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen.</p>
-          <button
-            class="m-0 rounded-lg px-5 py-2.5 main-btn before:ease relative overflow-hidden text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-pink-500 hover:before:-translate-x-40">
-            <span relative="relative z-10">Book Series</span>
-          </button>
-        </div>
-        <div class="w-full lg:w-4/12 xl:w-3/12 shadow1 p-6">
-          <img src="assets/images/cd1.svg" alt="cd">
-          <h5 class="my-3 text-xl font-semibold">Get 8000+ Colour Shades Suggestions</h5>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-
-        </div>
-        <div class="w-full lg:w-4/12 xl:w-3/12 shadow1 p-6">
-          <img src="assets/images/cd2.svg" alt="cd">
-          <h5 class="my-3 text-xl font-semibold">Home Wall Design Painting Ideas</h5>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-
-        </div>
-      </div>
-      <div class="flex gap-4 flex-col md:flex-row">
-        <div class="w-full lg:w-4/12 xl:w-4/12 shadow1 p-6">
-          <img src="assets/images/cd3.svg" alt="cd">
-          <h5 class="my-3 text-xl font-semibold">ColourDrive Painters Vs Local Painters</h5>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text
-            of the printing and typesetting industry.</p>
-
-        </div>
-        <div class="w-full lg:w-4/12 xl:w-4/12 shadow1 p-6">
-          <img src="assets/images/cd4.svg" alt="cd">
-          <h5 class="my-3 text-xl font-semibold">Home Wall Design Painting Ideas</h5>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text
-            of the printing and typesetting industry.</p>
-
-        </div>
-        <div class="w-full lg:w-4/12 xl:w-4/12 shadow1 p-6">
-          <img src="assets/images/cd5.svg" alt="cd">
-          <h5 class="my-3 text-xl font-semibold">Get 8000+ Colour Shades Suggestions</h5>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text
-            of the printing and typesetting industry.</p>
-
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-  <!-- Why You should choose CD -->
-
-  <!-- Suppliers brand -->
-  <section class="px-4">
-    <div class="container mx-auto">
-      <h2 class="text-center font-bold mb-5"> Suppliers brand </h2>
-      <div class="grid gap-x-8 gap-y-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 mb-4">
-        <img src="assets/images/brand1.webp" alt="brand" class="rounded-2xl shadow11">
-        <img src="assets/images/brand2.webp" alt="brand" class="rounded-2xl shadow11">
-        <img src="assets/images/brand3.webp" alt="brand" class="rounded-2xl shadow11">
-        <img src="assets/images/brand4.webp" alt="brand" class="rounded-2xl shadow11">
-        <img src="assets/images/brand5.webp" alt="brand" class="rounded-2xl shadow11">
-        <img src="assets/images/brand6.webp" alt="brand" class="rounded-2xl shadow11">
-      </div>
-      <div class="grid gap-x-8 gap-y-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 ">
-        <img src="assets/images/brand7.webp" alt="brand" class="rounded-2xl shadow11">
-        <img src="assets/images/brand8.webp" alt="brand" class="rounded-2xl shadow11">
-        <img src="assets/images/brand9.webp" alt="brand" class="rounded-2xl shadow11">
-        <img src="assets/images/brand10.webp" alt="brand" class="rounded-2xl shadow11">
-        <img src="assets/images/brand11.webp" alt="brand" class="rounded-2xl shadow11">
-        <img src="assets/images/brand12.webp" alt="brand" class="rounded-2xl shadow11">
-      </div>
-      </div>
-  </section>
-  <!-- Suppliers brand -->
-
-  <!-- blog -->
-  <section id="blog" class="py-100 px-4">
-    <div class="container mx-auto">
-      <h2 class="text-center font-bold mb-5"> Recent Projects </h2>
-      <div class="grid gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-3 mb-4">
-        <div class="blog-box rounded-2xl">
-          <div class="relative">
-            <img src="assets/images/blog1.webp" width="100%" alt="Blog" class="blog">
-            <div class="blog-btn px-4 py-2 absolute text-center text-white text-xl flex items-center">
-              <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.6 1.99272H12.8V1.21999C12.8 0.756357 12.48 0.447266 12 0.447266C11.52 0.447266 11.2 0.756357 11.2 1.21999V1.99272H4.8V1.21999C4.8 0.756357 4.48 0.447266 4 0.447266C3.52 0.447266 3.2 0.756357 3.2 1.21999V1.99272H2.4C1.04 1.99272 0 2.99727 0 4.3109V15.1291C0 16.4427 1.04 17.4473 2.4 17.4473H13.6C14.96 17.4473 16 16.4427 16 15.1291V4.3109C16 3.07454 14.96 1.99272 13.6 1.99272ZM4 14.3564C3.52 14.3564 3.2 14.0473 3.2 13.5836C3.2 13.12 3.52 12.8109 4 12.8109C4.48 12.8109 4.8 13.12 4.8 13.5836C4.8 14.0473 4.48 14.3564 4 14.3564ZM4 11.2654C3.52 11.2654 3.2 10.9564 3.2 10.4927C3.2 10.0291 3.52 9.71999 4 9.71999C4.48 9.71999 4.8 10.0291 4.8 10.4927C4.8 10.9564 4.48 11.2654 4 11.2654ZM8 14.3564C7.52 14.3564 7.2 14.0473 7.2 13.5836C7.2 13.12 7.52 12.8109 8 12.8109C8.48 12.8109 8.8 13.12 8.8 13.5836C8.8 14.0473 8.48 14.3564 8 14.3564ZM8 11.2654C7.52 11.2654 7.2 10.9564 7.2 10.4927C7.2 10.0291 7.52 9.71999 8 9.71999C8.48 9.71999 8.8 10.0291 8.8 10.4927C8.8 10.9564 8.48 11.2654 8 11.2654ZM12 14.3564C11.52 14.3564 11.2 14.0473 11.2 13.5836C11.2 13.12 11.52 12.8109 12 12.8109C12.48 12.8109 12.8 13.12 12.8 13.5836C12.8 14.0473 12.48 14.3564 12 14.3564ZM12 11.2654C11.52 11.2654 11.2 10.9564 11.2 10.4927C11.2 10.0291 11.52 9.71999 12 9.71999C12.48 9.71999 12.8 10.0291 12.8 10.4927C12.8 10.9564 12.48 11.2654 12 11.2654ZM14.4 6.62908H1.6V4.3109C1.6 3.84727 1.92 3.53817 2.4 3.53817H3.2V4.3109C3.2 4.77454 3.52 5.08363 4 5.08363C4.48 5.08363 4.8 4.77454 4.8 4.3109V3.53817H11.2V4.3109C11.2 4.77454 11.52 5.08363 12 5.08363C12.48 5.08363 12.8 4.77454 12.8 4.3109V3.53817H13.6C14.08 3.53817 14.4 3.84727 14.4 4.3109V6.62908Z"
-                  fill="white" />
-              </svg>
-              <h6 class="ms-3 ">Feb 20, 2024 </h6>
-            </div>
-          </div>
-          <div class="p-4">
-            <ul class="m-0 p-0">
-              <li class="flex items-center">
-                <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M17.5331 8.74538V14.3572C17.5331 14.5599 17.4545 14.7352 17.2974 14.8833C17.1403 15.0314 16.9542 15.1055 16.7392 15.1055H11.9756V10.616H8.79982V15.1055H4.03621C3.82119 15.1055 3.63511 15.0314 3.47798 14.8833C3.32084 14.7352 3.24228 14.5599 3.24228 14.3572V8.74538C3.24228 8.73758 3.24435 8.72589 3.24848 8.7103C3.25262 8.69471 3.25468 8.68302 3.25468 8.67523L10.3877 3.13353L17.5207 8.67523C17.529 8.69082 17.5331 8.7142 17.5331 8.74538ZM20.2995 7.93867L19.5304 8.80383C19.4642 8.87398 19.3774 8.91685 19.2698 8.93244H19.2326C19.1251 8.93244 19.0383 8.90516 18.9721 8.8506L10.3877 2.10469L1.80327 8.8506C1.70403 8.91295 1.60479 8.94023 1.50555 8.93244C1.39803 8.91685 1.3112 8.87398 1.24504 8.80383L0.47591 7.93867C0.409749 7.86073 0.380804 7.76915 0.389074 7.66393C0.397344 7.5587 0.44283 7.47492 0.525531 7.41256L9.4449 0.409444C9.70954 0.206794 10.0238 0.105469 10.3877 0.105469C10.7516 0.105469 11.0658 0.206794 11.3305 0.409444L14.3574 2.79448V0.514666C14.3574 0.405547 14.3946 0.315913 14.469 0.245765C14.5435 0.175617 14.6386 0.140543 14.7543 0.140543H17.1361C17.2519 0.140543 17.347 0.175617 17.4215 0.245765C17.4959 0.315913 17.5331 0.405547 17.5331 0.514666V5.28474L20.2499 7.41256C20.3326 7.47492 20.378 7.5587 20.3863 7.66393C20.3946 7.76915 20.3656 7.86073 20.2995 7.93867Z"
-                    fill="#6A6D70" />
-                </svg>
-                <h5 class="ms-3">Panduranganagar Bannerghatta Road</h5>
-              </li>
-              <li class="flex items-center">
-                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M7.8877 0.105469C5.89857 0.105469 3.99092 0.856196 2.58439 2.1925C1.17787 3.5288 0.387695 5.34122 0.387695 7.23103C0.387695 12.4881 7.30436 18.7349 7.60436 18.9961C7.68185 19.0663 7.7848 19.1055 7.89186 19.1055C7.99892 19.1055 8.10187 19.0663 8.17936 18.9961C8.47103 18.7349 15.3877 12.4881 15.3877 7.23103C15.3877 5.34122 14.5975 3.5288 13.191 2.1925C11.7845 0.856196 9.87682 0.105469 7.8877 0.105469ZM7.8877 11.1897C7.06361 11.1897 6.25802 10.9575 5.57282 10.5225C4.88761 10.0875 4.35356 9.46929 4.0382 8.74594C3.72283 8.02259 3.64032 7.22664 3.80109 6.45874C3.96186 5.69084 4.3587 4.98547 4.94142 4.43185C5.52414 3.87822 6.26656 3.5012 7.07482 3.34845C7.88307 3.19571 8.72085 3.2741 9.48221 3.57372C10.2436 3.87334 10.8943 4.38073 11.3522 5.03173C11.81 5.68272 12.0544 6.44809 12.0544 7.23103C12.0544 7.75089 11.9466 8.26566 11.7372 8.74594C11.5278 9.22623 11.2209 9.66263 10.834 10.0302C10.4471 10.3978 9.98773 10.6894 9.48221 10.8883C8.97669 11.0873 8.43487 11.1897 7.8877 11.1897Z"
-                    fill="#6A6D70" />
-                </svg>
-
-                <h5 class="ms-3">Bangalore</h5>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="blog-box rounded-2xl">
-          <div class="relative">
-            <img src="assets/images/blog2.webp" width="100%" alt="Blog" class="blog">
-            <div class="blog-btn px-4 py-2 absolute text-center text-white text-xl flex items-center">
-              <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.6 1.99272H12.8V1.21999C12.8 0.756357 12.48 0.447266 12 0.447266C11.52 0.447266 11.2 0.756357 11.2 1.21999V1.99272H4.8V1.21999C4.8 0.756357 4.48 0.447266 4 0.447266C3.52 0.447266 3.2 0.756357 3.2 1.21999V1.99272H2.4C1.04 1.99272 0 2.99727 0 4.3109V15.1291C0 16.4427 1.04 17.4473 2.4 17.4473H13.6C14.96 17.4473 16 16.4427 16 15.1291V4.3109C16 3.07454 14.96 1.99272 13.6 1.99272ZM4 14.3564C3.52 14.3564 3.2 14.0473 3.2 13.5836C3.2 13.12 3.52 12.8109 4 12.8109C4.48 12.8109 4.8 13.12 4.8 13.5836C4.8 14.0473 4.48 14.3564 4 14.3564ZM4 11.2654C3.52 11.2654 3.2 10.9564 3.2 10.4927C3.2 10.0291 3.52 9.71999 4 9.71999C4.48 9.71999 4.8 10.0291 4.8 10.4927C4.8 10.9564 4.48 11.2654 4 11.2654ZM8 14.3564C7.52 14.3564 7.2 14.0473 7.2 13.5836C7.2 13.12 7.52 12.8109 8 12.8109C8.48 12.8109 8.8 13.12 8.8 13.5836C8.8 14.0473 8.48 14.3564 8 14.3564ZM8 11.2654C7.52 11.2654 7.2 10.9564 7.2 10.4927C7.2 10.0291 7.52 9.71999 8 9.71999C8.48 9.71999 8.8 10.0291 8.8 10.4927C8.8 10.9564 8.48 11.2654 8 11.2654ZM12 14.3564C11.52 14.3564 11.2 14.0473 11.2 13.5836C11.2 13.12 11.52 12.8109 12 12.8109C12.48 12.8109 12.8 13.12 12.8 13.5836C12.8 14.0473 12.48 14.3564 12 14.3564ZM12 11.2654C11.52 11.2654 11.2 10.9564 11.2 10.4927C11.2 10.0291 11.52 9.71999 12 9.71999C12.48 9.71999 12.8 10.0291 12.8 10.4927C12.8 10.9564 12.48 11.2654 12 11.2654ZM14.4 6.62908H1.6V4.3109C1.6 3.84727 1.92 3.53817 2.4 3.53817H3.2V4.3109C3.2 4.77454 3.52 5.08363 4 5.08363C4.48 5.08363 4.8 4.77454 4.8 4.3109V3.53817H11.2V4.3109C11.2 4.77454 11.52 5.08363 12 5.08363C12.48 5.08363 12.8 4.77454 12.8 4.3109V3.53817H13.6C14.08 3.53817 14.4 3.84727 14.4 4.3109V6.62908Z"
-                  fill="white" />
-              </svg>
-              <h6 class="ms-3 ">Feb 20, 2024 </h6>
-            </div>
-          </div>
-          <div class="p-4">
-            <ul class="m-0 p-0">
-              <li class="flex items-center">
-                <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M17.5331 8.74538V14.3572C17.5331 14.5599 17.4545 14.7352 17.2974 14.8833C17.1403 15.0314 16.9542 15.1055 16.7392 15.1055H11.9756V10.616H8.79982V15.1055H4.03621C3.82119 15.1055 3.63511 15.0314 3.47798 14.8833C3.32084 14.7352 3.24228 14.5599 3.24228 14.3572V8.74538C3.24228 8.73758 3.24435 8.72589 3.24848 8.7103C3.25262 8.69471 3.25468 8.68302 3.25468 8.67523L10.3877 3.13353L17.5207 8.67523C17.529 8.69082 17.5331 8.7142 17.5331 8.74538ZM20.2995 7.93867L19.5304 8.80383C19.4642 8.87398 19.3774 8.91685 19.2698 8.93244H19.2326C19.1251 8.93244 19.0383 8.90516 18.9721 8.8506L10.3877 2.10469L1.80327 8.8506C1.70403 8.91295 1.60479 8.94023 1.50555 8.93244C1.39803 8.91685 1.3112 8.87398 1.24504 8.80383L0.47591 7.93867C0.409749 7.86073 0.380804 7.76915 0.389074 7.66393C0.397344 7.5587 0.44283 7.47492 0.525531 7.41256L9.4449 0.409444C9.70954 0.206794 10.0238 0.105469 10.3877 0.105469C10.7516 0.105469 11.0658 0.206794 11.3305 0.409444L14.3574 2.79448V0.514666C14.3574 0.405547 14.3946 0.315913 14.469 0.245765C14.5435 0.175617 14.6386 0.140543 14.7543 0.140543H17.1361C17.2519 0.140543 17.347 0.175617 17.4215 0.245765C17.4959 0.315913 17.5331 0.405547 17.5331 0.514666V5.28474L20.2499 7.41256C20.3326 7.47492 20.378 7.5587 20.3863 7.66393C20.3946 7.76915 20.3656 7.86073 20.2995 7.93867Z"
-                    fill="#6A6D70" />
-                </svg>
-                <h5 class="ms-3">Panduranganagar Bannerghatta Road</h5>
-              </li>
-              <li class="flex items-center">
-                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M7.8877 0.105469C5.89857 0.105469 3.99092 0.856196 2.58439 2.1925C1.17787 3.5288 0.387695 5.34122 0.387695 7.23103C0.387695 12.4881 7.30436 18.7349 7.60436 18.9961C7.68185 19.0663 7.7848 19.1055 7.89186 19.1055C7.99892 19.1055 8.10187 19.0663 8.17936 18.9961C8.47103 18.7349 15.3877 12.4881 15.3877 7.23103C15.3877 5.34122 14.5975 3.5288 13.191 2.1925C11.7845 0.856196 9.87682 0.105469 7.8877 0.105469ZM7.8877 11.1897C7.06361 11.1897 6.25802 10.9575 5.57282 10.5225C4.88761 10.0875 4.35356 9.46929 4.0382 8.74594C3.72283 8.02259 3.64032 7.22664 3.80109 6.45874C3.96186 5.69084 4.3587 4.98547 4.94142 4.43185C5.52414 3.87822 6.26656 3.5012 7.07482 3.34845C7.88307 3.19571 8.72085 3.2741 9.48221 3.57372C10.2436 3.87334 10.8943 4.38073 11.3522 5.03173C11.81 5.68272 12.0544 6.44809 12.0544 7.23103C12.0544 7.75089 11.9466 8.26566 11.7372 8.74594C11.5278 9.22623 11.2209 9.66263 10.834 10.0302C10.4471 10.3978 9.98773 10.6894 9.48221 10.8883C8.97669 11.0873 8.43487 11.1897 7.8877 11.1897Z"
-                    fill="#6A6D70" />
-                </svg>
-
-                <h5 class="ms-3">Bangalore</h5>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="blog-box rounded-2xl">
-          <div class="relative">
-            <img src="assets/images/blog3.webp" width="100%" alt="Blog" class="blog">
-            <div class="blog-btn px-4 py-2 absolute text-center text-white text-xl flex items-center">
-              <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.6 1.99272H12.8V1.21999C12.8 0.756357 12.48 0.447266 12 0.447266C11.52 0.447266 11.2 0.756357 11.2 1.21999V1.99272H4.8V1.21999C4.8 0.756357 4.48 0.447266 4 0.447266C3.52 0.447266 3.2 0.756357 3.2 1.21999V1.99272H2.4C1.04 1.99272 0 2.99727 0 4.3109V15.1291C0 16.4427 1.04 17.4473 2.4 17.4473H13.6C14.96 17.4473 16 16.4427 16 15.1291V4.3109C16 3.07454 14.96 1.99272 13.6 1.99272ZM4 14.3564C3.52 14.3564 3.2 14.0473 3.2 13.5836C3.2 13.12 3.52 12.8109 4 12.8109C4.48 12.8109 4.8 13.12 4.8 13.5836C4.8 14.0473 4.48 14.3564 4 14.3564ZM4 11.2654C3.52 11.2654 3.2 10.9564 3.2 10.4927C3.2 10.0291 3.52 9.71999 4 9.71999C4.48 9.71999 4.8 10.0291 4.8 10.4927C4.8 10.9564 4.48 11.2654 4 11.2654ZM8 14.3564C7.52 14.3564 7.2 14.0473 7.2 13.5836C7.2 13.12 7.52 12.8109 8 12.8109C8.48 12.8109 8.8 13.12 8.8 13.5836C8.8 14.0473 8.48 14.3564 8 14.3564ZM8 11.2654C7.52 11.2654 7.2 10.9564 7.2 10.4927C7.2 10.0291 7.52 9.71999 8 9.71999C8.48 9.71999 8.8 10.0291 8.8 10.4927C8.8 10.9564 8.48 11.2654 8 11.2654ZM12 14.3564C11.52 14.3564 11.2 14.0473 11.2 13.5836C11.2 13.12 11.52 12.8109 12 12.8109C12.48 12.8109 12.8 13.12 12.8 13.5836C12.8 14.0473 12.48 14.3564 12 14.3564ZM12 11.2654C11.52 11.2654 11.2 10.9564 11.2 10.4927C11.2 10.0291 11.52 9.71999 12 9.71999C12.48 9.71999 12.8 10.0291 12.8 10.4927C12.8 10.9564 12.48 11.2654 12 11.2654ZM14.4 6.62908H1.6V4.3109C1.6 3.84727 1.92 3.53817 2.4 3.53817H3.2V4.3109C3.2 4.77454 3.52 5.08363 4 5.08363C4.48 5.08363 4.8 4.77454 4.8 4.3109V3.53817H11.2V4.3109C11.2 4.77454 11.52 5.08363 12 5.08363C12.48 5.08363 12.8 4.77454 12.8 4.3109V3.53817H13.6C14.08 3.53817 14.4 3.84727 14.4 4.3109V6.62908Z"
-                  fill="white" />
-              </svg>
-              <h6 class="ms-3 ">Feb 20, 2024 </h6>
-            </div>
-          </div>
-          <div class="p-4">
-            <ul class="m-0 p-0">
-              <li class="flex items-center">
-                <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M17.5331 8.74538V14.3572C17.5331 14.5599 17.4545 14.7352 17.2974 14.8833C17.1403 15.0314 16.9542 15.1055 16.7392 15.1055H11.9756V10.616H8.79982V15.1055H4.03621C3.82119 15.1055 3.63511 15.0314 3.47798 14.8833C3.32084 14.7352 3.24228 14.5599 3.24228 14.3572V8.74538C3.24228 8.73758 3.24435 8.72589 3.24848 8.7103C3.25262 8.69471 3.25468 8.68302 3.25468 8.67523L10.3877 3.13353L17.5207 8.67523C17.529 8.69082 17.5331 8.7142 17.5331 8.74538ZM20.2995 7.93867L19.5304 8.80383C19.4642 8.87398 19.3774 8.91685 19.2698 8.93244H19.2326C19.1251 8.93244 19.0383 8.90516 18.9721 8.8506L10.3877 2.10469L1.80327 8.8506C1.70403 8.91295 1.60479 8.94023 1.50555 8.93244C1.39803 8.91685 1.3112 8.87398 1.24504 8.80383L0.47591 7.93867C0.409749 7.86073 0.380804 7.76915 0.389074 7.66393C0.397344 7.5587 0.44283 7.47492 0.525531 7.41256L9.4449 0.409444C9.70954 0.206794 10.0238 0.105469 10.3877 0.105469C10.7516 0.105469 11.0658 0.206794 11.3305 0.409444L14.3574 2.79448V0.514666C14.3574 0.405547 14.3946 0.315913 14.469 0.245765C14.5435 0.175617 14.6386 0.140543 14.7543 0.140543H17.1361C17.2519 0.140543 17.347 0.175617 17.4215 0.245765C17.4959 0.315913 17.5331 0.405547 17.5331 0.514666V5.28474L20.2499 7.41256C20.3326 7.47492 20.378 7.5587 20.3863 7.66393C20.3946 7.76915 20.3656 7.86073 20.2995 7.93867Z"
-                    fill="#6A6D70" />
-                </svg>
-                <h5 class="ms-3">Panduranganagar Bannerghatta Road</h5>
-              </li>
-              <li class="flex items-center">
-                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M7.8877 0.105469C5.89857 0.105469 3.99092 0.856196 2.58439 2.1925C1.17787 3.5288 0.387695 5.34122 0.387695 7.23103C0.387695 12.4881 7.30436 18.7349 7.60436 18.9961C7.68185 19.0663 7.7848 19.1055 7.89186 19.1055C7.99892 19.1055 8.10187 19.0663 8.17936 18.9961C8.47103 18.7349 15.3877 12.4881 15.3877 7.23103C15.3877 5.34122 14.5975 3.5288 13.191 2.1925C11.7845 0.856196 9.87682 0.105469 7.8877 0.105469ZM7.8877 11.1897C7.06361 11.1897 6.25802 10.9575 5.57282 10.5225C4.88761 10.0875 4.35356 9.46929 4.0382 8.74594C3.72283 8.02259 3.64032 7.22664 3.80109 6.45874C3.96186 5.69084 4.3587 4.98547 4.94142 4.43185C5.52414 3.87822 6.26656 3.5012 7.07482 3.34845C7.88307 3.19571 8.72085 3.2741 9.48221 3.57372C10.2436 3.87334 10.8943 4.38073 11.3522 5.03173C11.81 5.68272 12.0544 6.44809 12.0544 7.23103C12.0544 7.75089 11.9466 8.26566 11.7372 8.74594C11.5278 9.22623 11.2209 9.66263 10.834 10.0302C10.4471 10.3978 9.98773 10.6894 9.48221 10.8883C8.97669 11.0873 8.43487 11.1897 7.8877 11.1897Z"
-                    fill="#6A6D70" />
-                </svg>
-
-                <h5 class="ms-3">Bangalore</h5>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- blog -->
-
-  <!-- faq -->
-  <section id="faq" class="px-4">
-    <div class="container mx-auto">
-      <h2 class="text-center font-bold mb-5"> FAQs </h2>
-      <div class="accordion flex flex-col items-center justify-center ">
-        <!--  Panel 1  -->
-        <div class="w-full lg:w-1/2 shadow11 mb-4 ">
-          <input type="checkbox" name="panel" id="panel-1" class="hidden">
-          <label for="panel-1" class="relative block bg-white text-black p-4 rounded-2xl">Questions text goes
-            here</label>
-          <div class="accordion__content overflow-hidden ">
-            <p class="accordion__body p-4 text-black" id="panel1">Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-              an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
-          </div>
-        </div>
-        <!--  Panel 2  -->
-        <div class="w-full lg:w-1/2 shadow11 mb-4 ">
-          <input type="checkbox" name="panel" id="panel-2" class="hidden">
-          <label for="panel-2" class="relative block bg-white text-black p-4 rounded-2xl">Questions text goes
-            here</label>
-          <div class="accordion__content overflow-hidden ">
-            <p class="accordion__body p-4 text-black" id="panel1">Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Iusto possimus at a cum saepe molestias modi illo facere ducimus voluptatibus praesentium deleniti
-              fugiat ab error quia sit perspiciatis velit necessitatibus.Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-        <!--  Panel 3  -->
-        <div class="w-full lg:w-1/2 shadow11 mb-4">
-          <input type="checkbox" name="panel" id="panel-3" class="hidden">
-          <label for="panel-3" class="relative block bg-white text-black p-4 rounded-2xl">Questions text goes
-            here</label>
-          <div class="accordion__content overflow-hidden ">
-            <p class="accordion__body p-4 text-black" id="panel1">Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Iusto possimus at a cum saepe molestias modi illo facere ducimus voluptatibus praesentium deleniti
-              fugiat ab error quia sit perspiciatis velit necessitatibus.Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-        <!--  Panel 4  -->
-        <div class="w-full lg:w-1/2 shadow11 mb-4">
-          <input type="checkbox" name="panel" id="panel-4" class="hidden">
-          <label for="panel-4" class="relative block bg-white text-black p-4 rounded-2xl">Questions text goes
-            here</label>
-          <div class="accordion__content overflow-hidden ">
-            <p class="accordion__body p-4 text-black" id="panel1">Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Iusto possimus at a cum saepe molestias modi illo facere ducimus voluptatibus praesentium deleniti
-              fugiat ab error quia sit perspiciatis velit necessitatibus.Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-        <!--  Panel 5  -->
-        <div class="w-full lg:w-1/2 shadow11 mb-4">
-          <input type="checkbox" name="panel" id="panel-5" class="hidden">
-          <label for="panel-5" class="relative block bg-white text-black p-4 rounded-2xl">Questions text goes
-            here</label>
-          <div class="accordion__content overflow-hidden ">
-            <p class="accordion__body p-4 text-black" id="panel1">Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Iusto possimus at a cum saepe molestias modi illo facere ducimus voluptatibus praesentium deleniti
-              fugiat ab error quia sit perspiciatis velit necessitatibus.Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- faq -->
     <!-- CTA start -->
-  <section class="py-100 px-4">
-    <div class="container mx-auto" id="cta-bg">
-      <div class="grid gap-x-8 gap-y-4 grid-cols-2 items-center flex-column">
-        <div>
-          <img src="assets/images/cta2.webp" alt="cta" class="hidden xl:block">
-          <img src="assets/images/res-cta.webp" alt="cta" class="block xl:hidden rounded-2xl">
-        </div>
-        <div class="text-center md:text-start">
-          <h5 class="text-white">Unable To Decide Upon a Colour?</h5>
-          <h2 class="text-white font-semibold">Request Home Painting Services ! </h2>
-          <h4>Share details for Free Online-Quotation.</h4>
-          <button type="submit"
-            class="mb-4 xl:mb-0 mt-4 text-black bg-white cta-btn font-medium 
-                    rounded-lg text-sm px-5 py-2.5 text-center before:ease relative overflow-hidden transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-pink-500 hover:before:-translate-x-40">
-            <span relative="relative z-10">Enquire Now</span></button>
-        </div>
-      </div>
+    <section class="py-100 mx-3 lg-mx-0" id="cta">
+        <div class="container mx-auto" id="cta-blog">
+            <div class="grid gap-x-8 gap-y-4 sm:grid-cols-2 items-center">
+                <div>
+                    <img src="assets/images/home/cta-bgimg.webp" alt="cta" class="hidden lg:block" />
+                    <img src="assets/images/cta-mob.webp" alt="cta" class="block lg:hidden rounded-2xl" />
+                </div>
+                <div class="text-center md:text-start">
+                    <h5 class="text-black">Unable To Decide Upon a Colour?</h5>
+                    <h2 class="text-black font-semibold">Books a Service</h2>
+                    <h4>Self serve</h4>
+                    <div class="justify-center sm:justify-start flex">
+                        <button type="submit" class="mb-4 xl:mb-0 mt-4 text-white bg-green cta-btn font-medium rounded-lg text-sm px-5 py-2.5 text-center before:ease relative overflow-hidden transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-pink-500 hover:before:-translate-x-40">
+                            <span relative="relative z-10">Book Service</span>
+                        </button>
+                    </div>
 
-    </div>
-  </section>
-  <!-- CTA start -->
-  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA start -->
+
+    <!-- Inspirational Gallery start -->
+    <section class="px-4" id="gallery">
+        <div class="container mx-auto">
+            <h2 class="text-center font-bold mb-4">What We Offer</h2>
+            <Swiper class="catalogue" :slides-per-view="1" :loop="true" :breakpoints="{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 4 },
+          }" :space-between="30" :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation]" :autoplay="{
+            delay: 3000,
+            disableOnInteraction: true,
+          }" :pauseAutoplayOnMouseEnter="true" :navigation="true" :pagination="{
+            clickable: true,
+          }">
+                <SwiperSlide class="h-100">
+                    <div class="relative">
+                        <img src="assets/images/home/painting-service.webp" alt="painting-service" class="gallery-img" width="100%" />
+                        <div class="bg-gallery p-4 sm:p-2 lg:p-4 absolute w-full text-center text-white text-xl">
+                            <h4>Painting Services</h4>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide class="h-100">
+                    <div class="relative">
+                        <img src="assets/images/home/wall-designing.webp" alt="wall-designing" class="gallery-img" width="100%" />
+                        <div class="bg-gallery p-4 sm:p-2 lg:p-4 absolute w-full text-center text-white text-xl">
+                            <h4>Wall Designing</h4>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide class="h-100">
+                    <div class="relative">
+                        <img src="assets/images/home/wood-coating.webp" alt="wood-coating" class="gallery-img" width="100%" />
+                        <div class="bg-gallery p-4 sm:p-2 lg:p-4 absolute w-full text-center text-white text-xl">
+                            <h4>Wood Coating & Finishing</h4>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide class="h-100">
+                    <div class="relative">
+                        <img src="assets/images/home/waterproofing.webp" alt="waterproofing" class="gallery-img" width="100%" />
+                        <div class="bg-gallery p-4 sm:p-2 lg:p-4 absolute w-full text-center text-white text-xl">
+                            <h4>Waterproofing</h4>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide class="h-100">
+                    <div class="relative">
+                        <img src="assets/images/home/wall-designing.webp" alt="wall-designing" class="gallery-img" width="100%" />
+                        <div class="bg-gallery p-4 sm:p-2 lg:p-4 absolute w-full text-center text-white text-xl">
+                            <h4>Wall Designing</h4>
+                        </div>
+                    </div>
+                </SwiperSlide>
+            </Swiper>
+        </div>
+    </section>
+    <!-- Inspirational Gallery end -->
+
+    <!-- How We Works -->
+    <section id="work" class="mx-4 md-mx-0 py-100">
+        <div class="container mx-auto">
+            <div class="grid gap-x-8 gap-y-4 sm:grid-cols-2 md:grid-cols-2 items-center">
+                <div>
+                    <h2 class="font-bold mb-4">How We Works</h2>
+                    <div>
+                        <div class="accordion flex flex-col items-center justify-center">
+                            <!--  Panel 1  -->
+                            <div class="w-full mb-4 ac-tab">
+                                <input type="checkbox" name="panel" id="panel-1" class="hidden" />
+                                <label for="panel-1" class="relative block bg-white text-black pt-4 rounded-2xl flex items-center"><img src="assets/images/single-services/work1.svg" alt="work" />
+                                    <h5 class="ms-3 font-semibold">
+                                        Free Survey & Quotation
+                                    </h5>
+                                </label>
+                                <div class="accordion__content overflow-hidden">
+                                    <p class="accordion__body pt-4 text-gray" id="panel1">
+                                        Experience hassle-free house painting and waterproofing
+                                        with our skilled professionals. Our team will assess the
+                                        surface condition, identify areas needing special
+                                        attention, and accurately measure the site using laser
+                                        technology. We provide precise quotations, recommend
+                                        suitable products, and suggest the right process for the
+                                        job
+                                    </p>
+                                    <button type="submit" class="mt-3 text-white main-btngreen font-medium rounded-50 text-sm px-8 py-3 text-center before:ease relative overflow-hidden transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-pink-500 hover:before:-translate-x-40">
+                                        <span relative="relative z-10">Get Free Estimate</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!--  Panel 2  -->
+                            <div class="w-full mb-4 ac-tab">
+                                <input type="checkbox" name="panel" id="panel-2" class="hidden" />
+                                <label for="panel-2" class="relative block bg-white text-black pt-4 rounded-2xl flex items-center"><img src="assets/images/single-services/work2.svg" alt="work" />
+                                    <h5 class="ms-3 font-semibold">Accept Quotation</h5>
+                                </label>
+                                <div class="accordion__content overflow-hidden">
+                                    <p class="accordion__body pt-4 text-gray" id="panel2">
+                                        Experience hassle-free house painting and waterproofing
+                                        with our skilled professionals. Our team will assess the
+                                        surface condition, identify areas needing special
+                                        attention, and accurately measure the site using laser
+                                        technology. We provide precise quotations, recommend
+                                        suitable products, and suggest the right process for the
+                                        job
+                                    </p>
+                                    <button type="submit" class="mt-3 text-white main-btngreen font-medium rounded-50 text-sm px-8 py-3 text-center before:ease relative overflow-hidden transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-pink-500 hover:before:-translate-x-40">
+                                        <span relative="relative z-10">Get Free Estimate</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!--  Panel 3  -->
+                            <div class="w-full mb-4 ac-tab">
+                                <input type="checkbox" name="panel" id="panel-3" class="hidden" />
+                                <label for="panel-3" class="relative block bg-white text-black pt-4 rounded-2xl flex items-center"><img src="assets/images/single-services/work3.svg" alt="work" />
+                                    <h5 class="ms-3 font-semibold">
+                                        Online Color Consultation
+                                    </h5>
+                                </label>
+                                <div class="accordion__content overflow-hidden">
+                                    <p class="accordion__body pt-4 text-gray" id="panel3">
+                                        Experience hassle-free house painting and waterproofing
+                                        with our skilled professionals. Our team will assess the
+                                        surface condition, identify areas needing special
+                                        attention, and accurately measure the site using laser
+                                        technology. We provide precise quotations, recommend
+                                        suitable products, and suggest the right process for the
+                                        job
+                                    </p>
+                                    <button type="submit" class="mt-3 text-white main-btngreen font-medium rounded-50 text-sm px-8 py-3 text-center before:ease relative overflow-hidden transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-pink-500 hover:before:-translate-x-40">
+                                        <span relative="relative z-10">Get Free Estimate</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!--  Panel 4  -->
+                            <div class="w-full mb-4 ac-tab">
+                                <input type="checkbox" name="panel" id="panel-4" class="hidden" />
+                                <label for="panel-4" class="relative block bg-white text-black pt-4 rounded-2xl flex items-center"><img src="assets/images/single-services/work4.svg" alt="work" />
+                                    <h5 class="ms-3 font-semibold">Paint Begins</h5>
+                                </label>
+                                <div class="accordion__content overflow-hidden">
+                                    <p class="accordion__body pt-4 text-gray" id="panel4">
+                                        Experience hassle-free house painting and waterproofing
+                                        with our skilled professionals. Our team will assess the
+                                        surface condition, identify areas needing special
+                                        attention, and accurately measure the site using laser
+                                        technology. We provide precise quotations, recommend
+                                        suitable products, and suggest the right process for the
+                                        job
+                                    </p>
+                                    <button type="submit" class="mt-3 text-white main-btngreen font-medium rounded-50 text-sm px-8 py-3 text-center before:ease relative overflow-hidden transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-pink-500 hover:before:-translate-x-40">
+                                        <span relative="relative z-10">Get Free Estimate</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!--  Panel 5  -->
+                            <div class="w-full mb-4 ac-tab">
+                                <input type="checkbox" name="panel" id="panel-5" class="hidden" />
+                                <label for="panel-5" class="relative block bg-white text-black pt-4 rounded-2xl flex items-center"><img src="assets/images/single-services/work5.svg" alt="work" />
+                                    <h5 class="ms-3 font-semibold">
+                                        Finishing And Handover
+                                    </h5>
+                                </label>
+                                <div class="accordion__content overflow-hidden">
+                                    <p class="accordion__body pt-4 text-gray" id="panel5">
+                                        Experience hassle-free house painting and waterproofing
+                                        with our skilled professionals. Our team will assess the
+                                        surface condition, identify areas needing special
+                                        attention, and accurately measure the site using laser
+                                        technology. We provide precise quotations, recommend
+                                        suitable products, and suggest the right process for the
+                                        job
+                                    </p>
+                                    <button type="submit" class="mt-3 text-white main-btngreen font-medium rounded-50 text-sm px-8 py-3 text-center before:ease relative overflow-hidden transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-pink-500 hover:before:-translate-x-40">
+                                        <span relative="relative z-10">Get Free Estimate</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/images/single-services/work.webp" width="100%" alt="work" class="ac-image" />
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- How We Works -->
+
+    <!--Video Testimonials start -->
+    <section id="video-testimonials" class="pb-200">
+        <div class="container mx-auto">
+            <h2 class="text-center font-bold mb-4">Video Testimonials</h2>
+
+            <Swiper class="catalogue" :slides-per-view="1" :breakpoints="{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }" :loop="true" :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation]" :autoplay="{
+            delay: 3000,
+            disableOnInteraction: true,
+          }" :pauseAutoplayOnMouseEnter="true" :navigation="true" :pagination="{
+            clickable: true,
+          }">
+                <SwiperSlide class="h-100">
+                    <div class="bg-white p-5 video-box rounded-2xl m-3">
+                        <div class="relative cursor-pointer" onclick="toggleModal4()">
+                            <img src="assets/images/video-testimonial1.webp" alt="video-box" class="rounded-2xl" />
+                            <div class="absolute play-btn">
+                                <img src="assets/images/play-btn.svg" alt="play-btn" />
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="flex items-center">
+                                <img src="assets/images/user-img.webp" alt="user" class="w-22" />
+                                <div class="ms-3">
+                                    <h5 class="font-bold text-xl">Darin Nguyen</h5>
+                                    <p>@staking</p>
+                                </div>
+                            </div>
+                            <p class="text-xl text-black mt-3">
+                                Faucibus eu condimentum maecenas sollicitudin vitae.
+                            </p>
+
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide class="h-100">
+                    <div class="bg-white p-5 video-box rounded-2xl m-3">
+                        <div class="relative cursor-pointer" onclick="toggleModal4()">
+                            <img src="assets/images/video-testimonial1.webp" alt="video-box" class="rounded-2xl" />
+                            <div class="absolute play-btn">
+                                <img src="assets/images/play-btn.svg" alt="play-btn" />
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="flex items-center">
+                                <img src="assets/images/user-img.webp" alt="user" class="w-22" />
+                                <div class="ms-3">
+                                    <h5 class="font-bold text-xl">Darin Nguyen</h5>
+                                    <p>@staking</p>
+                                </div>
+                            </div>
+                            <p class="text-xl text-black mt-3">
+                                Faucibus eu condimentum maecenas sollicitudin vitae.
+                            </p>
+
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide class="h-100">
+                    <div class="bg-white p-5 video-box rounded-2xl m-3">
+                        <div class="relative cursor-pointer" onclick="toggleModal4()">
+                            <img src="assets/images/video-testimonial1.webp" alt="video-box" class="rounded-2xl" />
+                            <div class="absolute play-btn">
+                                <img src="assets/images/play-btn.svg" alt="play-btn" />
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="flex items-center">
+                                <img src="assets/images/user-img.webp" alt="user" class="w-22" />
+                                <div class="ms-3">
+                                    <h5 class="font-bold text-xl">Darin Nguyen</h5>
+                                    <p>@staking</p>
+                                </div>
+                            </div>
+                            <p class="text-xl text-black mt-3">
+                                Faucibus eu condimentum maecenas sollicitudin vitae.
+                            </p>
+
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide class="h-100">
+                    <div class="bg-white p-5 video-box rounded-2xl m-3">
+                        <div class="relative cursor-pointer" onclick="toggleModal4()">
+                            <img src="assets/images/video-testimonial1.webp" alt="video-box" class="rounded-2xl" />
+                            <div class="absolute play-btn">
+                                <img src="assets/images/play-btn.svg" alt="play-btn" />
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="flex items-center">
+                                <img src="assets/images/user-img.webp" alt="user" class="w-22" />
+                                <div class="ms-3">
+                                    <h5 class="font-bold text-xl">Darin Nguyen</h5>
+                                    <p>@staking</p>
+                                </div>
+                            </div>
+                            <p class="text-xl text-black mt-3">
+                                Faucibus eu condimentum maecenas sollicitudin vitae.
+                            </p>
+
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <div id="video-popup" class="px-2 md:px-0 fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden ">
+
+                    <div class="bg-white w-10/12 lg:w-7/12 relative br-20">
+                        <button type="button" class="text-white mr-2 absolute btn-position close-btn z-50" onclick="toggleModal4()">
+                            <i class="fas fa-times"></i>
+                        </button>
+
+                        <div class="br-20">
+                            <iframe width="100%" class="br-20" height="500" src="https://www.youtube.com/embed/KPJ5fRcfQBI?si=bIjdW5Az1Ocnbqn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="mt-4 px-5 pb-5">
+                            <div class="flex items-center">
+                                <img src="assets/images/user-img.webp" alt="user" class="w-22" />
+                                <div class="ms-3">
+                                    <h5 class="font-bold text-xl">Darin Nguyen</h5>
+                                    <p>@staking</p>
+                                </div>
+                            </div>
+                            <p class="text-xl text-black mt-3">
+                                Faucibus eu condimentum maecenas sollicitudin vitae.
+                            </p>
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </Swiper>
+        </div>
+    </section>
+    <!-- Video Testimonials end -->
+
+    <section class="position-relative">
+
+        <!-- CTA start -->
+        <section class="px-4 cta-position">
+            <div class="container mx-auto" id="cta-bg">
+                <div class="grid gap-x-8 gap-y-4 grid-cols-2 items-center flex-column">
+                    <div>
+                        <img src="assets/images/home/home-cta.webp" alt="cta" class="hidden xl:block" />
+                        <img src="assets/images/home/home-res-cta.webp" alt="cta" class="block xl:hidden rounded-2xl" />
+                    </div>
+                    <div class="text-center md:text-start mx-3 md-mx-0">
+                        <h5 class="text-white">Unable To Decide Upon a Colour?</h5>
+                        <h2 class="text-white font-semibold">
+                            Get Free Quotation
+                        </h2>
+                        <h4>Self serve</h4>
+                        <button type="button" onclick="toggleModal1()" class="mb-4 xl:mb-0 mt-4 text-black bg-yellow cta-btn font-medium rounded-lg text-sm px-5 py-2.5 text-center before:ease relative overflow-hidden transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-pink-500 hover:before:-translate-x-40">
+                            <span relative="relative z-10">Enquire Now</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA start -->
+
+        <section id="footer-home" class="pt-200 pb-10 px-4">
+            <div class="container mx-auto">
+                <div class="flex text-white flex-wrap items-start">
+                    <div class="w-full md:w-8/12 lg:w-6/12 xl:w-4/12 mb-3 lg:mb-0">
+                        <div class="mb-4">
+                            <a href="home">
+                                <h1>LOREM</h1>
+                            </a>
+                        </div>
+                        <div>
+                            <p class="w-75 mb-3">
+                                Home Painting Service Provider - Interior Painting, Exterior Painting, Rental Painting, Texture, Stencil, Kids Decor, Wallpaper, Free Hand Art, False Ceiling, Deep Cleaning, Waterproofing Service Provider in Bangalore, Hyderabad, Mumbai, Pune, Delhi, Bhopal, Indore
+                            </p>
+                            <h4 class="text-2xl pb-4"> Subscribe to our Newsletter</h4>
+                            <form class="flex w-full sm:w-4/5 relative">
+                                <div class="sm:flex sm:flex-wrap w-full">
+                                    <input type="email" id="email" class="text-sm block w-full py-4 ps-4 pr-50 dark:placeholder-gray-400 dark:text-white" placeholder="Enter your email" required />
+                                </div>
+                                <button type="submit" class="w-30 text-white main-btn font-medium text-sm p-2.5 text-center before:ease relative overflow-hidden transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-pink-500 hover:before:-translate-x-40">
+                                    <span relative="relative z-10">Subscribe</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12">
+                        <h5 class="mb-4 font-medium">About Company</h5>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Contact Us</li>
+                            <li>Join Us</li>
+                            <li>FAQs</li>
+                            <li>T&C</li>
+                            <li>Sitemap</li>
+                        </ul>
+                    </div>
+                    <div class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12 mt-3 lg:mt-0">
+                        <h5 class="mb-4 font-medium">Our Work</h5>
+                        <ul>
+                            <li>Home Paint Designs</li>
+                            <li>Painting Offers</li>
+                            <li>Disinfection & Sanitation</li>
+                            <li>Asian Colour Shades</li>
+                            <li>Berger Colour Shades</li>
+                            <li>Nerolac Colour Shades</li>
+                            <li>Dulux Colour Shades</li>
+                            <li>Sherwin William Colour Shades</li>
+                            <li>HomeDecor Wallpaper</li>
+                        </ul>
+                    </div>
+                    <div class="w-full sm:w-6/12 md:w-4/12 lg:w-6/12 xl:w-2/12 mt-3 lg:mt-0">
+                        <h5 class="mb-4 font-medium">Knowledge</h5>
+                        <ul>
+                            <li>Painting World</li>
+                            <li>पेंटिंग दुनिया</li>
+                            <li>Paint Brand & Products</li>
+                            <li>Do it Yourself (DIY)</li>
+                        </ul>
+                    </div>
+                    <div class="w-full sm:w-6/12 md:w-4/12 lg:w-6/12 xl:w-2/12 mt-3 lg:mt-0">
+                        <h5 class="mb-4 font-medium">Offices</h5>
+                        <div class="flex mb-2">
+                            <a href="mailto:  support@colourdrive.in" class="flex"><img src="assets/images/home/mail.svg">
+                                <p class="ms-3 text-nowrap"> support@colourdrive.in</p>
+                            </a>
+                        </div>
+                        <div class="flex mb-2">
+                            <a href="tel:+91-8151825126" class="flex"><img src="assets/images/home/phone.svg">
+                                <p class="ms-3 text-nowrap">+91-8151825126</p>
+                            </a>
+                        </div>
+                        <ul>
+                            <!-- Bangalore -->
+                            <li class="flex accordion-toggle justify-between">
+                                <div class="flex items-center">
+                                    <img src="assets/images/home/location.svg">
+                                    <p class="ms-3">Bangalore</p>
+                                </div>
+
+                                <span class="chevron"><svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.66338 7.98857C7.71504 7.97337 7.76921 7.96296 7.81921 7.94296C7.95504 7.88854 7.97837 7.85733 8.09003 7.7693L14.7599 1.36307C14.8291 1.28224 14.8991 1.19982 14.9407 1.10378C15.0874 0.764465 14.9532 0.336317 14.6341 0.131446C14.3607 -0.0438152 13.9807 -0.0438152 13.7074 0.131446C13.6616 0.160256 13.6233 0.197868 13.5808 0.23068L7.50005 6.07031L1.42018 0.23068L1.29351 0.131446C1.24518 0.106637 1.19935 0.077827 1.14935 0.0578201C0.796858 -0.0830288 0.353534 0.0418145 0.136872 0.352322C-0.045624 0.614813 -0.045624 0.97974 0.136872 1.24223C0.167705 1.28545 0.206037 1.32306 0.241036 1.36307L6.91089 7.7693C6.95339 7.80211 6.99172 7.83972 7.03756 7.86853C7.12839 7.92695 7.23005 7.96777 7.33755 7.98857C7.44422 8.00858 7.55421 7.99818 7.66338 7.98857Z" fill="white" />
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="accordion-content">
+                                <ul>
+                                    <li>#26, Pavitra Paradise, 1st Floor, 1st Cross, MS Ramaiah City Layout Road, JP Nagar 7th Phase, Bengaluru, Karnataka - 560076</li>
+                                </ul>
+                            </li>
+
+                            <!-- Hyderabad -->
+                            <li class="flex accordion-toggle justify-between">
+                                <div class="flex items-center">
+                                    <img src="assets/images/home/location.svg">
+                                    <p class="ms-3">Hyderabad</p>
+                                </div>
+
+                                <span class="chevron"><svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.66338 7.98857C7.71504 7.97337 7.76921 7.96296 7.81921 7.94296C7.95504 7.88854 7.97837 7.85733 8.09003 7.7693L14.7599 1.36307C14.8291 1.28224 14.8991 1.19982 14.9407 1.10378C15.0874 0.764465 14.9532 0.336317 14.6341 0.131446C14.3607 -0.0438152 13.9807 -0.0438152 13.7074 0.131446C13.6616 0.160256 13.6233 0.197868 13.5808 0.23068L7.50005 6.07031L1.42018 0.23068L1.29351 0.131446C1.24518 0.106637 1.19935 0.077827 1.14935 0.0578201C0.796858 -0.0830288 0.353534 0.0418145 0.136872 0.352322C-0.045624 0.614813 -0.045624 0.97974 0.136872 1.24223C0.167705 1.28545 0.206037 1.32306 0.241036 1.36307L6.91089 7.7693C6.95339 7.80211 6.99172 7.83972 7.03756 7.86853C7.12839 7.92695 7.23005 7.96777 7.33755 7.98857C7.44422 8.00858 7.55421 7.99818 7.66338 7.98857Z" fill="white" />
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="accordion-content">
+                                <ul>
+                                    <li>#301, Ankitha Residency, Khanamet, Hitex Road, Kondapur, Hyderabad, Telangana - 500084</li>
+                                </ul>
+                            </li>
+
+                            <!-- Mumbai -->
+                            <li class="flex accordion-toggle justify-between">
+                                <div class="flex items-center">
+                                    <img src="assets/images/home/location.svg">
+                                    <p class="ms-3">Mumbai</p>
+                                </div>
+
+                                <span class="chevron"><svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.66338 7.98857C7.71504 7.97337 7.76921 7.96296 7.81921 7.94296C7.95504 7.88854 7.97837 7.85733 8.09003 7.7693L14.7599 1.36307C14.8291 1.28224 14.8991 1.19982 14.9407 1.10378C15.0874 0.764465 14.9532 0.336317 14.6341 0.131446C14.3607 -0.0438152 13.9807 -0.0438152 13.7074 0.131446C13.6616 0.160256 13.6233 0.197868 13.5808 0.23068L7.50005 6.07031L1.42018 0.23068L1.29351 0.131446C1.24518 0.106637 1.19935 0.077827 1.14935 0.0578201C0.796858 -0.0830288 0.353534 0.0418145 0.136872 0.352322C-0.045624 0.614813 -0.045624 0.97974 0.136872 1.24223C0.167705 1.28545 0.206037 1.32306 0.241036 1.36307L6.91089 7.7693C6.95339 7.80211 6.99172 7.83972 7.03756 7.86853C7.12839 7.92695 7.23005 7.96777 7.33755 7.98857C7.44422 8.00858 7.55421 7.99818 7.66338 7.98857Z" fill="white" />
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="accordion-content">
+                                <ul>
+                                    <li>#8-A, Room No-281, Near Sanjog CHS, Mankhurd West, PMG Colony, Mumbai, Maharashtra - 400043</li>
+                                </ul>
+                            </li>
+
+                            <!-- Pune -->
+                            <li class="flex accordion-toggle justify-between">
+                                <div class="flex items-center">
+                                    <img src="assets/images/home/location.svg">
+                                    <p class="ms-3">Pune</p>
+                                </div>
+
+                                <span class="chevron"><svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.66338 7.98857C7.71504 7.97337 7.76921 7.96296 7.81921 7.94296C7.95504 7.88854 7.97837 7.85733 8.09003 7.7693L14.7599 1.36307C14.8291 1.28224 14.8991 1.19982 14.9407 1.10378C15.0874 0.764465 14.9532 0.336317 14.6341 0.131446C14.3607 -0.0438152 13.9807 -0.0438152 13.7074 0.131446C13.6616 0.160256 13.6233 0.197868 13.5808 0.23068L7.50005 6.07031L1.42018 0.23068L1.29351 0.131446C1.24518 0.106637 1.19935 0.077827 1.14935 0.0578201C0.796858 -0.0830288 0.353534 0.0418145 0.136872 0.352322C-0.045624 0.614813 -0.045624 0.97974 0.136872 1.24223C0.167705 1.28545 0.206037 1.32306 0.241036 1.36307L6.91089 7.7693C6.95339 7.80211 6.99172 7.83972 7.03756 7.86853C7.12839 7.92695 7.23005 7.96777 7.33755 7.98857C7.44422 8.00858 7.55421 7.99818 7.66338 7.98857Z" fill="white" />
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="accordion-content">
+                                <ul>
+                                    <li>#102, Tranquility phase 2, Kodre Nagar, Shewalewadi, Manjari Farm, Pune - 412307</li>
+                                </ul>
+                            </li>
+
+                            <!-- Indore -->
+                            <li class="flex accordion-toggle justify-between">
+                                <div class="flex items-center">
+                                    <img src="assets/images/home/location.svg">
+                                    <p class="ms-3">Indore</p>
+                                </div>
+
+                                <span class="chevron"><svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.66338 7.98857C7.71504 7.97337 7.76921 7.96296 7.81921 7.94296C7.95504 7.88854 7.97837 7.85733 8.09003 7.7693L14.7599 1.36307C14.8291 1.28224 14.8991 1.19982 14.9407 1.10378C15.0874 0.764465 14.9532 0.336317 14.6341 0.131446C14.3607 -0.0438152 13.9807 -0.0438152 13.7074 0.131446C13.6616 0.160256 13.6233 0.197868 13.5808 0.23068L7.50005 6.07031L1.42018 0.23068L1.29351 0.131446C1.24518 0.106637 1.19935 0.077827 1.14935 0.0578201C0.796858 -0.0830288 0.353534 0.0418145 0.136872 0.352322C-0.045624 0.614813 -0.045624 0.97974 0.136872 1.24223C0.167705 1.28545 0.206037 1.32306 0.241036 1.36307L6.91089 7.7693C6.95339 7.80211 6.99172 7.83972 7.03756 7.86853C7.12839 7.92695 7.23005 7.96777 7.33755 7.98857C7.44422 8.00858 7.55421 7.99818 7.66338 7.98857Z" fill="white" />
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="accordion-content">
+                                <ul>
+                                    <li>#32, 24 Bungalow, Part I, Scheme No 114, Near - Navodaya Medi Hubs, Indore, Madhya Pradesh - 452010</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="footer-home" class="border-t-gray px-4 ">
+            <div class="container mx-auto py-10">
+                <div class="flex text-white flex-wrap items-start">
+                    <div class="w-full sm:w-6/12 lg:w-3/12">
+                        <h5 class="mb-4 font-medium">Painters in Bangalore</h5>
+                        <ul>
+                            <li>Home Painting Charges Bangalore</li>
+                            <li>Home Paint Designs Bangalore</li>
+                            <li>Wood Painting Bangalore</li>
+                            <li>WaterProofing Bangalore</li>
+                            <li>Metal Painting Bangalore</li>
+                        </ul>
+                    </div>
+                    <div class="w-full sm:w-6/12 lg:w-3/12 mt-3 lg:mt-0">
+                        <h5 class="mb-4 font-medium">Painters in Hyderabad</h5>
+                        <ul>
+                            <li>Home Painting Charges Hyderabad</li>
+                            <li>Home Paint Designs Hyderabad</li>
+                            <li>Wood Painting Hyderabad</li>
+                            <li>WaterProofing Hyderabad</li>
+                            <li>Metal Painting Hyderabad</li>
+                        </ul>
+                    </div>
+                    <div class="w-full sm:w-6/12 lg:w-3/12 mt-3 lg:mt-0">
+                        <h5 class="mb-4 font-medium">Painters in Mumbai</h5>
+                        <ul>
+                            <li>Home Painting Charges Mumbai</li>
+                            <li>Home Paint Designs Mumbai</li>
+                            <li>Wood Painting Mumbai</li>
+                            <li>WaterProofing Mumbai</li>
+                            <li>Metal Painting Mumbai</li>
+                        </ul>
+                    </div>
+                    <div class="w-full sm:w-6/12 lg:w-3/12 mt-3 lg:mt-0">
+                        <h5 class="mb-4 font-medium">Painters in Pune</h5>
+                        <ul>
+                            <li>Home Painting Charges Pune</li>
+                            <li>Home Paint Designs Pune</li>
+                            <li>Wood Painting Pune</li>
+                            <li>WaterProofing Pune</li>
+                            <li>Metal Painting Pune</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container border-t mx-auto text-white py-3">
+                <div class="grid gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-3">
+                    <div>
+                        <p>©LoremDesign2020.</p>
+                    </div>
+                    <div class="justify-start sm:justify-end lg:justify-center flex">
+                        <p>Privacy Policy | Terms & Conditions</p>
+                    </div>
+                    <div>
+
+                        <ul class="flex gap-4 sm:justify-start lg:justify-end">
+                            <li>
+                                <a href="https://www.google.com/maps/place/ColourDrive/@12.8937837,77.583295,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x7e9b60370dd008f9!8m2!3d12.8937837!4d77.5854837?shorturl=1">
+                                    <img src="../assets/images/home/google1.svg" alt="Google"> </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/colourdrive/">
+                                    <img src="../assets/images/home/facebook.svg" alt="facebook"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/colourdrive.in/">
+                                    <img src="../assets/images/home/instagram.svg" alt="instagram"></a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/ColourDrive?mx=2">
+                                    <img src="../assets/images/home/twitter.svg" alt="twitter"></a>
+                            </li>
+                            <li>
+                                <a href="https://in.pinterest.com/colourdrive/">
+                                    <img src="../assets/images/home/pinterest.svg" alt="pinterest"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/colourdrive">
+                                    <img src="../assets/images/home/linkdin.svg" alt="linkdin"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCTtaHhqN87LYIGi-osmCLow">
+                                    <img src="../assets/images/home/youtube1.svg" alt="youtube1"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.quora.com/profile/ColourDrive-1">
+                                    <img src="../assets/images/home/quora.svg" alt="quora"></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+</div>
 </template>
+
 <style scoped>
-/* Your CSS here */
+@import '../assets/css/home.css';
 </style>

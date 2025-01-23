@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: "Inter", sans-serif;}
+
+.w-75{width: 75% }
+.error{background-image: url(../images/404/bg-error.webp); background-position: center; background-repeat: no-repeat; background-size: cover;}
+.error h2{font-size:42px !important; }
+.error h3{font-size:32px !important; }
+.error .bg-gray1{background: rgba(101, 101, 101, 0.20000000298023224);color: #656565;}
+
+
+
+@media only screen and (max-width: 575px) {
+    .error h2{font-size:30px !important; }
+    .error h3{font-size:24px !important; }
+}

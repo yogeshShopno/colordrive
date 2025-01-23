@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: "Inter", sans-serif;}
+
+
+/* commom css */
+/* .bg-green{background-color: #00715B;} */
+.br-20{border-radius: 20px;}
+.border-pink{border: 1px solid #FC2F93;}
+.bg-graybtn{background: rgba(196, 196, 196, 0.5);color: rgba(0, 0, 0, 0.5);}
+.border-left{border-left: 2px solid #000;}
+/* commom css */
+
+/* blog-details */
+#blog-details .border-top{border-top: 1px solid #e5e7eb;}
+#blog-details h5{font-size: 22px;}
+#blog-details .btn-green{ color: rgba(0, 0, 0, 0.5); border: 1px solid rgba(0, 0, 0, 0.5); border-radius: 100px;}
+#blog-details .btn-green:hover{ background-color: #00715B; color: #fff; border: 1px solid #ffffff00;}
+#blog-details textarea:focus-visible{outline: none;}
+.blog-list a{--tw-text-opacity: 1;color: rgb(75 85 99 / var(--tw-text-opacity));}
+/* .blog-list  li{margin-left: 20px;} */
+.blog-list li{margin-bottom: 12px;}
+.blog-list li:last-child{margin-bottom: 0px;}
+.blog-list  li::marker{--tw-text-opacity: 1;color: rgb(75 85 99 / var(--tw-text-opacity));}
+#blog-details .text-blue{color: rgba(24, 160, 251, 0.5);}
+#blog-details #recent-post ul li{margin-bottom: 20px;}
+#recent-post a:hover, .blog-list li a:hover{color: #FC2F93;}
+#blog-details .offer-benner1{top: 0; left: 20px;height: 100%;}
+#cta-blogdetails {background-color: #99E3D5; border-radius: 30px;}
+#cta-blogdetails  img{border-radius: 30px 0px 0px 30px;}
+/* blog-details */
+
+
+@media only screen and (max-width: 1100px) 
+{
+  #cta-blogdetails h2{font-size: 22px !important;}
+}
+
+@media only screen and (max-width: 991px) 
+{
+.pb-100{padding-bottom: 70px;}
+#blog h1{font-size: 48px;}
+}
+
+
+@media only screen and (max-width: 991px) 
+{
+  #cta-blogdetails h2{font-size: 18px !important; }
+  #cta-blogdetails h5{font-size: 16px !important; }
+
+}
+
+
+@media only screen and (max-width: 767px) 
+{
+  .dflex{flex-direction: column;display: flex !important;}
+  #cta-blogdetails h2{font-size: 22px !important; text-align: center;}
+  #cta-blogdetails h5{font-size: 16px !important; }
+}
+@media only screen and (max-width: 575px) 
+{
+.pb-100{padding-bottom: 40px;}
+.flex-column1{flex-direction: column;}
+/* #blog {
+    background-image: url(/_nuxt/assets/images/services/service-mob-bg.webp);
+  } */
+}
+
+
