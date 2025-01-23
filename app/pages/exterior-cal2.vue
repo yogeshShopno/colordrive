@@ -555,7 +555,7 @@
               <div class="faqcustshadow rounded-lg px-4 pt-4">
                 <button
                   class="w-full text-left pb-3 border-b focus:outline-none flex items-center justify-between"
-                  onclick="toggleAccordion(this)"
+                  onclick="toggleAccordion(this)" 
                 >
                   <span class="text-lg font-semibold"
                     >Questions text goes here</span
