@@ -17,7 +17,7 @@
                             <div>
                                 <a href="/calculator">
                                     <div class="box1 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2"></div>
-                                    <h5 class="text-center mt-2">Interior Painting 111</h5>
+                                    <h5 class="text-center mt-2">Interior Painting </h5>
                                 </a>
                             </div>
                             <div>
