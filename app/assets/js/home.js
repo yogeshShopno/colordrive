@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
+/*************  ✨ Codeium Command 🌟  *************/
   // FAQ
   function toggleAccordion(button) {
     const content = button.nextElementSibling;
@@ -83,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } 
     // FAQ js
   }
+/******  5a94a8af-ae67-4192-9eee-8624aa0d0372  *******/
 
   
 
