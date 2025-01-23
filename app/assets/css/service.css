@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+
+/* service banner */
+#services {
+  background-image: url(../images/services/service-bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#services h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+/* service banner */
+
+/* wall Designing */
+#wall-service img {
+  width: 140px;
+}
+
+/* #service-post ul li{color: #4E4E4E;} */
+/* wall Designing */
+
+@media only screen and (max-width: 991px) {
+  .pb-100 {
+    padding-bottom: 70px;
+  }
+
+  #services h1 {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .pb-100 {
+    padding-bottom: 40px;
+  }
+
+  #services {
+    background-image: url(../images/services/service-mob-bg.webp) !important;
+  }
+}
+
+.pink-txt {
+  color: #fc2f93;
+}
+
+
+.mb-50px {
+  margin-bottom: 50px;
+}
+
+.custsselect {
+  background: #fff !important;
+  box-shadow: 0 0 15px #ddd;
+}
+
+.custshadow {
+  box-shadow: 0 0 15px #ddd;
+}
+
+.faqcustshadow {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mainboxshadow {
+  box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.1);
+}
+
+.bg-light-pink {
+  background-color: #FFEAF4;
+}
+
+.bg-pink {
+  background-color: #FC2F93;
+}
+
+.btn-pink{
+  color: #fff;
+  background-color: #FC2F93;
+  border: 1px solid #FC2F93;
+  transition: all .3s ease;
+  &:hover{
+    background-color: #fff;
+    color: #FC2F93;
+  }
+}
+
+.btn-rounded{
+  border-radius: 100px;
+}
+
+.mt-50px{
+  margin-top: 50px;
+}

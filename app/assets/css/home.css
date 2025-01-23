@@ -1,0 +1,97 @@
+
+/* main hero */
+
+#home h1{font-size: 60px; color: #000000;}
+#home{background-image: url(../images/home/bg-homehero.webp);background-position: center;background-repeat: no-repeat;background-size: 100% 100%;}
+#home .box1{height: 120px; background-image: url(../images/service1.webp); background-position: center; background-repeat: no-repeat; background-size: cover;}
+#home .box2{height: 120px; background: rgba(0, 0, 0, 0.07000000029802322);}
+#home .box2 img{width: 80px;}
+#home .service1{border-radius: 1rem;}
+#home h3{font-size: 20px;}
+#home h2{font-size: 30px;line-height: 30px;}
+#home h4{font-size: 25px;color: rgba(0, 0, 0, 0.800000011920929);}
+#home p{color: rgba(0, 0, 0, 0.800000011920929);}
+#home .rounded-tlb{border-radius: 30px 30px 0px 0px;}
+/* main hero */
+
+/* #gallery  */
+#gallery .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav .owl-prev {position: absolute;top: 50%;left: -50px;transform: translateY(-50%);display: flex;justify-content: center;align-items: center;}
+#gallery .offer{top: 20px; left: 20px;background-color: #D9D9D9; border-radius: 10px;}
+/* #gallery  */
+
+/* #cta */
+#cta #cta-blog{background-color: #99E3D5; border-radius: 30px;}
+#cta #cta-blog img{border-radius: 30px 0px 0px 30px;}
+/* #cta */
+
+
+/* footer */
+#footer-home{background-color: #1E1E1E;}
+.border-t-gray{border-top: 1px solid #ffffff49;}
+#footer-home input { border-radius: 100px}
+#footer-home button { border-radius: 100px; position:absolute; right: 5px;top: 26px; transform: translateY(-50%);}
+#footer-home .w-25 {width: 25%;}
+#footer-home .w-30 { width: 30%;}
+#footer-home h1{font-size: 40px; font-weight: 700;}
+#footer-home ul li{margin-bottom: 10px;}
+#footer-home h5{font-size: 22px;}
+#footer-home .pr-50{padding-right: 110px;}
+#footer-home input:focus-visible{outline: none;}
+#footer-home .border-t{border-top: 1px solid #ffffff49;}
+#footer-home ul {list-style-type: none;padding: 0;}
+#footer-home .flex {display: flex;cursor: pointer;}
+#footer-home .ms-3 {margin-left: 1rem;}
+#footer-home .accordion-content {display: none; border-top: 1px solid #fff; padding-top: 10px; }
+#footer-home .chevron {margin-left: 10px;transition: transform 0.3s ease;align-items: center;display: flex; /* Smooth rotation */}
+#footer-home .accordion-toggle.active .chevron {transform: rotate(180deg); /* Rotate when active */}
+/* footer */
+
+
+/* booking-popup */
+/* Add this to your CSS code */
+#booking-popup {z-index: 1000000;}
+#booking-popup .bg-white {box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);}
+#booking-popup .overflow{ max-height: calc(100dvh - 40px);overflow-y: scroll;}
+/* Hide scrollbar for Chrome, Safari and Opera */
+#booking-popup .overflow::-webkit-scrollbar {display: none;}
+/* Hide scrollbar for IE, Edge and Firefox */
+#booking-popup .overflow { -ms-overflow-style: none;  /* IE and Edge */ scrollbar-width: none;  /* Firefox */}
+#booking-popup h2{font-family: "Bebas Neue", sans-serif;font-size: 75px; line-height: 55px;color: #FC2F93; border-radius: 0px 10px 0px 0px;}
+/* booking-popup */
+
+
+@media only screen and (max-width: 1535px) 
+{#home #inquire h1{font-size: 44px;}
+#home h1{font-size: 56px;}}
+@media only screen and (max-width: 1300px) 
+{#home h1{font-size: 42px;}}
+@media only screen and (max-width: 1279px) 
+{#home h5{font-size: 15px;}
+#home #inquire h1 {font-size: 35px;}}
+@media only screen and (max-width: 991px) 
+{#home #inquire h1 {font-size: 55px;}}
+@media only screen and (max-width: 767px) 
+{#home h2{text-align: center;}
+#cta #cta-blog h2{font-size: 20px !important;}
+#cta #cta-blog h5, #cta #cta-blog h4{text-align: left;}
+#cta #cta-blog button{display: flex; justify-content: start;}
+#home h3{text-align: center;}
+#home #inquire h1 {font-size: 38px;}}
+@media only screen and (max-width: 639px) 
+{#cta #cta-blog img{border-radius: 30px;}
+#cta #cta-blog h5, #cta #cta-blog h4 {text-align: center;}
+#cta #cta-blog button{display: flex; justify-content: center;}
+#cta-bg h2{text-align: center;}
+#cta h2{text-align: center;}}
+@media only screen and (max-width: 575px) 
+{#cta-bg img{border-radius: 30px;}
+#home h4{font-size: 22px;}
+#home h1{font-size: 38px;line-height: 48px;margin-top: 10px;}
+#home .mt-10 {margin-top: 0px !important;}
+#home #inquire h1{padding: 0px;}}
+
+/* Pop-up styles */
+
+
+
+
