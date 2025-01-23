@@ -56,6 +56,8 @@
             <li><a href="/blog">Recent Projects</a></li>
             <li><a href="/404">About Us</a></li>
             <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="/calculator">calculator</a></li>
+
           </ul>
         </div>
       </div>
