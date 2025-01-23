@@ -69,7 +69,8 @@
             type="button"
             class="m-0 text-white rounded-lg px-2 sm:px-5 py-2.5 btn-gray hidden sm:block"
           >
-            Calculate Pricing
+          <a href="/calculator">
+            Calculate Pricing</a>
           </button>
           
           <button
