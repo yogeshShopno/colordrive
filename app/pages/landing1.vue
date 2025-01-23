@@ -338,7 +338,9 @@
                 <div class="flex items-center bg-light rounded-2xl">
                     <img src="assets/images/Calculate Price.webp" alt="Calculate Price" class="br-2xl" />
                     <div class="ms-3">
-                        <h4>Calculate Price</h4>
+                        <li><a href="/calculator">calculator</a>
+                            <h4>Calculate Price</h4></li>
+                  
                         <!-- <p> Google Rating </p> -->
                     </div>
                 </div>
