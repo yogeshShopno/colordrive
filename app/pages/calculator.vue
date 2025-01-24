@@ -1,4 +1,4 @@
-<script></script>
+<script> </script>
 
 <template>
   <!-- main banner start -->
