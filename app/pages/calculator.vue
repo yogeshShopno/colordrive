@@ -180,18 +180,19 @@
                   </div>
                 </div>
                 <div class="toggledivcalspace mt-3">
-                  <div class="flex items-center space-x-4">
-                    <label for="toggle" class="relative inline-block w-12 h-6">
-                      <input
-                        type="checkbox"
-                        id="toggle"
-                        class="opacity-0 w-0 h-0 peer"
-                      />
-                      <span
-                        class="absolute inset-0 bg-gray-300 rounded-full transition-all peer-checked:bg-blue-600 peer-checked:after:translate-x-full after:content-[''] after:absolute after:left-0 after:top-0 after:bg-white after:rounded-full after:h-6 after:w-6 after:transition-all"
-                      ></span>
+                  <div class="toggledivcalspace mt-3">
+                    <!-- Example Toggle -->
+                    <label
+                      class="relative inline-flex items-center mt-4 cursor-pointer"
+                    >
+                      <input type="checkbox" class="sr-only peer" />
+                      <div
+                        class="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-pink-600 peer-focus:ring-pink-300 dark:peer-focus:ring-pink-800 dark:bg-gray-300 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all"
+                      ></div>
+                      <span class="ml-3 text-gray-500 dark:text-gray-500"
+                        >Built-up Area ?</span
+                      >
                     </label>
-                    <span class="text-gray-500">Built-up Area ?</span>
                   </div>
                 </div>
               </div>
@@ -206,7 +207,7 @@
                         <input
                           type="number"
                           value="400"
-                          class="w-32 custsselect rounded-md p-3 text-sm"
+                          class="w-32 custsselect rounded-md focus-visible:outline-0 p-3 text-sm"
                           min="0"
                           max="10000"
                           step="1"
@@ -222,10 +223,11 @@
                           value="400"
                           class="h-2 bg-gray-300 rounded-lg appearance-none focus:ring-2"
                           style="accent-color: #fc2f93"
+                          oninput="updateRangeValue(this)"
                         />
                         <div class="flex mt-2 justify-between">
-                          <span id="rangeValue" class="text-sm">250Sq Ft</span>
-                          <span id="rangeValue" class="text-sm">2000Sq Ft</span>
+                          <span class="text-sm">0 Sq Ft</span>
+                          <span id="rangeValue" class="text-sm">400 Sq Ft</span>
                         </div>
                       </div>
                     </div>
@@ -243,7 +245,7 @@
                     >
                       <div class="row-span-6">
                         <div
-                          class="servccarddiv bg-white custshadow rounded-md p-4"
+                          class="servccarddiv bg-white custshadow product-card rounded-md p-4"
                         >
                           <div class="imgcalcdiv">
                             <img
@@ -276,7 +278,7 @@
                       </div>
                       <div class="row-span-6">
                         <div
-                          class="servccarddiv bg-white custshadow rounded-md p-4"
+                          class="servccarddiv bg-white custshadow product-card rounded-md p-4"
                         >
                           <div class="imgcalcdiv">
                             <img
@@ -309,7 +311,7 @@
                       </div>
                       <div class="row-span-6">
                         <div
-                          class="servccarddiv bg-white custshadow rounded-md p-4"
+                          class="servccarddiv bg-white custshadow product-card rounded-md p-4"
                         >
                           <div class="imgcalcdiv">
                             <img
@@ -352,7 +354,7 @@
             <div class="relative">
               <!-- Carousel Items -->
               <div class="flex justify-between align-center">
-                <div class="buttonsnextprev">
+                <div class="buttonsnextprev invisible">
                   <a
                     href=""
                     id="prevBtn"
@@ -366,18 +368,21 @@
                   class="flex items-center gap-2 transition-transform duration-300 ease-in-out"
                   style="transform: translateX(0)"
                 >
-                  <button
+                  <a
+                    href="/calculator"
                     class="w-3 h-3 bg-pink-500 rounded-full focus:outline-none"
                     onclick="goToSlide(0)"
-                  ></button>
-                  <button
+                  ></a>
+                  <a
+                    href="/calculator-2"
                     class="w-3 h-3 bg-gray-300 rounded-full focus:outline-none"
                     onclick="goToSlide(1)"
-                  ></button>
-                  <button
+                  ></a>
+                  <a
+                    href="/calculator-3"
                     class="w-3 h-3 bg-gray-300 rounded-full focus:outline-none"
                     onclick="goToSlide(2)"
-                  ></button>
+                  ></a>
                 </div>
                 <div class="buttonsnextprev">
                   <a
@@ -393,47 +398,305 @@
             </div>
           </div>
         </div>
-
-        <div class="textcontentdiv mt-9">
+      </div>
+      <div class="max-w-6xl mx-auto">
+        <div class="textcontentdiv mt-9 pt-100">
           <h2 class="font-bold text-center">
             More About Home Exterior Painting
           </h2>
-          <p class="text-sm text-gray-700 mt-3">
-            <span class="pink-txt">ColourDrive Home Solutions</span> provide
-            complete solution for Interior Painting which includes every single
-            part of your home inside right from kitchen to bathroom, staircase
-            to balcony, pooja room to dining hall, bedroom to bathroom etc
-            either for Fresh Painting and Re-Painting work.  Please visit<span
-              class="pink-txt"
-              > Detailed Interior Painting Process</span
-            > to know how we do it. 
-          </p>
-          <p class="text-sm text-gray-700 mt-3">
-            Please have a look at our Projects which we have done recently
-            -<span class="pink-txt"> Recent Interior Projects</span> 
+          <p class="text-sm text-gray-500 mt-3">
+            But nevertheless, Exterior Painting is more really difficult as
+            compared to what it looks. Which means that it happens to be with
+            great pleasure that many Household painters make up your mind that
+            it is now time to hire an Exterior Painting Services to seek the
+            services of the job. Let us really know what painting Exterior
+            Painting Company do, would you like to hire them? ... Tips sharing
+            by ColourDrive.
           </p>
           <hr class="my-5" />
+          <div class="text-sm text-gray-700 mt-3">
+            <div class="calcseccardsdiv mt-5">
+              <div class="calcspace">
+                <div class="calccardtitle mb-3">
+                  <h5 class="font-semibold">Standard Procedure:</h5>
+                </div>
+                <div class="calccardspacemini mb-2">
+                  <div
+                    class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 gap-4"
+                  >
+                    <div class="row-span-6 h-full">
+                      <div
+                        class="servccarddiv bg-white h-full flex gap-2 custshadow product-card rounded-md p-4"
+                      >
+                        <div class="imgcalcdiv rounded">
+                          <img
+                            src="assets/images/calculator/icon1.png"
+                            alt="Interior Painting"
+                            width=""
+                            class="max-w-full h-auto"
+                          />
+                        </div>
+                        <div class="lablediv">
+                          <h6 class="font-bold pink-txt mb-2">
+                            Exterior repainting procedure
+                          </h6>
+                          <p class="text-sm text-gray-500">
+                            Exterior repainting procedure includes exterior wall
+                            cleaning by jet machine, crack filling by Dr. Fixit
+                            then one coat of exterior primer followed by two
+                            coat of paint.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row-span-6 h-full">
+                      <div
+                        class="servccarddiv h-full bg-white flex gap-2 custshadow product-card rounded-md p-4"
+                      >
+                        <div class="imgcalcdiv rounded">
+                          <img
+                            src="assets/images/calculator/icn15.png"
+                            alt="Interior Painting"
+                            width=""
+                            class="max-w-full h-auto"
+                          />
+                        </div>
+                        <div class="lablediv">
+                          <h6 class="font-bold pink-txt mb-2">
+                            Exterior fresh painting procedure
+                          </h6>
+                          <p class="text-sm text-gray-500">
+                            Exterior fresh painting procedure includes one coat
+                            of exterior primer and two coat of paint.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-5" />
           <h5 class="font-semibold">
-            House Inside Painting Standard Procedure:
+            What Is Actually an Exterior Painting Services company?
           </h5>
-          <p class="text-sm text-gray-700 mt-3">
-            <span class="pink-txt">Interior repainting procedure:</span
-            > Interior repainting procedure includes covering and paking of
-            furniture, sanding of existing paint by sand paper followed by touch
-            up putty then one coat of primer and two coat of paint. After
-            complition of paint work, dusting will be done. We will make sure
-            that no paint marks will be visible in end.
+          <p class="text-sm text-gray-500 mt-3">
+            An Exterior Painting contractor can work as a sub-Exterior Paint
+            Colours company, or sub-contractor, under a general Residential
+            Exterior Painting contractor , or can retain the services of itself
+            out directly to the owner of the house. For the most part, the
+            painting contractor is a relatively smaller sized operation, ranging
+            from the one-man exceptional proprietor up to 25 or 45 painters
+            doing work for an insignificant company.
           </p>
-          <p class="text-sm text-gray-700 mt-3">
-            <span class="pink-txt">Interior fresh painting procedure:</span
-            > Interior fresh painting procedure includes covering and paking of
-            furniture, two coat of putty, sanding/shining of putty by sand
-            paper/ sanding machine followed by one coat of primer and two coat
-            of paint. After complition of paint work, dusting will be done. We
-            will make sure that no paint marks will be visible in end.
+          <hr class="my-5" />
+          <h5 class="font-semibold">What Will ColourDrive Do?</h5>
+          <p class="text-sm text-gray-500 mt-3">
+            Virtually all painting contractors will take on any kind of
+            profession, from merely painting you are your window trim to a
+            full-house paint profession. But let us believe that they are
+            painting them your exterior. You can actually usually expect to have
+            from ColourDrive
+          </p>
+          <ul class="list-disc custom-list ps-6 mt-3">
+            <li class="text-sm mb-1 text-gray-500">
+              Coverage of all destinations that will be multi-colored, including
+              floors, residential windows, kitchen space counters, storage
+              units, etc.
+            </li>
+            <li class="text-sm mb-1 text-gray-500">
+              Inconsequential surface getting prepared prior to repainting,
+              which means illuminate sanding and scraping away do will manage to
+              win paint, tapping in a few overhanging nails, cleaning off
+              woodworking, with the use of sackcloth in some areas. The
+              important thing here is “minor,” as the service provider will
+              assume that the accommodate is mostly in Exterior Fresh Painting
+              overall condition.
+            </li>
+            <li class="text-sm mb-1 text-gray-500">
+              Reduction of electrical plates, equipment and lighting, doors, and
+              other obstructions.
+            </li>
+            <li class="text-sm mb-1 text-gray-500">
+              Moving accessories away for better access to the elements to be
+              painted. This is such really a painter’s job, which means you
+              would need to confirm this, in the beginning, such as Painting The
+              Outside Of Your House. Priming new drywall or alternatively the
+              current paint with an exterior latex primer.
+            </li>
+            <li class="text-sm mb-1 text-gray-500">
+              Not one but two colour coats of exterior furnishing latex paint on
+              the walls.
+            </li>
+            <li class="text-sm mb-1 text-gray-500">
+              Two or three coats of ceiling paint. Painting on the trim and
+              molding (baseboards, windowpane accessories, window mentions, etc
+              .)
+            </li>
+            <li class="text-sm mb-1 text-gray-500">
+              Touchups of greatly noticed spots.
+            </li>
+            <li class="text-sm mb-1 text-gray-500">
+              Cleanups for unpleasant incidents ( no matter how good the payment
+              or reimbursement with drop-cloths, a handful of drips will
+              happen).
+            </li>
+            <li class="text-sm mb-1 text-gray-500">
+              A final evaluation between Express Exterior Painting foreman and
+              home-owner.
+            </li>
+          </ul>
+          <hr class="my-5" />
+          <h5 class="font-semibold">Our exterior house painting procedure</h5>
+          <p class="text-sm text-gray-500 mt-3">
+            Our first and fore mostly priority is to always make sure we don’t
+            totally affect your day. During the time you book your painting on
+            the job, our immediate down line will set up a get in touch with
+            before your assignment date to go over all suggestions:
+          </p>
+          <ul class="list-disc custom-list ps-6 mt-3">
+            <li class="text-sm mb-1 text-gray-500">
+              Confirm demonstrate colour and suggestions,
+            </li>
+            <li class="text-sm mb-1 text-gray-500">
+              Ask the prospective cardholder to move patio home furnishings and
+              potted plants, and
+            </li>
+            <li class="text-sm mb-1 text-gray-500">
+              Respond to the questions you have about your repainting project.
+            </li>
+          </ul>
+          <p class="text-sm text-gray-500 mt-3">
+            Check once our Free Exterior quotation for Per sqft rates for
+            Exterior Painting, Dustless Exterior Painting and Exterior Fresh
+            Painting, Just mark your requirement on support@colourdrive.in
           </p>
         </div>
-        <section id="faq" class="px-4 pt-100 pb-200">
+        <div class="calccardspacemini sliderdiv text1 pt-100 pt-100">
+          <h2 class="text-center font-bold mb-5">Best Interior Paint Products</h2>
+          <Swiper
+            class="catalogue"
+            :slides-per-view="1"
+            :loop="true"
+            :breakpoints="{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 1 },
+              1024: { slidesPerView: 1 },
+            }"
+            :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation]"
+            :autoplay="{
+              delay: 3000,
+              disableOnInteraction: true,
+            }"
+            :pauseAutoplayOnMouseEnter="true"
+            :navigation="true"
+            :pagination="{
+              clickable: true,
+            }"
+          >
+            <SwiperSlide class="h-100">
+              <div class="m-4 bg-pink rounded-2xl text-center p-4 h-100">
+                <div class="calccardspacemini00 flex gap-3">
+                  <div
+                    href=""
+                    class="imgcalcdiv bg-white align-center flex justify-center basis-1/3 items-center p-4 rounded-md"
+                  >
+                    <img
+                      src="assets/images/calculator/paintbucket.png"
+                      alt="Interior Painting"
+                      width=""
+                      class="br-16 max-w-full h-auto"
+                    />
+                  </div>
+                  <div class="lablediv content-center">
+                    <p class="text-md text-white text-start">
+                      Apcolite Premium Emulsion gives matt and satin finish to
+                      your walls. It works on all wall conditions. Apcolite
+                      Premium Emulsion is having anti fungus qualities. Apcolite
+                      Premium Emulsion is type of Interior Paints which contains
+                      long lasting film due to that your house looks new for
+                      long time. It is semi washable. Apcolite Premium Emulsion
+                      contains special stainguard technology that keeps your
+                      walls stain free.
+                    </p>
+                  </div>
+                </div>
+                <!-- <div
+                            class="bg-white shadow-mds p-3 sm:p-5 rounded-2xl relative h-100"
+                          >
+                          </div> -->
+              </div>
+            </SwiperSlide>
+            <SwiperSlide class="h-100">
+              <div class="m-4 bg-pink rounded-2xl text-center p-4 h-100">
+                <div class="calccardspacemini00 flex gap-3">
+                  <div
+                    href=""
+                    class="imgcalcdiv bg-white align-center flex justify-center basis-1/3 items-center p-4 rounded-md"
+                  >
+                    <img
+                      src="assets/images/calculator/paintbucket.png"
+                      alt="Interior Painting"
+                      width=""
+                      class="br-16 max-w-full h-auto"
+                    />
+                  </div>
+                  <div class="lablediv content-center">
+                    <p class="text-md text-white text-start">
+                      Apcolite Premium Emulsion gives matt and satin finish to
+                      your walls. It works on all wall conditions. Apcolite
+                      Premium Emulsion is having anti fungus qualities. Apcolite
+                      Premium Emulsion is type of Interior Paints which contains
+                      long lasting film due to that your house looks new for
+                      long time. It is semi washable. Apcolite Premium Emulsion
+                      contains special stainguard technology that keeps your
+                      walls stain free.
+                    </p>
+                  </div>
+                </div>
+                <!-- <div
+                            class="bg-white shadow-mds p-3 sm:p-5 rounded-2xl relative h-100"
+                          >
+                          </div> -->
+              </div>
+            </SwiperSlide>
+            <SwiperSlide class="h-100">
+              <div class="m-4 bg-pink rounded-2xl text-center p-4 h-100">
+                <div class="calccardspacemini00 flex gap-3">
+                  <div
+                    href=""
+                    class="imgcalcdiv bg-white align-center flex justify-center basis-1/3 items-center p-4 rounded-md"
+                  >
+                    <img
+                      src="assets/images/calculator/paintbucket.png"
+                      alt="Interior Painting"
+                      width=""
+                      class="br-16 max-w-full h-auto"
+                    />
+                  </div>
+                  <div class="lablediv content-center">
+                    <p class="text-md text-white text-start">
+                      Apcolite Premium Emulsion gives matt and satin finish to
+                      your walls. It works on all wall conditions. Apcolite
+                      Premium Emulsion is having anti fungus qualities. Apcolite
+                      Premium Emulsion is type of Interior Paints which contains
+                      long lasting film due to that your house looks new for
+                      long time. It is semi washable. Apcolite Premium Emulsion
+                      contains special stainguard technology that keeps your
+                      walls stain free.
+                    </p>
+                  </div>
+                </div>
+                <!-- <div
+                            class="bg-white shadow-mds p-3 sm:p-5 rounded-2xl relative h-100"
+                          >
+                          </div> -->
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+        <section id="faq" class="px-4 pt-100">
           <div class="container mx-auto">
             <h2 class="text-center font-bold mb-5">FAQs</h2>
             <div class="accordion flex flex-col items-center justify-center">
@@ -559,7 +822,6 @@
             </div>
           </div>
         </section>
-        
       </div>
     </div>
   </section>

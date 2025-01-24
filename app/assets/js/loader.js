@@ -182,3 +182,24 @@ function toggleAccordion(button) {
   } 
   // FAQ js
 }
+
+
+// cust range
+const range = document.getElementById('range');
+const rangeValue = document.getElementById('rangeValue');
+
+// Function to update the background color fill and right-side value
+function updateRangeValue(input) {
+  const min = input.min;
+  const max = input.max;
+  const value = input.value;
+
+  // Set the range background fill color
+  input.style.background = `linear-gradient(to right, #fc2f93 ${((value - min) / (max - min)) * 100}%, #ddd ${((value - min) / (max - min)) * 100}%)`;
+
+  // Update the right-side value display
+  rangeValue.innerText = `${value} Sq Ft`;
+}
+
+// Initialize the range display on page load
+updateRangeValue(range);

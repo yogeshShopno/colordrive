@@ -149,3 +149,14 @@
   border-radius: 50px;
   border: 2px solid #FC2F93 !important;
 }
+
+
+ /* Hover effect for options */
+ select option:hover {
+  background-color: #ec4899; /* Tailwind's pink-500 */
+  color: #fff; /* White text for contrast */
+}
+
+ul.custom-list li::marker {
+  color: #ec4899;
+}
