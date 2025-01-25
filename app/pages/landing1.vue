@@ -15,13 +15,13 @@
                     <div class="mt-4">
                         <div class="grid gap-x-8 gap-y-4 grid-cols-2 md:grid-cols-4">
                             <div>
-                                <a href="/calculator">
+                                <a href="/calculatePrice">
                                     <div class="box1 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2"></div>
-                                    <h5 class="text-center mt-2">Interior Painting </h5>
+                                    <h5 class="text-center mt-2">Interior Painting</h5>
                                 </a>
                             </div>
                             <div>
-                                <a href="/exterior-cal1">
+                                <a href="/exteriorcalculator">
                                     <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
                                         <img src="assets/images/Exterior Painting.svg" alt="Exterior Painting" />
                                     </div>
@@ -37,7 +37,7 @@
                                 </a>
                             </div>
                             <div>
-                                <a href="/water-proff1">
+                                <a href="/waterproofCal">
                                     <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
                                         <img src="assets/images/Waterproofing Solutions.svg" alt="Waterproofing Solutions" />
                                     </div>
@@ -71,7 +71,7 @@
                                 </a>
                             </div>
                             <div class="more-services">
-                                <a href="">
+                                <a href="/texturepaint">
                                     <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
                                         <h5 class="text-center">More Services</h5>
                                     </div>
@@ -79,13 +79,13 @@
                             </div>
 
                             <div class="service-new hidden">
-                                <a href="/calculator">
+                                <a href="/calculatePrice">
                                     <div class="box1 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2"></div>
                                     <h5 class="text-center mt-2">Interior Painting</h5>
                                 </a>
                             </div>
                             <div class="service-new hidden">
-                                <a href="/exterior-cal1">
+                                <a href="/exteriorcalculator">
                                     <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
                                         <img src="assets/images/Exterior Painting.svg" alt="Exterior Painting" />
                                     </div>
@@ -101,7 +101,7 @@
                                 </a>
                             </div>
                             <div class="service-new hidden">
-                                <a href="/water-proff1">
+                                <a href="/waterproofCal">
                                     <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
                                         <img src="assets/images/Waterproofing Solutions.svg" alt="Waterproofing Solutions" />
                                     </div>

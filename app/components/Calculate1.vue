@@ -92,7 +92,7 @@ export default {
                       <div class="row-span-6">
                         <div class="calccardspacemini0 active">
                           <a
-                            href=""
+                            href="/calculatePrice"
                             class="imgcalcdiv align-center bg-gray-300 flex justify-center p-4 rounded-md"
                           >
                             <img
@@ -110,7 +110,7 @@ export default {
                       <div class="row-span-6">
                         <div class="calccardspacemini0">
                           <a
-                            href="/exterior-cal1"
+                            href="/exteriorcalculator"
                             class="imgcalcdiv align-center bg-gray-300 flex justify-center p-4 rounded-md"
                           >
                             <img

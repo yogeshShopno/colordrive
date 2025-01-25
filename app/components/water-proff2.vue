@@ -1,6 +1,6 @@
-<script></script>
+<script setup></script>
 
-<template>
+<template> 
   <!-- service Post section start -->
   <section id="service-post" class="mt-50px px-4 px-md-0">
     <div class="container mx-auto">
@@ -306,20 +306,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="toggledivcalspace mt-3">
-                    <!-- Example Toggle -->
-                    <label
-                      class="relative inline-flex items-center mt-4 cursor-pointer"
-                    >
-                      <input type="checkbox" class="sr-only peer" />
-                      <div
-                        class="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-pink-600 peer-focus:ring-pink-300 dark:peer-focus:ring-pink-800 dark:bg-gray-300 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all"
-                      ></div>
-                      <span class="ml-3 text-gray-500 dark:text-gray-500"
-                        >Do you want to paint your ceiling?</span
-                      >
-                    </label>
-                  </div>
                 </div>
               </div>
               <div class="calcseccardsdiv mt-5">
@@ -343,18 +329,18 @@
                           <a
                             href=""
                             class="btn btn-rounded btn-pink text-center px-3 py-2"
-                            >Email Free Quotation</a
                           >
+                            Email Free Quotation
+                          </a>
                         </div>
                       </div>
                     </div>
-
                     <div class="toggledivcalspace mt-3">
                       <!-- Example Toggle -->
                       <label
                         class="relative inline-flex items-center mt-4 cursor-pointer"
                       >
-                        <input type="checkbox" checked class="sr-only peer" />
+                        <input type="checkbox" class="sr-only peer" />
                         <div
                           class="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-pink-600 peer-focus:ring-pink-300 dark:peer-focus:ring-pink-800 dark:bg-gray-300 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all"
                         ></div>
@@ -367,10 +353,14 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> 
         </div>
-      </div>
+      </div> 
     </div>
   </section>
   <!-- service Post section end -->
 </template>
+
+<style scoped>
+@import "../assets/css/service.css";
+</style>

@@ -1,4 +1,4 @@
-<script></script>
+<script setup></script>
 
 <template>
   <!-- service Post section start -->
@@ -306,20 +306,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="toggledivcalspace mt-3">
-                    <!-- Example Toggle -->
-                    <label
-                      class="relative inline-flex items-center mt-4 cursor-pointer"
-                    >
-                      <input type="checkbox" class="sr-only peer" />
-                      <div
-                        class="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-pink-600 peer-focus:ring-pink-300 dark:peer-focus:ring-pink-800 dark:bg-gray-300 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all"
-                      ></div>
-                      <span class="ml-3 text-gray-500 dark:text-gray-500"
-                        >Do you want to paint your ceiling?</span
-                      >
-                    </label>
-                  </div>
                 </div>
               </div>
               <div class="calcseccardsdiv mt-5">
@@ -374,3 +360,7 @@
   </section>
   <!-- service Post section end -->
 </template>
+
+<style scoped>
+@import "../assets/css/service.css";
+</style>

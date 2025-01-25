@@ -1,10 +1,10 @@
 <script>
-  import Calculate1 from "~/components/Calculate1.vue";
-  import Calculate2 from "~/components/Calculate2.vue";
-  import Calculate3 from "~/components/Calculate3.vue";
+  import ExteriorCal1 from "@/components/exterior-cal1.vue";
+  import ExteriorCal2 from "@/components/exterior-cal2.vue";
+  import ExteriorCal3 from "@/components/exterior-cal3.vue";
 
   export default {
-    components: { Calculate1, Calculate2, Calculate3 },
+    components: { ExteriorCal1, ExteriorCal2, ExteriorCal3 },
     data() {
       return {
         currentSlide: 0, // Current active slide
@@ -31,24 +31,40 @@
 
 <template>
   <!-- main banner start -->
-  <section id="blog-new" class="py-100 px-3 mb-50px" data-v-inspector="app/pages/blog.vue:5:3" data-v-1bac7c7d="">
-    <div class="container mx-auto" data-v-inspector="app/pages/blog.vue:6:5" data-v-1bac7c7d="">
+  <section
+    id="blog-new"
+    class="py-100 px-3 mb-50px"
+    data-v-inspector="app/pages/blog.vue:5:3"
+    data-v-1bac7c7d=""
+  >
+    <div
+      class="container mx-auto"
+      data-v-inspector="app/pages/blog.vue:6:5"
+      data-v-1bac7c7d=""
+    >
       <!-- <h1>Blog</h1> -->
       <div class="text-center">
-        <h2 class="text font-bold">Painting Cost Calculator</h2>
-        <p class="text-muted">Get Free Painting Quotation</p>
+        <h2 class="text font-bold">Exterior Calculator</h2>
+        <div class="flex items-center gap-2 justify-center mt-3">
+          <a href="index.vue">
+            <p class="text-gray-500">Home</p>
+          </a>
+          <i class="fa-solid fa-chevron-right text-gray-500"></i>
+          <p class="pink-txt">Exterior Calculator</p>
+        </div>
       </div>
     </div>
   </section>
+  <!-- main banner end -->
   <div class="w-full maincomponent pb-200 mx-auto mt-9">
     <!-- Carousel Container -->
 
 
     <!-- Conditional Rendering of Components -->
     <div class="mt-6">
-      <Calculate1 v-if="currentSlide === 0" />
-      <Calculate2 v-if="currentSlide === 1" />
-      <Calculate3 v-if="currentSlide === 2" />
+      <ExteriorCal1 v-if="currentSlide === 0" />
+      <ExteriorCal2 v-if="currentSlide === 1" />
+      <ExteriorCal3 v-if="currentSlide === 2" />
     </div>
 
     <!-- nextpre ydthfjf-->
@@ -426,9 +442,9 @@
     </div>
   </div>
   <!-- <div class="mt-6">
-    <Calculate1 v-if="currentSlide === 0" />
-    <Calculate2 v-if="currentSlide === 1" />
-    <Calculate3 v-if="currentSlide === 2" />
+    <ExteriorCal1 v-if="currentSlide === 0" />
+    <ExteriorCal2 v-if="currentSlide === 1" />
+    <ExteriorCal3 v-if="currentSlide === 2" />
   </div> -->
 
   <!-- main banner end -->
