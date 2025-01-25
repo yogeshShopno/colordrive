@@ -134,6 +134,14 @@
   }
 }
 
+.product-card2{
+  /* border: 1px solid transparent; */
+  transition: all .3s ease;
+  &:hover{
+    border: 1px solid #FC2F93;
+  }
+}
+
 .sqft-w{
   max-width: 80px;
 }
@@ -165,3 +173,10 @@ select option:hover {
   background-color: #f472b6; /* Tailwind's pink-400 for hover background */
   color: #fff; /* White text for better contrast */
 }
+
+@media (width >= 40rem) { 
+  .rowcontentdivimg{
+    position: sticky;
+    top: 8rem;
+  }
+ }
