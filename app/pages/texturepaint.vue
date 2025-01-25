@@ -575,7 +575,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class=" w-fullrow-span-6">
+                                            <div class=" row-span-6">
                                                 <div
                                                     class="servccarddiv bg-white custshadow overflow-hidden rounded-2xl">
                                                     <div class="imgcalcdivv border-none">
