@@ -381,7 +381,6 @@ export default {
           </div>
         </div>
       </div>
-      
     </div>
   </section>
   <!-- service Post section end -->
