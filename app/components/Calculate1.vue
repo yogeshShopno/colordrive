@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      rangeValue: 400,
+      rangeValue: 0,
     };
   },
   computed: {
