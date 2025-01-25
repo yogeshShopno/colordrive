@@ -65,14 +65,22 @@
         <div
           class="flex items-center lg:order-2 justify-end sm:justify-start lg:justify-end gap-x-3 me-3 sm:me-0"
         >
-          <button
+        <button
+            type="button"
+            class="m-0 text-white rounded-lg px-2 sm:px-5 py-2.5 btn-gray hidden sm:block"
+          >
+          <a href="/calculatePrice">
+            Calculate Pricing</a>
+          </button>
+        
+          <!-- <button
             type="button"
             class="m-0 text-white rounded-lg px-2 sm:px-5 py-2.5 btn-gray hidden sm:block"
           >
           <a href="/calculator">
             Calculate Pricing</a>
-          </button>
-          
+          </button> -->
+         
           <button
           
             type="button"
