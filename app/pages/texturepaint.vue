@@ -553,7 +553,7 @@
                                                     <div class="imgcalcdivv border-none">
                                                         <img src="assets/images/calculator/prod3.png"
                                                             alt="Interior Painting" width=""
-                                                            class="max-w-full h-auto" />
+                                                            class="w-full max-w-full h-auto" />
                                                     </div>
                                                     <div class="lablediv p-3">
                                                         <h5 class="text-xl font-bold">
