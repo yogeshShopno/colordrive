@@ -151,7 +151,7 @@
                                 </a>
                             </div>
                             <div class="more-services">
-                                <a href="">
+                                <a href="/texturepaint">
                                     <div class="box2 justify-center flex rounded-2xl py-3 items-center shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-pink-2">
                                         <h5 class="text-center">More Services</h5>
                                     </div>

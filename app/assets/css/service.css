@@ -160,3 +160,8 @@
 ul.custom-list li::marker {
   color: #ec4899;
 }
+
+select option:hover {
+  background-color: #f472b6; /* Tailwind's pink-400 for hover background */
+  color: #fff; /* White text for better contrast */
+}
