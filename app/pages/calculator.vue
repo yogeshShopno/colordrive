@@ -1,18 +1,47 @@
-<script> </script>
+<script>
+export default {
+  data() {
+    return {
+      rangeValue: 400, 
+    };
+  },
+  computed: {
+    
+    formattedRangeValue() {
+      return `${this.rangeValue} Sq Ft`;
+    },
+  },
+  methods: {
+    updateRangeBackground(event) {
+      const input = event.target;
+      const min = input.min;
+      const max = input.max;
+      const value = input.value;
+
+      input.style.background = `linear-gradient(to right, #fc2f93 ${
+        ((value - min) / (max - min)) * 100
+      }%, #ddd ${((value - min) / (max - min)) * 100}%)`;
+    },
+  },
+  mounted() {
+    this.$nextTick(() => {
+      const range = this.$refs.rangeInput;
+      if (range) {
+        range.style.background = `linear-gradient(to right, #fc2f93 ${
+          ((this.rangeValue - range.min) / (range.max - range.min)) * 100
+        }%, #ddd ${
+          ((this.rangeValue - range.min) / (range.max - range.min)) * 100
+        }%)`;
+      }
+    });
+  },
+};
+</script>
 
 <template>
   <!-- main banner start -->
-  <section
-    id="blog-new"
-    class="py-100 px-3 mb-50px"
-    data-v-inspector="app/pages/blog.vue:5:3"
-    data-v-1bac7c7d=""
-  >
-    <div
-      class="container mx-auto"
-      data-v-inspector="app/pages/blog.vue:6:5"
-      data-v-1bac7c7d=""
-    >
+  <section id="blog-new" class="py-100 px-3 mb-50px" data-v-inspector="app/pages/blog.vue:5:3" data-v-1bac7c7d="">
+    <div class="container mx-auto" data-v-inspector="app/pages/blog.vue:6:5" data-v-1bac7c7d="">
       <!-- <h1>Blog</h1> -->
       <div class="text-center">
         <h2 class="text font-bold">Painting Cost Calculator</h2>
@@ -31,18 +60,10 @@
             <div>
               <form action="" method="post">
                 <div class="sm:col-span-3">
-                  <label
-                    for="country"
-                    class="block text-sm/6 font-medium text-gray-900"
-                    >City</label
-                  >
+                  <label for="country" class="block text-sm/6 font-medium text-gray-900">City</label>
                   <div class="mt-2 grid grid-cols-1">
-                    <select
-                      id="country"
-                      name="country"
-                      autocomplete="country-name"
-                      class="col-start-1 row-start-1 w-full appearance-none rounded-md custsselect py-1.5 pl-3 pr-8 text-base text-gray-900 sm:text-sm/6"
-                    >
+                    <select id="country" name="country" autocomplete="country-name"
+                      class="col-start-1 row-start-1 w-full appearance-none rounded-md custsselect py-1.5 pl-3 pr-8 text-base text-gray-900 sm:text-sm/6">
                       <option>Select Your City</option>
                       <option>United States</option>
                       <option>Canada</option>
@@ -50,16 +71,10 @@
                     </select>
                     <svg
                       class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4"
-                      viewBox="0 0 16 16"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      data-slot="icon"
-                    >
-                      <path
-                        fill-rule="evenodd"
+                      viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                      <path fill-rule="evenodd"
                         d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
-                        clip-rule="evenodd"
-                      />
+                        clip-rule="evenodd" />
                     </svg>
                   </div>
                 </div>
@@ -70,21 +85,12 @@
                     <h5 class="font-bold">Select Space</h5>
                   </div>
                   <div class="calccardspacemini">
-                    <div
-                      class="grid grid-cols-3 sm:grid-cols-4 grid-flow-col gap-4"
-                    >
+                    <div class="grid grid-cols-3 sm:grid-cols-4 grid-flow-col gap-4">
                       <div class="row-span-6">
                         <div class="calccardspacemini0 active">
-                          <a
-                            href=""
-                            class="imgcalcdiv align-center bg-gray-300 flex justify-center p-4 rounded-md"
-                          >
-                            <img
-                              src="assets/images/calculator/homeicon2.png"
-                              alt="Interior Painting"
-                              width=""
-                              class="br-16 max-w-full h-auto"
-                            />
+                          <a href="" class="imgcalcdiv align-center bg-gray-300 flex justify-center p-4 rounded-md">
+                            <img src="assets/images/calculator/homeicon2.png" alt="Interior Painting" width=""
+                              class="br-16 max-w-full h-auto" />
                           </a>
                           <div class="lablediv mt-2 text-center">
                             <p class="text-sm">Interior</p>
@@ -93,16 +99,10 @@
                       </div>
                       <div class="row-span-6">
                         <div class="calccardspacemini0">
-                          <a
-                            href="/exterior-cal1"
-                            class="imgcalcdiv align-center bg-gray-300 flex justify-center p-4 rounded-md"
-                          >
-                            <img
-                              src="assets/images/calculator/homeicon.png"
-                              alt="Interior Painting"
-                              width=""
-                              class="br-16 max-w-full h-auto"
-                            />
+                          <a href="/exterior-cal1"
+                            class="imgcalcdiv align-center bg-gray-300 flex justify-center p-4 rounded-md">
+                            <img src="assets/images/calculator/homeicon.png" alt="Interior Painting" width=""
+                              class="br-16 max-w-full h-auto" />
                           </a>
                           <div class="lablediv mt-2 text-center">
                             <p class="text-sm">Exterior</p>
@@ -122,57 +122,33 @@
                     <div class="grid grid-cols-2 sm:grid-cols-5 gap-4">
                       <div class="row-span-6">
                         <div class="calccardspacemini0">
-                          <div
-                            class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-2xl"
-                          >
-                            <img
-                              src="assets/images/calculator/slectspace.png"
-                              alt="Interior Painting"
-                              width=""
-                              class="br-16 max-w-full w-full h-auto"
-                            />
+                          <div class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-2xl">
+                            <img src="assets/images/calculator/slectspace.png" alt="Interior Painting" width=""
+                              class="br-16 max-w-full w-full h-auto" />
                           </div>
                         </div>
                       </div>
                       <div class="row-span-6">
                         <div class="calccardspacemini0">
-                          <div
-                            class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-2xl"
-                          >
-                            <img
-                              src="assets/images/calculator/slectspace2.png"
-                              alt="Interior Painting"
-                              width=""
-                              class="br-16 max-w-full h-auto w-full"
-                            />
+                          <div class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-2xl">
+                            <img src="assets/images/calculator/slectspace2.png" alt="Interior Painting" width=""
+                              class="br-16 max-w-full h-auto w-full" />
                           </div>
                         </div>
                       </div>
                       <div class="row-span-6">
                         <div class="calccardspacemini0">
-                          <div
-                            class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-2xl"
-                          >
-                            <img
-                              src="assets/images/calculator/slectspace3.png"
-                              alt="Interior Painting"
-                              width=""
-                              class="br-16 max-w-full h-auto w-full"
-                            />
+                          <div class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-2xl">
+                            <img src="assets/images/calculator/slectspace3.png" alt="Interior Painting" width=""
+                              class="br-16 max-w-full h-auto w-full" />
                           </div>
                         </div>
                       </div>
                       <div class="row-span-6">
                         <div class="calccardspacemini0">
-                          <div
-                            class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-2xl"
-                          >
-                            <img
-                              src="assets/images/calculator/slectspace4.png"
-                              alt="Interior Painting"
-                              width=""
-                              class="br-16 max-w-full h-auto w-full"
-                            />
+                          <div class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-2xl">
+                            <img src="assets/images/calculator/slectspace4.png" alt="Interior Painting" width=""
+                              class="br-16 max-w-full h-auto w-full" />
                           </div>
                         </div>
                       </div>
@@ -182,16 +158,12 @@
                 <div class="toggledivcalspace mt-3">
                   <div class="toggledivcalspace mt-3">
                     <!-- Example Toggle -->
-                    <label
-                      class="relative inline-flex items-center mt-4 cursor-pointer"
-                    >
+                    <label class="relative inline-flex items-center mt-4 cursor-pointer">
                       <input type="checkbox" class="sr-only peer" />
                       <div
-                        class="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-pink-600 peer-focus:ring-pink-300 dark:peer-focus:ring-pink-800 dark:bg-gray-300 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all"
-                      ></div>
-                      <span class="ml-3 text-gray-500 dark:text-gray-500"
-                        >Built-up Area ?</span
-                      >
+                        class="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-pink-600 peer-focus:ring-pink-300 dark:peer-focus:ring-pink-800 dark:bg-gray-300 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all">
+                      </div>
+                      <span class="ml-3 text-gray-500 dark:text-gray-500">Built-up Area ?</span>
                     </label>
                   </div>
                 </div>
@@ -204,17 +176,12 @@
                   <div class="calccardspacemini">
                     <div class="inptselectnumbdiv">
                       <div class="flex items-center space-x-2">
-                        <input
-                          type="number"
-                          value="400"
-                          class="w-32 custsselect rounded-md focus-visible:outline-0 p-3 text-sm"
-                          min="0"
-                          max="10000"
-                          step="1"
-                        />
+                        <input type="number" value="400"
+                          class="w-32 custsselect rounded-md focus-visible:outline-0 p-3 text-sm" min="0" max="10000"
+                          step="1" />
                         <span class="text-sm">Sq ft</span>
                       </div>
-                      <div class="flex flex-col w-4/5 mt-4 space-x-2">
+                      <!-- <div class="flex flex-col w-4/5 mt-4 space-x-2">
                         <input
                           type="range"
                           id="range"
@@ -229,8 +196,15 @@
                           <span class="text-sm">0 Sq Ft</span>
                           <span id="rangeValue" class="text-sm">400 Sq Ft</span>
                         </div>
-                      </div>
+                      </div> -->
+                      
                     </div>
+                    <div class="w-100">
+                        <input type="range" id="range" min="0" max="1000" v-model="rangeValue"
+                          class=" w-full h-2 bg-gray-300 rounded-lg appearance-none focus:ring-2" style="accent-color: #fc2f93"
+                          @input="updateRangeBackground" />
+                        <div>{{ formattedRangeValue }}</div>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -240,20 +214,12 @@
                     <h5 class="font-bold">Select Painting Service Type</h5>
                   </div>
                   <div class="calccardspacemini mb-2">
-                    <div
-                      class="grid grid-cols- sm:grid-cols-2 md:grid-cols-3 gap-4"
-                    >
+                    <div class="grid grid-cols- sm:grid-cols-2 md:grid-cols-3 gap-4">
                       <div class="row-span-6">
-                        <div
-                          class="servccarddiv bg-white custshadow product-card rounded-md p-4"
-                        >
+                        <div class="servccarddiv bg-white custshadow product-card rounded-md p-4">
                           <div class="imgcalcdiv">
-                            <img
-                              src="assets/images/calculator/icon1.png"
-                              alt="Interior Painting"
-                              width=""
-                              class="br-16 max-w-full h-auto"
-                            />
+                            <img src="assets/images/calculator/icon1.png" alt="Interior Painting" width=""
+                              class="br-16 max-w-full h-auto" />
                           </div>
                           <div class="lablediv mt-2">
                             <h6 class="font-bold">Repainting</h6>
@@ -277,16 +243,10 @@
                         </div>
                       </div>
                       <div class="row-span-6">
-                        <div
-                          class="servccarddiv bg-white custshadow product-card rounded-md p-4"
-                        >
+                        <div class="servccarddiv bg-white custshadow product-card rounded-md p-4">
                           <div class="imgcalcdiv">
-                            <img
-                              src="assets/images/calculator/icon1.png"
-                              alt="Interior Painting"
-                              width=""
-                              class="br-16 max-w-full h-auto"
-                            />
+                            <img src="assets/images/calculator/icon1.png" alt="Interior Painting" width=""
+                              class="br-16 max-w-full h-auto" />
                           </div>
                           <div class="lablediv mt-2">
                             <h6 class="font-bold">Repainting</h6>
@@ -310,16 +270,10 @@
                         </div>
                       </div>
                       <div class="row-span-6">
-                        <div
-                          class="servccarddiv bg-white custshadow product-card rounded-md p-4"
-                        >
+                        <div class="servccarddiv bg-white custshadow product-card rounded-md p-4">
                           <div class="imgcalcdiv">
-                            <img
-                              src="assets/images/calculator/icon1.png"
-                              alt="Interior Painting"
-                              width=""
-                              class="br-16 max-w-full h-auto"
-                            />
+                            <img src="assets/images/calculator/icon1.png" alt="Interior Painting" width=""
+                              class="br-16 max-w-full h-auto" />
                           </div>
                           <div class="lablediv mt-2">
                             <h6 class="font-bold">Repainting</h6>
@@ -355,41 +309,23 @@
               <!-- Carousel Items -->
               <div class="flex justify-between align-center">
                 <div class="buttonsnextprev invisible">
-                  <a
-                    href=""
-                    id="prevBtn"
-                    class="bg-white text-gray-800 border rounded-full px-8 py-2 focus:outline-none hover:bg-gray-100"
-                  >
+                  <a href="" id="prevBtn"
+                    class="bg-white text-gray-800 border rounded-full px-8 py-2 focus:outline-none hover:bg-gray-100">
                     Prev
                   </a>
                 </div>
-                <div
-                  id="carousel"
-                  class="flex items-center gap-2 transition-transform duration-300 ease-in-out"
-                  style="transform: translateX(0)"
-                >
-                  <a
-                    href="/calculator"
-                    class="w-3 h-3 bg-pink-500 rounded-full focus:outline-none"
-                    onclick="goToSlide(0)"
-                  ></a>
-                  <a
-                    href="/calculator-2"
-                    class="w-3 h-3 bg-gray-300 rounded-full focus:outline-none"
-                    onclick="goToSlide(1)"
-                  ></a>
-                  <a
-                    href="/calculator-3"
-                    class="w-3 h-3 bg-gray-300 rounded-full focus:outline-none"
-                    onclick="goToSlide(2)"
-                  ></a>
+                <div id="carousel" class="flex items-center gap-2 transition-transform duration-300 ease-in-out"
+                  style="transform: translateX(0)">
+                  <a href="/calculator" class="w-3 h-3 bg-pink-500 rounded-full focus:outline-none"
+                    onclick="goToSlide(0)"></a>
+                  <a href="/calculator-2" class="w-3 h-3 bg-gray-300 rounded-full focus:outline-none"
+                    onclick="goToSlide(1)"></a>
+                  <a href="/calculator-3" class="w-3 h-3 bg-gray-300 rounded-full focus:outline-none"
+                    onclick="goToSlide(2)"></a>
                 </div>
                 <div class="buttonsnextprev">
-                  <a
-                    href="/calculator-2"
-                    id="nextBtn"
-                    class="btn-pink btn-rounded text-white border px-8 px-4 py-2 focus:outline-none"
-                  >
+                  <a href="/calculator-2" id="nextBtn"
+                    class="btn-pink btn-rounded text-white border px-8 px-4 py-2 focus:outline-none">
                     Next
                   </a>
                 </div>
@@ -421,20 +357,12 @@
                   <h5 class="font-semibold">Standard Procedure:</h5>
                 </div>
                 <div class="calccardspacemini mb-2">
-                  <div
-                    class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 gap-4"
-                  >
+                  <div class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="row-span-6 h-full">
-                      <div
-                        class="servccarddiv bg-white h-full flex gap-2 custshadow product-card rounded-md p-4"
-                      >
+                      <div class="servccarddiv bg-white h-full flex gap-2 custshadow product-card rounded-md p-4">
                         <div class="imgcalcdiv rounded">
-                          <img
-                            src="assets/images/calculator/icon1.png"
-                            alt="Interior Painting"
-                            width=""
-                            class="max-w-full h-auto"
-                          />
+                          <img src="assets/images/calculator/icon1.png" alt="Interior Painting" width=""
+                            class="max-w-full h-auto" />
                         </div>
                         <div class="lablediv">
                           <h6 class="font-bold pink-txt mb-2">
@@ -450,16 +378,10 @@
                       </div>
                     </div>
                     <div class="row-span-6 h-full">
-                      <div
-                        class="servccarddiv h-full bg-white flex gap-2 custshadow product-card rounded-md p-4"
-                      >
+                      <div class="servccarddiv h-full bg-white flex gap-2 custshadow product-card rounded-md p-4">
                         <div class="imgcalcdiv rounded">
-                          <img
-                            src="assets/images/calculator/icn15.png"
-                            alt="Interior Painting"
-                            width=""
-                            class="max-w-full h-auto"
-                          />
+                          <img src="assets/images/calculator/icn15.png" alt="Interior Painting" width=""
+                            class="max-w-full h-auto" />
                         </div>
                         <div class="lablediv">
                           <h6 class="font-bold pink-txt mb-2">
@@ -575,39 +497,23 @@
         </div>
         <div class="calccardspacemini sliderdiv text1 pt-100 pt-100">
           <h2 class="text-center font-bold mb-5">Best Interior Paint Products</h2>
-          <Swiper
-            class="catalogue"
-            :slides-per-view="1"
-            :loop="true"
-            :breakpoints="{
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 1 },
-              1024: { slidesPerView: 1 },
-            }"
-            :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation]"
-            :autoplay="{
+          <Swiper class="catalogue" :slides-per-view="1" :loop="true" :breakpoints="{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 1 },
+            1024: { slidesPerView: 1 },
+          }" :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation]" :autoplay="{
               delay: 3000,
               disableOnInteraction: true,
-            }"
-            :pauseAutoplayOnMouseEnter="true"
-            :navigation="true"
-            :pagination="{
+            }" :pauseAutoplayOnMouseEnter="true" :navigation="true" :pagination="{
               clickable: true,
-            }"
-          >
+            }">
             <SwiperSlide class="h-100">
               <div class="m-4 bg-pink rounded-2xl text-center p-4 h-100">
                 <div class="calccardspacemini00 flex gap-3">
-                  <div
-                    href=""
-                    class="imgcalcdiv bg-white align-center flex justify-center basis-1/3 items-center p-4 rounded-md"
-                  >
-                    <img
-                      src="assets/images/calculator/paintbucket.png"
-                      alt="Interior Painting"
-                      width=""
-                      class="br-16 max-w-full h-auto"
-                    />
+                  <div href=""
+                    class="imgcalcdiv bg-white align-center flex justify-center basis-1/3 items-center p-4 rounded-md">
+                    <img src="assets/images/calculator/paintbucket.png" alt="Interior Painting" width=""
+                      class="br-16 max-w-full h-auto" />
                   </div>
                   <div class="lablediv content-center">
                     <p class="text-md text-white text-start">
@@ -631,16 +537,10 @@
             <SwiperSlide class="h-100">
               <div class="m-4 bg-pink rounded-2xl text-center p-4 h-100">
                 <div class="calccardspacemini00 flex gap-3">
-                  <div
-                    href=""
-                    class="imgcalcdiv bg-white align-center flex justify-center basis-1/3 items-center p-4 rounded-md"
-                  >
-                    <img
-                      src="assets/images/calculator/paintbucket.png"
-                      alt="Interior Painting"
-                      width=""
-                      class="br-16 max-w-full h-auto"
-                    />
+                  <div href=""
+                    class="imgcalcdiv bg-white align-center flex justify-center basis-1/3 items-center p-4 rounded-md">
+                    <img src="assets/images/calculator/paintbucket.png" alt="Interior Painting" width=""
+                      class="br-16 max-w-full h-auto" />
                   </div>
                   <div class="lablediv content-center">
                     <p class="text-md text-white text-start">
@@ -664,16 +564,10 @@
             <SwiperSlide class="h-100">
               <div class="m-4 bg-pink rounded-2xl text-center p-4 h-100">
                 <div class="calccardspacemini00 flex gap-3">
-                  <div
-                    href=""
-                    class="imgcalcdiv bg-white align-center flex justify-center basis-1/3 items-center p-4 rounded-md"
-                  >
-                    <img
-                      src="assets/images/calculator/paintbucket.png"
-                      alt="Interior Painting"
-                      width=""
-                      class="br-16 max-w-full h-auto"
-                    />
+                  <div href=""
+                    class="imgcalcdiv bg-white align-center flex justify-center basis-1/3 items-center p-4 rounded-md">
+                    <img src="assets/images/calculator/paintbucket.png" alt="Interior Painting" width=""
+                      class="br-16 max-w-full h-auto" />
                   </div>
                   <div class="lablediv content-center">
                     <p class="text-md text-white text-start">
@@ -702,17 +596,9 @@
             <div class="accordion flex flex-col items-center justify-center">
               <!--  Panel 1  -->
               <div class="w-full lg:w-1/2 shadow11 mb-4">
-                <input
-                  type="checkbox"
-                  name="panel"
-                  id="panel-1"
-                  class="hidden"
-                />
-                <label
-                  for="panel-1"
-                  class="relative block bg-white text-black p-4 rounded-2xl"
-                  >Questions text goes here</label
-                >
+                <input type="checkbox" name="panel" id="panel-1" class="hidden" />
+                <label for="panel-1" class="relative block bg-white text-black p-4 rounded-2xl">Questions text goes
+                  here</label>
                 <div class="accordion__content overflow-hidden">
                   <p class="accordion__body p-4 text-black" id="panel1">
                     Lorem Ipsum is simply dummy text of the printing and
@@ -725,17 +611,9 @@
               </div>
               <!--  Panel 2  -->
               <div class="w-full lg:w-1/2 shadow11 mb-4">
-                <input
-                  type="checkbox"
-                  name="panel"
-                  id="panel-2"
-                  class="hidden"
-                />
-                <label
-                  for="panel-2"
-                  class="relative block bg-white text-black p-4 rounded-2xl"
-                  >Questions text goes here</label
-                >
+                <input type="checkbox" name="panel" id="panel-2" class="hidden" />
+                <label for="panel-2" class="relative block bg-white text-black p-4 rounded-2xl">Questions text goes
+                  here</label>
                 <div class="accordion__content overflow-hidden">
                   <p class="accordion__body p-4 text-black" id="panel1">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -749,17 +627,9 @@
               </div>
               <!--  Panel 3  -->
               <div class="w-full lg:w-1/2 shadow11 mb-4">
-                <input
-                  type="checkbox"
-                  name="panel"
-                  id="panel-3"
-                  class="hidden"
-                />
-                <label
-                  for="panel-3"
-                  class="relative block bg-white text-black p-4 rounded-2xl"
-                  >Questions text goes here</label
-                >
+                <input type="checkbox" name="panel" id="panel-3" class="hidden" />
+                <label for="panel-3" class="relative block bg-white text-black p-4 rounded-2xl">Questions text goes
+                  here</label>
                 <div class="accordion__content overflow-hidden">
                   <p class="accordion__body p-4 text-black" id="panel1">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -773,17 +643,9 @@
               </div>
               <!--  Panel 4  -->
               <div class="w-full lg:w-1/2 shadow11 mb-4">
-                <input
-                  type="checkbox"
-                  name="panel"
-                  id="panel-4"
-                  class="hidden"
-                />
-                <label
-                  for="panel-4"
-                  class="relative block bg-white text-black p-4 rounded-2xl"
-                  >Questions text goes here</label
-                >
+                <input type="checkbox" name="panel" id="panel-4" class="hidden" />
+                <label for="panel-4" class="relative block bg-white text-black p-4 rounded-2xl">Questions text goes
+                  here</label>
                 <div class="accordion__content overflow-hidden">
                   <p class="accordion__body p-4 text-black" id="panel1">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -797,17 +659,9 @@
               </div>
               <!--  Panel 5  -->
               <div class="w-full lg:w-1/2 shadow11 mb-4">
-                <input
-                  type="checkbox"
-                  name="panel"
-                  id="panel-5"
-                  class="hidden"
-                />
-                <label
-                  for="panel-5"
-                  class="relative block bg-white text-black p-4 rounded-2xl"
-                  >Questions text goes here</label
-                >
+                <input type="checkbox" name="panel" id="panel-5" class="hidden" />
+                <label for="panel-5" class="relative block bg-white text-black p-4 rounded-2xl">Questions text goes
+                  here</label>
                 <div class="accordion__content overflow-hidden">
                   <p class="accordion__body p-4 text-black" id="panel1">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
