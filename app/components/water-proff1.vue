@@ -6,7 +6,7 @@
     <div class="container mx-auto">
       <div class="max-w-4xl mx-auto">
         <div class="firstsecdiv">
-          <div class="bg-white mainboxshadoww rounded-2xl p-5">
+          <div class="bg-white mainboxshadoww rounded-2xl p-0">
             <div>
               <div class="calcseccardsdiv mt-5">
                 <div class="calcspace">
@@ -45,7 +45,7 @@
                       }"
                     >
                       <SwiperSlide class="h-100">
-                        <div class="m-4 text-center pt-6 h-100">
+                        <div class="m-4 text-center h-100">
                           <div class="calccardspacemini0">
                             <a
                               href=""
@@ -59,7 +59,7 @@
                               />
                             </a>
                             <div class="lablediv mt-2 text-center">
-                              <p class="text-sm">Interior</p>
+                              <p class="text-sm">Roof ( Terrace)</p>
                             </div>
                           </div>
                           <!-- <div
@@ -69,7 +69,7 @@
                         </div>
                       </SwiperSlide>
                       <SwiperSlide class="h-100">
-                        <div class="m-4 text-center pt-6 h-100">
+                        <div class="m-4 text-center h-100">
                           <div class="calccardspacemini0">
                             <a
                               href=""
@@ -83,7 +83,7 @@
                               />
                             </a>
                             <div class="lablediv mt-2 text-center">
-                              <p class="text-sm">Interior</p>
+                              <p class="text-sm">Bathrooms</p>
                             </div>
                           </div>
                           <!-- <div
@@ -93,7 +93,7 @@
                         </div>
                       </SwiperSlide>
                       <SwiperSlide class="h-100">
-                        <div class="m-4 text-center pt-6 h-100">
+                        <div class="m-4 text-center h-100">
                           <div class="calccardspacemini0">
                             <a
                               href=""
@@ -107,7 +107,7 @@
                               />
                             </a>
                             <div class="lablediv mt-2 text-center">
-                              <p class="text-sm">Interior</p>
+                              <p class="text-sm">Internal Walls</p>
                             </div>
                           </div>
                           <!-- <div
@@ -117,7 +117,7 @@
                         </div>
                       </SwiperSlide>
                       <SwiperSlide class="h-100">
-                        <div class="m-4 text-center pt-6 h-100">
+                        <div class="m-4 text-center h-100">
                           <div class="calccardspacemini0">
                             <a
                               href=""
@@ -131,7 +131,7 @@
                               />
                             </a>
                             <div class="lablediv mt-2 text-center">
-                              <p class="text-sm">Interior</p>
+                              <p class="text-sm">External Walls</p>
                             </div>
                           </div>
                           <!-- <div
@@ -141,7 +141,7 @@
                         </div>
                       </SwiperSlide>
                       <SwiperSlide class="h-100">
-                        <div class="m-4 text-center pt-6 h-100">
+                        <div class="m-4 text-center h-100">
                           <div class="calccardspacemini0">
                             <a
                               href=""
@@ -155,7 +155,7 @@
                               />
                             </a>
                             <div class="lablediv mt-2 text-center">
-                              <p class="text-sm">Interior</p>
+                              <p class="text-sm">External Walls</p>
                             </div>
                           </div>
                           <!-- <div
@@ -163,23 +163,23 @@
                           >
                           </div> -->
                         </div>
-                      </SwiperSlide>
+                      </SwiperSlide> 
                       <SwiperSlide class="h-100">
-                        <div class="m-4 text-center pt-6 h-100">
+                        <div class="m-4 text-center h-100">
                           <div class="calccardspacemini0">
                             <a
                               href=""
                               class="imgcalcdiv align-center bg-gray-300 flex justify-center p-4 rounded-md"
                             >
                               <img
-                                src="assets/images/calculator/icn1.png"
+                                src="assets/images/calculator/icn4.png"
                                 alt="Interior Painting"
                                 width=""
                                 class="br-16 max-w-full h-auto"
                               />
                             </a>
                             <div class="lablediv mt-2 text-center">
-                              <p class="text-sm">Interior</p>
+                              <p class="text-sm">External Walls</p>
                             </div>
                           </div>
                           <!-- <div

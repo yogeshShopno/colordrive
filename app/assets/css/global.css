@@ -1548,3 +1548,7 @@ select option:hover {
     flex-basis: 45vw;
   }
 }
+
+.calccardtitle {
+  text-transform: capitalize;
+}
