@@ -4,7 +4,7 @@
   <!-- service Post section start -->
   <section id="service-post" class="mt-50px px-4 px-md-0">
     <div class="container mx-auto">
-      <div class="max-w-4xl mx-auto">
+      <div class="max-w-full mx-auto">
         <div class="firstsecdiv">
           <div class="cal3main">
             <div>
@@ -12,19 +12,19 @@
                 <div class="calcspace">
                   <div class="calccardspacemini">
                     <div class="flex sm:flex-row flex-col  gap-4">
-                      <div class="basis-[55vw]">
+                      <div class="basis-1/2">
                         <div class="calccardspacemini00 sticky top-32">
                           <div class="imgcalcdiv align-center rounded-md">
                             <img
                               src="assets/images/calculator/cal3.png"
                               alt="Interior Painting"
                               width=""
-                              class="br-16 max-w-full object-contain"
+                              class="br-16 max-w-full w-full object-contain"
                             />
                           </div>
                         </div>
                       </div>
-                      <div class="basis-[45vw]">
+                      <div class="basis-1/2">
                         <div
                           class="calccardspacemini0 faqcustshadow p-4 rounded-lg"
                         >
