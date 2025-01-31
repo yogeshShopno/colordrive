@@ -1452,6 +1452,17 @@ video {
     color: #FC2F93;
   }
 }
+.btn-pink-o {
+  background-color: #fff !important;
+  color: #FC2F93 !important;
+  border: 1px solid #FC2F93 !important;
+  transition: all .3s ease;
+
+  &:hover {
+    background-color: #FC2F93 !important;
+    color: #fff !important;
+  }
+}
 
 .btn-rounded {
   border-radius: 100px;
@@ -1623,4 +1634,62 @@ select option:hover {
 
 .border-pink{
   border: 1px solid #fc2f93 !important;
+}  
+
+.w-640px{
+  width: 640px;
+
+}
+
+/* Change default dot color */
+.swiper-pagination-bullet {
+  background-color: #ffffff !important; /* Change to your preferred color */
+  /* opacity: 0.9; */
+}
+
+/* Change active dot color */
+.swiper-pagination-bullet-active {
+  background-color: #fc2f93 !important; /* Change to your preferred active color */
+  opacity: 1;
+}
+
+.modalpopupproduct{
+  .imgcalcdivv{
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+}
+
+.prodcardsliderpopup .row-span-612 {
+  border: 1px solid #ddd !important;
+  border-radius: .8rem;
+  overflow: hidden;
+}
+
+.max-height-90vh {
+  max-height: 90vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fc2f93;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fc2f93;
+}
+
+.maxhdiv{
+  max-height: 300px;
 }
