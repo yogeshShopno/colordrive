@@ -1672,6 +1672,7 @@ select option:hover {
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
+  height: 7px;
 }
 
 /* Track */
@@ -1692,4 +1693,10 @@ select option:hover {
 
 .maxhdiv{
   max-height: 300px;
+}
+
+.recentworkslider{
+  .imgcalcdivv.relative.border-none img {
+    filter: brightness(0.8);
+}
 }

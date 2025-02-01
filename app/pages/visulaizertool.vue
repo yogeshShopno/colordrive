@@ -29,211 +29,213 @@
                             <div class="calcseccardsdiv">
                                 <div class="calcspace">
                                     <div class="calccardspacemini">
-                                        <div class="flex sm:flex-row flex-col gap-4">
-                                            <div class="basis-1/3">
-                                                <div class="colorfilterdiv mt-8 overflow-x-auto mb-5">
-                                                    <div
-                                                        class="flex space-x-5 items-center justify-start md:justify-center px-4">
-                                                        <!-- Color Option -->
-                                                        <div class="flex flex-col items-center">
-                                                            <div
-                                                                class="w-10 h-10 rounded-full bg-pink-500 hover:shadow-md">
+                                        <div class="flex lg:flex-row flex-col gap-4">
+                                            <div class="basis-3/3 lg:basis-1/3">
+                                                <div class="flex gap-3 flex-col">
+                                                    <div class="colorfilterdiv mt-8 overflow-x-auto mb-5">
+                                                        <div
+                                                            class="flex space-x-5 items-center justify-start md:justify-center px-4">
+                                                            <!-- Color Option -->
+                                                            <div class="flex flex-col items-center">
+                                                                <div
+                                                                    class="w-10 h-10 rounded-full bg-pink-500 hover:shadow-md">
+                                                                </div>
+                                                                <span class="text-sm text-gray-900 mt-2">All</span>
                                                             </div>
-                                                            <span class="text-sm text-gray-900 mt-2">All</span>
-                                                        </div>
-
-                                                        <!-- Red -->
-                                                        <div class="flex flex-col items-center">
-                                                            <div
-                                                                class="w-10 h-10 rounded-full bg-red-600 hover:shadow-md">
+    
+                                                            <!-- Red -->
+                                                            <div class="flex flex-col items-center">
+                                                                <div
+                                                                    class="w-10 h-10 rounded-full bg-red-600 hover:shadow-md">
+                                                                </div>
+                                                                <span class="text-sm text-gray-900 mt-2">Red</span>
                                                             </div>
-                                                            <span class="text-sm text-gray-900 mt-2">Red</span>
-                                                        </div>
-
-                                                        <!-- Green -->
-                                                        <div class="flex flex-col items-center">
-                                                            <div
-                                                                class="w-10 h-10 rounded-full bg-green-600 hover:shadow-md">
+    
+                                                            <!-- Green -->
+                                                            <div class="flex flex-col items-center">
+                                                                <div
+                                                                    class="w-10 h-10 rounded-full bg-green-600 hover:shadow-md">
+                                                                </div>
+                                                                <span class="text-sm text-gray-900 mt-2">Green</span>
                                                             </div>
-                                                            <span class="text-sm text-gray-900 mt-2">Green</span>
-                                                        </div>
-
-                                                        <!-- Blue -->
-                                                        <div class="flex flex-col items-center">
-                                                            <div
-                                                                class="w-10 h-10 rounded-full bg-blue-400 hover:shadow-md">
+    
+                                                            <!-- Blue -->
+                                                            <div class="flex flex-col items-center">
+                                                                <div
+                                                                    class="w-10 h-10 rounded-full bg-blue-400 hover:shadow-md">
+                                                                </div>
+                                                                <span class="text-sm text-gray-900 mt-2">Blue</span>
                                                             </div>
-                                                            <span class="text-sm text-gray-900 mt-2">Blue</span>
-                                                        </div>
-
-                                                        <!-- Pastel -->
-                                                        <div class="flex flex-col items-center">
-                                                            <div
-                                                                class="w-10 h-10 rounded-full bg-rose-200 hover:shadow-md">
+    
+                                                            <!-- Pastel -->
+                                                            <div class="flex flex-col items-center">
+                                                                <div
+                                                                    class="w-10 h-10 rounded-full bg-rose-200 hover:shadow-md">
+                                                                </div>
+                                                                <span class="text-sm text-gray-900 mt-2">Pastel</span>
                                                             </div>
-                                                            <span class="text-sm text-gray-900 mt-2">Pastel</span>
-                                                        </div>
-
-                                                        <!-- Yellow -->
-                                                        <div class="flex flex-col items-center">
-                                                            <div
-                                                                class="w-10 h-10 rounded-full bg-yellow-400 hover:shadow-md">
+    
+                                                            <!-- Yellow -->
+                                                            <div class="flex flex-col items-center">
+                                                                <div
+                                                                    class="w-10 h-10 rounded-full bg-yellow-400 hover:shadow-md">
+                                                                </div>
+                                                                <span class="text-sm text-gray-900 mt-2">Yellow</span>
                                                             </div>
-                                                            <span class="text-sm text-gray-900 mt-2">Yellow</span>
-                                                        </div>
-
-                                                        <!-- Gray -->
-                                                        <div class="flex flex-col items-center">
-                                                            <div
-                                                                class="w-10 h-10 rounded-full bg-gray-400 hover:shadow-md">
+    
+                                                            <!-- Gray -->
+                                                            <div class="flex flex-col items-center">
+                                                                <div
+                                                                    class="w-10 h-10 rounded-full bg-gray-400 hover:shadow-md">
+                                                                </div>
+                                                                <span class="text-sm text-gray-900 mt-2">Gray</span>
                                                             </div>
-                                                            <span class="text-sm text-gray-900 mt-2">Gray</span>
-                                                        </div>
-
-                                                        <!-- Purple -->
-                                                        <div class="flex flex-col items-center">
-                                                            <div
-                                                                class="w-10 h-10 rounded-full bg-purple-500 hover:shadow-md">
+    
+                                                            <!-- Purple -->
+                                                            <div class="flex flex-col items-center">
+                                                                <div
+                                                                    class="w-10 h-10 rounded-full bg-purple-500 hover:shadow-md">
+                                                                </div>
+                                                                <span class="text-sm text-gray-900 mt-2">Purple</span>
                                                             </div>
-                                                            <span class="text-sm text-gray-900 mt-2">Purple</span>
-                                                        </div>
-
-                                                        <!-- Brown -->
-                                                        <div class="flex flex-col items-center">
-                                                            <div
-                                                                class="w-10 h-10 rounded-full bg-amber-900 hover:shadow-md">
+    
+                                                            <!-- Brown -->
+                                                            <div class="flex flex-col items-center">
+                                                                <div
+                                                                    class="w-10 h-10 rounded-full bg-amber-900 hover:shadow-md">
+                                                                </div>
+                                                                <span class="text-sm text-gray-900 mt-2">Brown</span>
                                                             </div>
-                                                            <span class="text-sm text-gray-900 mt-2">Brown</span>
+    
                                                         </div>
-
                                                     </div>
-                                                </div>
-                                                <div class="calccardspacemini0 faqcustshadow p-4 rounded-lg">
-                                                    <div class="calccardtitle mb-3">
-                                                        <p class="font-semibold text-xl text-center">Select colour
-                                                            shades from Red colour pallet & see demo on walls</p>
-                                                    </div>
-                                                    <div class="cal3fordiv colosselectgdiv">
-                                                        <div class="maxhdiv overflow-y-auto">
-                                                            <div class="grid grid-cols-5 gap-4 mb-3">
-                                                                <div class="colordivcards text-center overflow-hidden">
-                                                                    <img src="assets/images/calculator/colorcard.png"
-                                                                        alt=""
-                                                                        class="img-fluid rounded-2xl w-full mb-1">
-                                                                    <h6 class="text-sm font-semibold">Rich Rouge</h6>
-                                                                    <p class="text-xs text-gray-500">8101</p>
-                                                                </div>
-                                                                <div class="colordivcards text-center overflow-hidden">
-                                                                    <img src="assets/images/calculator/colorcard.png"
-                                                                        alt=""
-                                                                        class="img-fluid rounded-2xl w-full mb-1">
-                                                                    <h6 class="text-sm font-semibold">Rich Rouge</h6>
-                                                                    <p class="text-xs text-gray-500">8101</p>
-                                                                </div>
-                                                                <div class="colordivcards text-center overflow-hidden">
-                                                                    <img src="assets/images/calculator/colorcard.png"
-                                                                        alt=""
-                                                                        class="img-fluid rounded-2xl w-full mb-1">
-                                                                    <h6 class="text-sm font-semibold">Rich Rouge</h6>
-                                                                    <p class="text-xs text-gray-500">8101</p>
-                                                                </div>
-                                                                <div class="colordivcards text-center overflow-hidden">
-                                                                    <img src="assets/images/calculator/colorcard.png"
-                                                                        alt=""
-                                                                        class="img-fluid rounded-2xl w-full mb-1">
-                                                                    <h6 class="text-sm font-semibold">Rich Rouge</h6>
-                                                                    <p class="text-xs text-gray-500">8101</p>
-                                                                </div>
-                                                                <div class="colordivcards text-center overflow-hidden">
-                                                                    <img src="assets/images/calculator/colorcard.png"
-                                                                        alt=""
-                                                                        class="img-fluid rounded-2xl w-full mb-1">
-                                                                    <h6 class="text-sm font-semibold">Rich Rouge</h6>
-                                                                    <p class="text-xs text-gray-500">8101</p>
-                                                                </div>
-                                                                <div class="colordivcards text-center overflow-hidden">
-                                                                    <img src="assets/images/calculator/colorcard.png"
-                                                                        alt=""
-                                                                        class="img-fluid rounded-2xl w-full mb-1">
-                                                                    <h6 class="text-sm font-semibold">Rich Rouge</h6>
-                                                                    <p class="text-xs text-gray-500">8101</p>
-                                                                </div>
-                                                                <div class="colordivcards text-center overflow-hidden">
-                                                                    <img src="assets/images/calculator/colorcard.png"
-                                                                        alt=""
-                                                                        class="img-fluid rounded-2xl w-full mb-1">
-                                                                    <h6 class="text-sm font-semibold">Rich Rouge</h6>
-                                                                    <p class="text-xs text-gray-500">8101</p>
-                                                                </div>
-                                                                <div class="colordivcards text-center overflow-hidden">
-                                                                    <img src="assets/images/calculator/colorcard.png"
-                                                                        alt=""
-                                                                        class="img-fluid rounded-2xl w-full mb-1">
-                                                                    <h6 class="text-sm font-semibold">Rich Rouge</h6>
-                                                                    <p class="text-xs text-gray-500">8101</p>
-                                                                </div>
-                                                                <div class="colordivcards text-center overflow-hidden">
-                                                                    <img src="assets/images/calculator/colorcard.png"
-                                                                        alt=""
-                                                                        class="img-fluid rounded-2xl w-full mb-1">
-                                                                    <h6 class="text-sm font-semibold">Rich Rouge</h6>
-                                                                    <p class="text-xs text-gray-500">8101</p>
-                                                                </div>
-                                                                <div class="colordivcards text-center overflow-hidden">
-                                                                    <img src="assets/images/calculator/colorcard.png"
-                                                                        alt=""
-                                                                        class="img-fluid rounded-2xl w-full mb-1">
-                                                                    <h6 class="text-sm font-semibold">Rich Rouge</h6>
-                                                                    <p class="text-xs text-gray-500">8101</p>
-                                                                </div>
-                                                                <div class="colordivcards text-center overflow-hidden">
-                                                                    <img src="assets/images/calculator/colorcard.png"
-                                                                        alt=""
-                                                                        class="img-fluid rounded-2xl w-full mb-1">
-                                                                    <h6 class="text-sm font-semibold">Rich Rouge</h6>
-                                                                    <p class="text-xs text-gray-500">8101</p>
-                                                                </div>
-                                                                <div class="colordivcards text-center overflow-hidden">
-                                                                    <img src="assets/images/calculator/colorcard.png"
-                                                                        alt=""
-                                                                        class="img-fluid rounded-2xl w-full mb-1">
-                                                                    <h6 class="text-sm font-semibold">Rich Rouge</h6>
-                                                                    <p class="text-xs text-gray-500">8101</p>
-                                                                </div>
-                                                                <div class="colordivcards text-center overflow-hidden">
-                                                                    <img src="assets/images/calculator/colorcard.png"
-                                                                        alt=""
-                                                                        class="img-fluid rounded-2xl w-full mb-1">
-                                                                    <h6 class="text-sm font-semibold">Rich Rouge</h6>
-                                                                    <p class="text-xs text-gray-500">8101</p>
-                                                                </div>
-                                                                <div class="colordivcards text-center overflow-hidden">
-                                                                    <img src="assets/images/calculator/colorcard.png"
-                                                                        alt=""
-                                                                        class="img-fluid rounded-2xl w-full mb-1">
-                                                                    <h6 class="text-sm font-semibold">Rich Rouge</h6>
-                                                                    <p class="text-xs text-gray-500">8101</p>
-                                                                </div>
-                                                                <div class="colordivcards text-center overflow-hidden">
-                                                                    <img src="assets/images/calculator/colorcard.png"
-                                                                        alt=""
-                                                                        class="img-fluid rounded-2xl w-full mb-1">
-                                                                    <h6 class="text-sm font-semibold">Rich Rouge</h6>
-                                                                    <p class="text-xs text-gray-500">8101</p>
-                                                                </div>
-                                                                <div class="colordivcards text-center overflow-hidden">
-                                                                    <img src="assets/images/calculator/colorcard.png"
-                                                                        alt=""
-                                                                        class="img-fluid rounded-2xl w-full mb-1">
-                                                                    <h6 class="text-sm font-semibold">Rich Rouge</h6>
-                                                                    <p class="text-xs text-gray-500">8101</p>
+                                                    <div class="calccardspacemini0 faqcustshadow p-4 rounded-lg">
+                                                        <div class="calccardtitle mb-3">
+                                                            <p class="font-semibold text-xl text-center">Select colour
+                                                                shades from Red colour pallet & see demo on walls</p>
+                                                        </div>
+                                                        <div class="cal3fordiv colosselectgdiv">
+                                                            <div class="maxhdiv overflow-y-auto">
+                                                                <div class="grid grid-cols-5 gap-4 mb-3">
+                                                                    <div class="colordivcards text-center overflow-hidden">
+                                                                        <img src="assets/images/calculator/colorcard.png"
+                                                                            alt=""
+                                                                            class="img-fluid rounded-2xl w-full mb-1">
+                                                                        <h6 class="text-sm font-semibold">Rich Rouge</h6>
+                                                                        <p class="text-xs text-gray-500">8101</p>
+                                                                    </div>
+                                                                    <div class="colordivcards text-center overflow-hidden">
+                                                                        <img src="assets/images/calculator/colorcard.png"
+                                                                            alt=""
+                                                                            class="img-fluid rounded-2xl w-full mb-1">
+                                                                        <h6 class="text-sm font-semibold">Rich Rouge</h6>
+                                                                        <p class="text-xs text-gray-500">8101</p>
+                                                                    </div>
+                                                                    <div class="colordivcards text-center overflow-hidden">
+                                                                        <img src="assets/images/calculator/colorcard.png"
+                                                                            alt=""
+                                                                            class="img-fluid rounded-2xl w-full mb-1">
+                                                                        <h6 class="text-sm font-semibold">Rich Rouge</h6>
+                                                                        <p class="text-xs text-gray-500">8101</p>
+                                                                    </div>
+                                                                    <div class="colordivcards text-center overflow-hidden">
+                                                                        <img src="assets/images/calculator/colorcard.png"
+                                                                            alt=""
+                                                                            class="img-fluid rounded-2xl w-full mb-1">
+                                                                        <h6 class="text-sm font-semibold">Rich Rouge</h6>
+                                                                        <p class="text-xs text-gray-500">8101</p>
+                                                                    </div>
+                                                                    <div class="colordivcards text-center overflow-hidden">
+                                                                        <img src="assets/images/calculator/colorcard.png"
+                                                                            alt=""
+                                                                            class="img-fluid rounded-2xl w-full mb-1">
+                                                                        <h6 class="text-sm font-semibold">Rich Rouge</h6>
+                                                                        <p class="text-xs text-gray-500">8101</p>
+                                                                    </div>
+                                                                    <div class="colordivcards text-center overflow-hidden">
+                                                                        <img src="assets/images/calculator/colorcard.png"
+                                                                            alt=""
+                                                                            class="img-fluid rounded-2xl w-full mb-1">
+                                                                        <h6 class="text-sm font-semibold">Rich Rouge</h6>
+                                                                        <p class="text-xs text-gray-500">8101</p>
+                                                                    </div>
+                                                                    <div class="colordivcards text-center overflow-hidden">
+                                                                        <img src="assets/images/calculator/colorcard.png"
+                                                                            alt=""
+                                                                            class="img-fluid rounded-2xl w-full mb-1">
+                                                                        <h6 class="text-sm font-semibold">Rich Rouge</h6>
+                                                                        <p class="text-xs text-gray-500">8101</p>
+                                                                    </div>
+                                                                    <div class="colordivcards text-center overflow-hidden">
+                                                                        <img src="assets/images/calculator/colorcard.png"
+                                                                            alt=""
+                                                                            class="img-fluid rounded-2xl w-full mb-1">
+                                                                        <h6 class="text-sm font-semibold">Rich Rouge</h6>
+                                                                        <p class="text-xs text-gray-500">8101</p>
+                                                                    </div>
+                                                                    <div class="colordivcards text-center overflow-hidden">
+                                                                        <img src="assets/images/calculator/colorcard.png"
+                                                                            alt=""
+                                                                            class="img-fluid rounded-2xl w-full mb-1">
+                                                                        <h6 class="text-sm font-semibold">Rich Rouge</h6>
+                                                                        <p class="text-xs text-gray-500">8101</p>
+                                                                    </div>
+                                                                    <div class="colordivcards text-center overflow-hidden">
+                                                                        <img src="assets/images/calculator/colorcard.png"
+                                                                            alt=""
+                                                                            class="img-fluid rounded-2xl w-full mb-1">
+                                                                        <h6 class="text-sm font-semibold">Rich Rouge</h6>
+                                                                        <p class="text-xs text-gray-500">8101</p>
+                                                                    </div>
+                                                                    <div class="colordivcards text-center overflow-hidden">
+                                                                        <img src="assets/images/calculator/colorcard.png"
+                                                                            alt=""
+                                                                            class="img-fluid rounded-2xl w-full mb-1">
+                                                                        <h6 class="text-sm font-semibold">Rich Rouge</h6>
+                                                                        <p class="text-xs text-gray-500">8101</p>
+                                                                    </div>
+                                                                    <div class="colordivcards text-center overflow-hidden">
+                                                                        <img src="assets/images/calculator/colorcard.png"
+                                                                            alt=""
+                                                                            class="img-fluid rounded-2xl w-full mb-1">
+                                                                        <h6 class="text-sm font-semibold">Rich Rouge</h6>
+                                                                        <p class="text-xs text-gray-500">8101</p>
+                                                                    </div>
+                                                                    <div class="colordivcards text-center overflow-hidden">
+                                                                        <img src="assets/images/calculator/colorcard.png"
+                                                                            alt=""
+                                                                            class="img-fluid rounded-2xl w-full mb-1">
+                                                                        <h6 class="text-sm font-semibold">Rich Rouge</h6>
+                                                                        <p class="text-xs text-gray-500">8101</p>
+                                                                    </div>
+                                                                    <div class="colordivcards text-center overflow-hidden">
+                                                                        <img src="assets/images/calculator/colorcard.png"
+                                                                            alt=""
+                                                                            class="img-fluid rounded-2xl w-full mb-1">
+                                                                        <h6 class="text-sm font-semibold">Rich Rouge</h6>
+                                                                        <p class="text-xs text-gray-500">8101</p>
+                                                                    </div>
+                                                                    <div class="colordivcards text-center overflow-hidden">
+                                                                        <img src="assets/images/calculator/colorcard.png"
+                                                                            alt=""
+                                                                            class="img-fluid rounded-2xl w-full mb-1">
+                                                                        <h6 class="text-sm font-semibold">Rich Rouge</h6>
+                                                                        <p class="text-xs text-gray-500">8101</p>
+                                                                    </div>
+                                                                    <div class="colordivcards text-center overflow-hidden">
+                                                                        <img src="assets/images/calculator/colorcard.png"
+                                                                            alt=""
+                                                                            class="img-fluid rounded-2xl w-full mb-1">
+                                                                        <h6 class="text-sm font-semibold">Rich Rouge</h6>
+                                                                        <p class="text-xs text-gray-500">8101</p>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="viewmorediv mt-5 text-center">
-                                                            <button
-                                                                class="m-0 px-2 sm:px-5 py-2.5 main-btn before:ease relative overflow-hidden text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-pink-500 hover:before:-translate-x-40 rounded-full">View
-                                                                All Colours</button>
+                                                            <div class="viewmorediv mt-5 text-center">
+                                                                <button
+                                                                    class="m-0 px-2 sm:px-5 py-2.5 main-btn before:ease relative overflow-hidden text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-pink-500 hover:before:-translate-x-40 rounded-full">View
+                                                                    All Colours</button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -261,30 +263,30 @@
                                                     </div>
                                                     <div class="tabcontdiv mb-4">
                                                         <div
-                                                            class="calccardspacemini sliderdiv justify-center overflow-x-auto flex flex-row flex-nowrap gap-2 text1">
+                                                            class="calccardspacemini sliderdiv justify-center grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-4 md:grid-cols-4 grid-cols-2 gap-2 text1">
                                                             <div class="calccardspacemini00">
                                                                 <button
-                                                                    class="btn btn-rounded btn-pink text-center px-3 py-2">View
+                                                                    class="btn btn-rounded w-full btn-pink whitespace-nowrap text-center px-3 py-2">View
                                                                     All Colours</button>
                                                             </div>
                                                             <div class="calccardspacemini00">
                                                                 <button
-                                                                    class="btn btn-rounded btn-pink-o text-center px-3 py-2">View
+                                                                    class="btn btn-rounded w-full btn-pink-o whitespace-nowrap text-center px-3 py-2">View
                                                                     All Colours</button>
                                                             </div>
                                                             <div class="calccardspacemini00">
                                                                 <button
-                                                                    class="btn btn-rounded btn-pink-o text-center px-3 py-2">View
+                                                                    class="btn btn-rounded w-full btn-pink-o whitespace-nowrap text-center px-3 py-2">View
                                                                     All Colours</button>
                                                             </div>
                                                             <div class="calccardspacemini00">
                                                                 <button
-                                                                    class="btn btn-rounded btn-pink-o text-center px-3 py-2">View
+                                                                    class="btn btn-rounded w-full btn-pink-o whitespace-nowrap text-center px-3 py-2">View
                                                                     All Colours</button>
                                                             </div>
                                                             <div class="calccardspacemini00">
                                                                 <button
-                                                                    class="btn btn-rounded btn-pink-o text-center px-3 py-2">View
+                                                                    class="btn btn-rounded w-full btn-pink-o whitespace-nowrap text-center px-3 py-2">View
                                                                     All Colours</button>
                                                             </div>
                                                         </div>
@@ -307,39 +309,39 @@
                                     <div class="shadesdivcontdiv mt-8">
                                         <div class="tabcontdiv mb-4">
                                             <div
-                                                class="calccardspacemini sliderdiv justify-center flex flex-row gap-2 text1">
-                                                <div class="calccardspacemini00">
+                                                class="calccardspacemini sliderdiv justify-start flex flex-row gap-2 text1 overflow-x-auto pb-1">
+                                                <div class="calccardspacemini00 whitespace-nowrap">
                                                     <button class="btn rounded-lg btn-pink text-center px-3 py-2">Asian
                                                         Shades</button>
                                                 </div>
-                                                <div class="calccardspacemini00">
+                                                <div class="calccardspacemini00 whitespace-nowrap">
                                                     <button
                                                         class="btn rounded-lg btn-pink-o text-center px-3 py-2">Asian
                                                         Shades</button>
                                                 </div>
-                                                <div class="calccardspacemini00">
+                                                <div class="calccardspacemini00 whitespace-nowrap">
                                                     <button
                                                         class="btn rounded-lg btn-pink-o text-center px-3 py-2">Asian
                                                         Shades</button>
                                                 </div>
-                                                <div class="calccardspacemini00">
+                                                <div class="calccardspacemini00 whitespace-nowrap">
                                                     <button
                                                         class="btn rounded-lg btn-pink-o text-center px-3 py-2">Asian
                                                         Shades</button>
                                                 </div>
-                                                <div class="calccardspacemini00">
+                                                <div class="calccardspacemini00 whitespace-nowrap">
                                                     <button class="btn rounded-lg btn-pink-o text-center px-3 py-2">View
                                                         All Colours</button>
                                                 </div>
-                                                <div class="calccardspacemini00">
+                                                <div class="calccardspacemini00 whitespace-nowrap">
                                                     <button class="btn rounded-lg btn-pink-o text-center px-3 py-2">View
                                                         All Colours</button>
                                                 </div>
-                                                <div class="calccardspacemini00">
+                                                <div class="calccardspacemini00 whitespace-nowrap">
                                                     <button class="btn rounded-lg btn-pink-o text-center px-3 py-2">View
                                                         All Colours</button>
                                                 </div>
-                                                <div class="calccardspacemini00">
+                                                <div class="calccardspacemini00 whitespace-nowrap">
                                                     <button class="btn rounded-lg btn-pink-o text-center px-3 py-2">View
                                                         All Colours</button>
                                                 </div>
@@ -442,7 +444,7 @@
                                         <div class="getqtformdiv">
                                             <form action="">
                                                 <div class="cal3fordiv0 capitalize">
-                                                    <div class="mt-3 grid grid-cols-3 gap-4"> 
+                                                    <div class="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-4"> 
                                                         <div class=" mb-3">
                                                             <label for="first-name"
                                                                 class="block text-sm/6 font-medium text-gray-900">Email</label>
