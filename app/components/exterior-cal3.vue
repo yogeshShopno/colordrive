@@ -1,4 +1,19 @@
-<script setup></script>
+<script setup>
+  import { toast } from "vue3-toastify";  // Correct import
+  import "vue3-toastify/dist/index.css";
+  
+  // Method to handle form submission and show toast notification
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent default form submission
+  
+    // Show toast notification after clicking the button
+    toast.success("Booking successfully submitted!", {
+      position: "top-right",
+      autoClose: 3000, // Closes after 3 seconds
+      theme: "light",
+    });
+  };
+  </script>
 
 <template>
   <!-- service Post section start -->
@@ -200,7 +215,7 @@
                                             aria-describedby="offers-description"
                                             name="offers"
                                             type="checkbox"
-                                            class="col-start-1 row-start-1 appearance-none rounded border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
+                                            class="col-start-1 row-start-1 appearance-none rounded border border-gray-300 bg-white checked:border-pink-600 checked:bg-pink-600 indeterminate:border-pink-600 indeterminate:bg-pink-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
                                           />
                                           <svg
                                             class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-[:disabled]:stroke-gray-950/25"
@@ -239,7 +254,8 @@
                                   >
                                     <button
                                       type="submit"
-                                      class="rounded-md btn-pink w-full px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                      @click="handleSubmit"
+                                      class="rounded-md btn-pink w-full px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600"
                                     >
                                       Book Now
                                     </button>

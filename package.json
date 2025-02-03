@@ -19,7 +19,10 @@
     "nuxt-swiper": "^1.2.2",
     "pnpm": "^9.12.2",
     "swiper": "^11.0.0",
-    "vue": "^3.4.38"
+    "tippy.js": "^6.3.7",
+    "toastify-js": "^1.12.0",
+    "vue": "^3.4.38",
+    "vue3-toastify": "^0.2.8"
   },
   "devDependencies": {
     "@types/node": "^22.5.0",

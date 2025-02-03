@@ -1,4 +1,19 @@
-<script setup></script>
+<script setup>
+  import { toast } from "vue3-toastify";  // Correct import
+  import "vue3-toastify/dist/index.css";
+  
+  // Method to handle form submission and show toast notification
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent default form submission
+  
+    // Show toast notification after clicking the button
+    toast.success("Booking successfully submitted!", {
+      position: "top-right",  
+      autoClose: 3000, // Closes after 3 seconds
+      theme: "light",
+    });
+  };
+  </script>
 
 <template>
   <!-- service Post section start -->
@@ -239,6 +254,7 @@
                                   >
                                     <button
                                       type="submit"
+                                      @click="handleSubmit"
                                       class="rounded-md btn-pink w-full px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600"
                                     >
                                       Book Now

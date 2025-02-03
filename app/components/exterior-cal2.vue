@@ -1,18 +1,120 @@
 <script>
-export default {
-  methods: {
-    toggleSection() {
-      const checkbox = document.getElementById("toggle-checkbox");
-      const section = document.getElementById("toggle-section");
-      if (checkbox.checked) {
-        section.classList.remove("hidden"); // Show the section
-      } else {
-        section.classList.add("hidden"); // Hide the section
-      }
+  import tippy from 'tippy.js';
+  import 'tippy.js/dist/tippy.css';
+
+  export default {
+
+    data() {
+      return {
+        products: [
+          {
+            name: "Tractor Suprem Emulsion",
+            price: "₹ 9.5 / SqFt",
+            image: "assets/images/calculator/paintbucket.png",
+            tooltip: "Finishing : Matte<br>Washability : Non-Washable<br>Durability : 3-4 Years<br>VoC Content: Low<br>USP : Economical - Easy to paint<br>Unit Rate : ₹ 10/SqFt<br>Standard Total Cost : ₹ 24330/-",
+          },
+          {
+            name: "Tractor Suprem Emulsion",
+            price: "₹ 15 / SqFt",
+            image: "assets/images/calculator/paintbucket.png",
+            tooltip: "Finishing : Matte<br>Washability : Non-Washable<br>Durability : 3-4 Years<br>VoC Content: Low<br>USP : Economical - Easy to paint<br>Unit Rate : ₹ 10/SqFt<br>Standard Total Cost : ₹ 24330/-",
+          },
+          {
+            name: "Tractor Suprem Emulsion",
+            price: "₹ 12 / SqFt",
+            image: "assets/images/calculator/paintbucket.png",
+            tooltip: "Finishing : Matte<br>Washability : Non-Washable<br>Durability : 3-4 Years<br>VoC Content: Low<br>USP : Economical - Easy to paint<br>Unit Rate : ₹ 10/SqFt<br>Standard Total Cost : ₹ 24330/-",
+          },
+          {
+            name: "Tractor Suprem Emulsion",
+            price: "₹ 9.5 / SqFt",
+            image: "assets/images/calculator/paintbucket.png",
+            tooltip: "Finishing : Matte<br>Washability : Non-Washable<br>Durability : 3-4 Years<br>VoC Content: Low<br>USP : Economical - Easy to paint<br>Unit Rate : ₹ 10/SqFt<br>Standard Total Cost : ₹ 24330/-",
+          },
+          {
+            name: "Tractor Suprem Emulsion",
+            price: "₹ 15 / SqFt",
+            image: "assets/images/calculator/paintbucket.png",
+            tooltip: "Finishing : Matte<br>Washability : Non-Washable<br>Durability : 3-4 Years<br>VoC Content: Low<br>USP : Economical - Easy to paint<br>Unit Rate : ₹ 10/SqFt<br>Standard Total Cost : ₹ 24330/-",
+          },
+          {
+            name: "Tractor Suprem Emulsion",
+            price: "₹ 12 / SqFt",
+            image: "assets/images/calculator/paintbucket.png",
+            tooltip: "Finishing : Matte<br>Washability : Non-Washable<br>Durability : 3-4 Years<br>VoC Content: Low<br>USP : Economical - Easy to paint<br>Unit Rate : ₹ 10/SqFt<br>Standard Total Cost : ₹ 24330/-",
+          },
+          {
+            name: "Tractor Suprem Emulsion",
+            price: "₹ 15 / SqFt",
+            image: "assets/images/calculator/paintbucket.png",
+            tooltip: "Finishing : Matte<br>Washability : Non-Washable<br>Durability : 3-4 Years<br>VoC Content: Low<br>USP : Economical - Easy to paint<br>Unit Rate : ₹ 10/SqFt<br>Standard Total Cost : ₹ 24330/-",
+          },
+          {
+            name: "Tractor Suprem Emulsion",
+            price: "₹ 12 / SqFt",
+            image: "assets/images/calculator/paintbucket.png",
+            tooltip: "Finishing : Matte<br>Washability : Non-Washable<br>Durability : 3-4 Years<br>VoC Content: Low<br>USP : Economical - Easy to paint<br>Unit Rate : ₹ 10/SqFt<br>Standard Total Cost : ₹ 24330/-",
+          },
+        ],
+      };
     },
-  },
-};
+    mounted() {
+      this.$nextTick(() => {
+        if (this.$refs.tooltipTargets) {
+          this.$refs.tooltipTargets.forEach((el) => {
+            tippy(el, {
+              content: el.getAttribute("data-tippy-content"),
+              placement: "top",
+              allowHTML: true,
+              theme: "custom",
+            });
+          });
+        }
+      });
+    },
+    methods: {
+      toggleSection() {
+        const checkbox = document.getElementById("toggle-checkbox");
+        const section = document.getElementById("toggle-section");
+        if (checkbox.checked) {
+          section.classList.remove("hidden"); // Show the section
+        } else {
+          section.classList.add("hidden"); // Hide the section
+        }
+      },
+    },
+  };
 </script>
+
+<style>
+  /* Add your custom tooltip styles here */
+
+
+  .tippy-box[data-theme~='custom'] {
+    font-family: Arial, sans-serif;
+    /* Change font family */
+    font-size: 16px;
+    /* Change font size to 20px */
+    color: white;
+    /* Change text color */
+    background-color: #000000ab;
+    /* Change background color to white */
+    border: 1px solid #ccc;
+    /* Add border */
+    border-radius: 10px;
+    /* Round corners */
+    padding: 10px;
+    /* Add padding */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Add shadow */
+    line-height: 2rem;
+  }
+
+  .tippy-box[data-theme~='custom'] .tippy-arrow {
+    color: #000000ab;
+  }
+</style>
+
 <template>
   <!-- service Post section start -->
   <section id="service-post" class="mt-50px px-4 px-md-0">
@@ -170,153 +272,25 @@ export default {
                     <h5 class="font-bold">Select Product For Walls</h5>
                   </div>
                   <div class="calccardspacemini">
-                    <div
-                      class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5"
-                    >
-                      <div class="row-span-6">
-                        <div
-                          class="product-card bg-white custshadow p-4 rounded-lg"
-                        >
-                          <div
-                            class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md"
-                          >
-                            <img
-                              src="assets/images/calculator/paintbucket.png"
-                              alt=""
-                            />
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+                      <div v-for="(product, index) in products" :key="index" ref="tooltipTargets" class="row-span-6"
+                        :data-tippy-content="product.tooltip">
+
+                        <div class="product-card relative bg-white custshadow p-4 rounded-lg">
+
+                          <i class="fa-solid fa-circle-info absolute right-2 flex sm:block md:hidden hover:cursor-pointer"
+                            style="color: #fc2f93ba;" @click="showTooltip(index)"></i>
+
+                          <div class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md">
+                            <img src="assets/images/calculator/paintbucket.png" alt="" />
                           </div>
                           <div class="desccpik">
-                            <p>Tractor Suprem Emulsion</p>
-                            <strong>₹ 9.5 / SqFt</strong>
+                            <p>{{ product.name }}</p>
+                            <strong>{{ product.price }}</strong>
                           </div>
                         </div>
                       </div>
-                      <div class="row-span-6">
-                        <div
-                          class="product-card bg-white custshadow p-4 rounded-lg"
-                        >
-                          <div
-                            class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md"
-                          >
-                            <img
-                              src="assets/images/calculator/paintbucket.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="desccpik">
-                            <p>Tractor Suprem Emulsion</p>
-                            <strong>₹ 9.5 / SqFt</strong>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row-span-6">
-                        <div
-                          class="product-card bg-white custshadow p-4 rounded-lg"
-                        >
-                          <div
-                            class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md"
-                          >
-                            <img
-                              src="assets/images/calculator/paintbucket.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="desccpik">
-                            <p>Tractor Suprem Emulsion</p>
-                            <strong>₹ 9.5 / SqFt</strong>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row-span-6">
-                        <div
-                          class="product-card bg-white custshadow p-4 rounded-lg"
-                        >
-                          <div
-                            class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md"
-                          >
-                            <img
-                              src="assets/images/calculator/paintbucket.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="desccpik">
-                            <p>Tractor Suprem Emulsion</p>
-                            <strong>₹ 9.5 / SqFt</strong>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row-span-6">
-                        <div
-                          class="product-card bg-white custshadow p-4 rounded-lg"
-                        >
-                          <div
-                            class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md"
-                          >
-                            <img
-                              src="assets/images/calculator/paintbucket.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="desccpik">
-                            <p>Tractor Suprem Emulsion</p>
-                            <strong>₹ 9.5 / SqFt</strong>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row-span-6">
-                        <div
-                          class="product-card bg-white custshadow p-4 rounded-lg"
-                        >
-                          <div
-                            class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md"
-                          >
-                            <img
-                              src="assets/images/calculator/paintbucket.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="desccpik">
-                            <p>Tractor Suprem Emulsion</p>
-                            <strong>₹ 9.5 / SqFt</strong>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row-span-6">
-                        <div
-                          class="product-card bg-white custshadow p-4 rounded-lg"
-                        >
-                          <div
-                            class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md"
-                          >
-                            <img
-                              src="assets/images/calculator/paintbucket.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="desccpik">
-                            <p>Tractor Suprem Emulsion</p>
-                            <strong>₹ 9.5 / SqFt</strong>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row-span-6">
-                        <div
-                          class="product-card bg-white custshadow p-4 rounded-lg"
-                        >
-                          <div
-                            class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md"
-                          >
-                            <img
-                              src="assets/images/calculator/paintbucket.png"
-                              alt=""
-                            />
-                          </div>
-                          <div class="desccpik">
-                            <p>Tractor Suprem Emulsion</p>
-                            <strong>₹ 9.5 / SqFt</strong>
-                          </div>
-                        </div>
-                      </div>
+
                     </div>
                   </div>
                   <div class="toggledivtonew">
@@ -394,153 +368,25 @@ export default {
                         <h5 class="font-bold">Select Product For Walls</h5>
                       </div>
                       <div class="calccardspacemini">
-                        <div
-                          class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5"
-                        >
-                          <div class="row-span-6">
-                            <div
-                              class="product-card bg-white custshadow p-4 rounded-lg"
-                            >
-                              <div
-                                class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md"
-                              >
-                                <img
-                                  src="assets/images/calculator/paintbucket.png"
-                                  alt=""
-                                />
+                        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+                          <div v-for="(product, index) in products" :key="index" ref="tooltipTargets" class="row-span-6"
+                            :data-tippy-content="product.tooltip">
+
+                            <div class="product-card relative bg-white custshadow p-4 rounded-lg">
+
+                              <i class="fa-solid fa-circle-info absolute right-2 flex sm:block md:hidden hover:cursor-pointer"
+                                style="color: #fc2f93ba;" @click="showTooltip(index)"></i>
+
+                              <div class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md">
+                                <img src="assets/images/calculator/paintbucket.png" alt="" />
                               </div>
                               <div class="desccpik">
-                                <p>Tractor Suprem Emulsion</p>
-                                <strong>₹ 9.5 / SqFt</strong>
+                                <p>{{ product.name }}</p>
+                                <strong>{{ product.price }}</strong>
                               </div>
                             </div>
                           </div>
-                          <div class="row-span-6">
-                            <div
-                              class="product-card bg-white custshadow p-4 rounded-lg"
-                            >
-                              <div
-                                class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md"
-                              >
-                                <img
-                                  src="assets/images/calculator/paintbucket.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="desccpik">
-                                <p>Tractor Suprem Emulsion</p>
-                                <strong>₹ 9.5 / SqFt</strong>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row-span-6">
-                            <div
-                              class="product-card bg-white custshadow p-4 rounded-lg"
-                            >
-                              <div
-                                class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md"
-                              >
-                                <img
-                                  src="assets/images/calculator/paintbucket.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="desccpik">
-                                <p>Tractor Suprem Emulsion</p>
-                                <strong>₹ 9.5 / SqFt</strong>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row-span-6">
-                            <div
-                              class="product-card bg-white custshadow p-4 rounded-lg"
-                            >
-                              <div
-                                class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md"
-                              >
-                                <img
-                                  src="assets/images/calculator/paintbucket.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="desccpik">
-                                <p>Tractor Suprem Emulsion</p>
-                                <strong>₹ 9.5 / SqFt</strong>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row-span-6">
-                            <div
-                              class="product-card bg-white custshadow p-4 rounded-lg"
-                            >
-                              <div
-                                class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md"
-                              >
-                                <img
-                                  src="assets/images/calculator/paintbucket.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="desccpik">
-                                <p>Tractor Suprem Emulsion</p>
-                                <strong>₹ 9.5 / SqFt</strong>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row-span-6">
-                            <div
-                              class="product-card bg-white custshadow p-4 rounded-lg"
-                            >
-                              <div
-                                class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md"
-                              >
-                                <img
-                                  src="assets/images/calculator/paintbucket.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="desccpik">
-                                <p>Tractor Suprem Emulsion</p>
-                                <strong>₹ 9.5 / SqFt</strong>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row-span-6">
-                            <div
-                              class="product-card bg-white custshadow p-4 rounded-lg"
-                            >
-                              <div
-                                class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md"
-                              >
-                                <img
-                                  src="assets/images/calculator/paintbucket.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="desccpik">
-                                <p>Tractor Suprem Emulsion</p>
-                                <strong>₹ 9.5 / SqFt</strong>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row-span-6">
-                            <div
-                              class="product-card bg-white custshadow p-4 rounded-lg"
-                            >
-                              <div
-                                class="imgcalcdiv text-center p-5 rounded-lg overflow-hiddenrounded-md"
-                              >
-                                <img
-                                  src="assets/images/calculator/paintbucket.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div class="desccpik">
-                                <p>Tractor Suprem Emulsion</p>
-                                <strong>₹ 9.5 / SqFt</strong>
-                              </div>
-                            </div>
-                          </div>
+
                         </div>
                       </div>
                     </div>
