@@ -1278,5 +1278,5 @@
 </template>
 
 <style scoped>
-    @import "../assets/css/service.css";
+    @import "../assets/css/productpage.css";
 </style>

@@ -461,5 +461,5 @@
 </template>
 
 <style scoped>
-  @import "../assets/css/service.css";
+  @import "../assets/css/exterior.css";
 </style>

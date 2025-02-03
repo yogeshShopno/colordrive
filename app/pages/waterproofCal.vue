@@ -527,5 +527,5 @@ export default {
 </template>
 
 <style scoped>
-@import "../assets/css/service.css";
+@import "../assets/css/waterproofCal.css";
 </style>

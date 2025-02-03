@@ -547,5 +547,5 @@
 </template>
 
 <style scoped>
-    @import "../assets/css/service.css";
+    @import "../assets/css/visualscreen2.css";
 </style>

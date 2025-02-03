@@ -778,5 +778,5 @@
 </template>
 
 <style scoped>
-@import "../assets/css/service.css";
+@import "../assets/css/VisualizerToolpage11.css";
 </style>
