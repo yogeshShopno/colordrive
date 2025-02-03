@@ -14,7 +14,7 @@
       });
     };
     </script>
-
+    
 <template>
     <!-- service Post section start -->
     <section id="service-post" class="pb-200 mt-50px px-4 px-md-0">
