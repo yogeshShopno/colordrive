@@ -1,16 +1,16 @@
 // model1
 function toggleModal1() {
   // toggleModal()
-    document.getElementById('modal1').classList.toggle('hidden')
+  document.getElementById('modal1').classList.toggle('hidden')
   // let header = document.querySelector('#header')
   // console.log(header.style.zIndex);
-  
+
   // if(header.style.zIndex == 1 || header.style.zIndex == ''){
   //   header.style.zIndex = -1;
   // }else{
   //   header.style.zIndex = 1;
   // }
- 
+
 }
 // model1
 
@@ -28,15 +28,15 @@ function toggleModal1AndModal2() {
 
 // model3
 function toggleModal3() {
-    const popup = document.getElementById('booking-popup');
-    popup.classList.toggle('hidden');
+  const popup = document.getElementById('booking-popup');
+  popup.classList.toggle('hidden');
 }
 // model3
 
 // model3
 function toggleModal4() {
-    const popup = document.getElementById('video-popup');
-    popup.classList.toggle('hidden');
+  const popup = document.getElementById('video-popup');
+  popup.classList.toggle('hidden');
 }
 // model3
 
@@ -67,8 +67,8 @@ mobile_icon.addEventListener('click', openCloseMenu);
 mobile_menu.addEventListener('click', (event) => {
   event.stopPropagation();
   console.log("nhgb");
-  openCloseMenu();
-  changeIcon(hamburger_icon);
+  // openCloseMenu();
+  // changeIcon(hamburger_icon);
 });
 
 
@@ -152,10 +152,41 @@ function scrollToSection(event, id) {
   const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
   window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
+    top: offsetPosition,
+    behavior: 'smooth'
   });
 }
+
+
+
+// JavaScript to toggle drawer visibility
+document.querySelector('[data-drawer-show="drawer-right-example"]').addEventListener('click', () => {
+  const drawer = document.getElementById('drawer-right-example');
+  drawer.classList.remove('translate-x-full'); // Show the drawer
+  drawer.classList.add('translate-x-0');
+});
+
+document.querySelector('[data-drawer-hide="drawer-right-example"]').addEventListener('click', () => {
+  const drawer = document.getElementById('drawer-right-example');
+  drawer.classList.add('translate-x-full'); // Hide the drawer
+  drawer.classList.remove('translate-x-0');
+});
+
+
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('#service-dropdown').addEventListener('click', () => {
+    const drawer = document.getElementById('open-menu');
+    let display = getComputedStyle(drawer).display;
+    if (display == 'none') {
+      drawer.style.display = 'block';
+    } else {
+      drawer.style.display = 'none';
+    }
+  });
+
+})
+
+
 
 // FAQ Content
 function toggleAccordion(button) {

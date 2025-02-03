@@ -977,7 +977,11 @@ video {
 }
 
 #footer button {
-  border-radius: 0px 100px 100px 0px;
+  border-radius: 100px 100px 100px 100px;
+  -webkit-border-radius: 100px 100px 100px 100px;
+  -moz-border-radius: 100px 100px 100px 100px;
+  -ms-border-radius: 100px 100px 100px 100px;
+  -o-border-radius: 100px 100px 100px 100px;
 }
 
 #footer .w-25 {
@@ -1724,4 +1728,10 @@ select option:hover {
 
 .Toastify__toast-container {
   z-index: 9999999999 !important;
+}
+
+.more_drawer_fldd {
+  z-index: 9999999999 !important;
+  width: 22%;
+  min-width: 400px;
 }
