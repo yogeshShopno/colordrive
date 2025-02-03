@@ -1,6 +1,20 @@
 <script></script>
 
 <template>
+    <div class="breadcrum py-5">
+        <div class="container mx-auto" data-v-inspector="app/pages/blog.vue:6:5" data-v-1bac7c7d="">
+            <!-- <h1>Blog</h1> -->
+            <div class="text-center">
+                <div class="flex items-center gap-2">
+                    <a href="/texturepaint">
+                        <p>Home</p>
+                    </a>
+                    <i class="fa-solid fa-chevron-right" style="color: #000000"></i>
+                    <p class="text-gray-500 pink-txt">Estimate Waterproofing cost</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- main banner start -->
     <section id="blog-new" class="py-100 px-3 mb-50px" data-v-inspector="app/pages/blog.vue:5:3" data-v-1bac7c7d="">
         <div class="flex items-center justify-center gap-2">
@@ -770,7 +784,8 @@
     <div id="modalOverlay" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden"
         style="z-index: 99999;">
         <!-- Modal Box -->
-        <div class="bg-white overflow-y-auto pb-5 overflow-x-hidden custscroll rounded-lg shadow-lg w-640px relative max-height-90vh">
+        <div
+            class="bg-white overflow-y-auto pb-5 overflow-x-hidden custscroll rounded-lg shadow-lg w-640px relative max-height-90vh">
             <div class="detailsmodalcontentdiv">
                 <div class="detailssliderimgdiv">
                     <div class="calccardspacemini sliderdiv text1">
@@ -1265,13 +1280,15 @@
                                             <div class="includedcrdsmain flex w-full justify-between mb-3  gap-4">
                                                 <div class="inclflex flex gap-3 items-center">
                                                     <div class="inclfleximg rounded-lg overflow-hidden">
-                                                        <img src="assets/images/calculator/avtar.png" alt="" class="img-fluid">
+                                                        <img src="assets/images/calculator/avtar.png" alt=""
+                                                            class="img-fluid">
                                                     </div>
                                                     <div class="inccontent">
                                                         <h5 class="font-bold text-base">Vipin</h5>
-                                                        <p class="text-gray-500 text-sm">Dec 27, 2024 • For Classic bathroom cleaning </p>
+                                                        <p class="text-gray-500 text-sm">Dec 27, 2024 • For Classic
+                                                            bathroom cleaning </p>
                                                     </div>
-                                                </div> 
+                                                </div>
                                                 <div class="flexrevstar flex items-center gap-1">
                                                     <i class="fa-solid fa-star"></i>
                                                     <i class="fa-solid fa-star"></i>
@@ -1280,7 +1297,9 @@
                                                     <i class="fa-solid fa-star"></i>
                                                 </div>
                                             </div>
-                                            <p class="text-gray-500">Cleaning was not proper and stains are still seen. Service was done in 35 mins only for a bathroom and seems adequate time was not spent for proper cleaning.</p>
+                                            <p class="text-gray-500">Cleaning was not proper and stains are still seen.
+                                                Service was done in 35 mins only for a bathroom and seems adequate time
+                                                was not spent for proper cleaning.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1290,13 +1309,15 @@
                                             <div class="includedcrdsmain flex w-full justify-between mb-3  gap-4">
                                                 <div class="inclflex flex gap-3 items-center">
                                                     <div class="inclfleximg rounded-lg overflow-hidden">
-                                                        <img src="assets/images/calculator/avtar.png" alt="" class="img-fluid">
+                                                        <img src="assets/images/calculator/avtar.png" alt=""
+                                                            class="img-fluid">
                                                     </div>
                                                     <div class="inccontent">
                                                         <h5 class="font-bold text-base">Vipin</h5>
-                                                        <p class="text-gray-500 text-sm">Dec 27, 2024 • For Classic bathroom cleaning </p>
+                                                        <p class="text-gray-500 text-sm">Dec 27, 2024 • For Classic
+                                                            bathroom cleaning </p>
                                                     </div>
-                                                </div> 
+                                                </div>
                                                 <div class="flexrevstar flex items-center gap-1">
                                                     <i class="fa-solid fa-star"></i>
                                                     <i class="fa-solid fa-star"></i>
@@ -1305,7 +1326,9 @@
                                                     <i class="fa-solid fa-star"></i>
                                                 </div>
                                             </div>
-                                            <p class="text-gray-500">Cleaning was not proper and stains are still seen. Service was done in 35 mins only for a bathroom and seems adequate time was not spent for proper cleaning.</p>
+                                            <p class="text-gray-500">Cleaning was not proper and stains are still seen.
+                                                Service was done in 35 mins only for a bathroom and seems adequate time
+                                                was not spent for proper cleaning.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1315,13 +1338,15 @@
                                             <div class="includedcrdsmain flex w-full justify-between mb-3  gap-4">
                                                 <div class="inclflex flex gap-3 items-center">
                                                     <div class="inclfleximg rounded-lg overflow-hidden">
-                                                        <img src="assets/images/calculator/avtar.png" alt="" class="img-fluid">
+                                                        <img src="assets/images/calculator/avtar.png" alt=""
+                                                            class="img-fluid">
                                                     </div>
                                                     <div class="inccontent">
                                                         <h5 class="font-bold text-base">Vipin</h5>
-                                                        <p class="text-gray-500 text-sm">Dec 27, 2024 • For Classic bathroom cleaning </p>
+                                                        <p class="text-gray-500 text-sm">Dec 27, 2024 • For Classic
+                                                            bathroom cleaning </p>
                                                     </div>
-                                                </div> 
+                                                </div>
                                                 <div class="flexrevstar flex items-center gap-1">
                                                     <i class="fa-solid fa-star"></i>
                                                     <i class="fa-solid fa-star"></i>
@@ -1330,7 +1355,9 @@
                                                     <i class="fa-solid fa-star"></i>
                                                 </div>
                                             </div>
-                                            <p class="text-gray-500">Cleaning was not proper and stains are still seen. Service was done in 35 mins only for a bathroom and seems adequate time was not spent for proper cleaning.</p>
+                                            <p class="text-gray-500">Cleaning was not proper and stains are still seen.
+                                                Service was done in 35 mins only for a bathroom and seems adequate time
+                                                was not spent for proper cleaning.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1340,13 +1367,15 @@
                                             <div class="includedcrdsmain flex w-full justify-between mb-3  gap-4">
                                                 <div class="inclflex flex gap-3 items-center">
                                                     <div class="inclfleximg rounded-lg overflow-hidden">
-                                                        <img src="assets/images/calculator/avtar.png" alt="" class="img-fluid">
+                                                        <img src="assets/images/calculator/avtar.png" alt=""
+                                                            class="img-fluid">
                                                     </div>
                                                     <div class="inccontent">
                                                         <h5 class="font-bold text-base">Vipin</h5>
-                                                        <p class="text-gray-500 text-sm">Dec 27, 2024 • For Classic bathroom cleaning </p>
+                                                        <p class="text-gray-500 text-sm">Dec 27, 2024 • For Classic
+                                                            bathroom cleaning </p>
                                                     </div>
-                                                </div> 
+                                                </div>
                                                 <div class="flexrevstar flex items-center gap-1">
                                                     <i class="fa-solid fa-star"></i>
                                                     <i class="fa-solid fa-star"></i>
@@ -1355,7 +1384,9 @@
                                                     <i class="fa-solid fa-star"></i>
                                                 </div>
                                             </div>
-                                            <p class="text-gray-500">Cleaning was not proper and stains are still seen. Service was done in 35 mins only for a bathroom and seems adequate time was not spent for proper cleaning.</p>
+                                            <p class="text-gray-500">Cleaning was not proper and stains are still seen.
+                                                Service was done in 35 mins only for a bathroom and seems adequate time
+                                                was not spent for proper cleaning.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1365,13 +1396,15 @@
                                             <div class="includedcrdsmain flex w-full justify-between mb-3  gap-4">
                                                 <div class="inclflex flex gap-3 items-center">
                                                     <div class="inclfleximg rounded-lg overflow-hidden">
-                                                        <img src="assets/images/calculator/avtar.png" alt="" class="img-fluid">
+                                                        <img src="assets/images/calculator/avtar.png" alt=""
+                                                            class="img-fluid">
                                                     </div>
                                                     <div class="inccontent">
                                                         <h5 class="font-bold text-base">Vipin</h5>
-                                                        <p class="text-gray-500 text-sm">Dec 27, 2024 • For Classic bathroom cleaning </p>
+                                                        <p class="text-gray-500 text-sm">Dec 27, 2024 • For Classic
+                                                            bathroom cleaning </p>
                                                     </div>
-                                                </div> 
+                                                </div>
                                                 <div class="flexrevstar flex items-center gap-1">
                                                     <i class="fa-solid fa-star"></i>
                                                     <i class="fa-solid fa-star"></i>
@@ -1380,15 +1413,17 @@
                                                     <i class="fa-solid fa-star"></i>
                                                 </div>
                                             </div>
-                                            <p class="text-gray-500">Cleaning was not proper and stains are still seen. Service was done in 35 mins only for a bathroom and seems adequate time was not spent for proper cleaning.</p>
+                                            <p class="text-gray-500">Cleaning was not proper and stains are still seen.
+                                                Service was done in 35 mins only for a bathroom and seems adequate time
+                                                was not spent for proper cleaning.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
-            </div> 
+                </div>
+            </div>
         </div>
     </div>
     <!-- service Post section end -->

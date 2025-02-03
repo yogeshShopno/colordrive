@@ -10,8 +10,8 @@
             <div>
               <div class="calcseccardsdiv">
                 <div class="calcspace">
-                  <div class="calccardspacemini">
-                    <div class="flex sm:flex-row flex-col  gap-4">
+                  <div class="calccardspacemini max-w-lg lg:max-w-full mx-auto">
+                    <div class="flex lg:flex-row flex-col  gap-4">
                       <div class="basis-1/2">
                         <div class="calccardspacemini00 sticky top-32">
                           <div class="imgcalcdiv align-center rounded-md">

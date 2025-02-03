@@ -9,7 +9,7 @@
           <div class="bg-white mainboxshadow rounded-2xl p-5">
             <div>
               <div class="caclc2div">
-                <h2 class="font-bold er">Paint Of Your Choice</h2>
+                <h3 class="font-bold text-2xl er">Paint Of Your Choice</h3>
               </div>
               <div class="calcseccardsdiv mt-5">
                 <div class="calcspace">

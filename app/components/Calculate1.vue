@@ -87,9 +87,9 @@ export default {
                   </div>
                   <div class="calccardspacemini">
                     <div
-                      class="grid grid-cols-3 sm:grid-cols-4 grid-flow-col gap-4"
+                      class="grid grid-cols-3 sm:grid-cols-4 gap-4"
                     >
-                      <div class="row-span-6">
+                      <div class="row-span-66">
                         <div class="calccardspacemini0 active">
                           <a
                             href="/calculatePrice"
@@ -107,7 +107,7 @@ export default {
                           </div>
                         </div>
                       </div>
-                      <div class="row-span-6">
+                      <div class="row-span-66">
                         <div class="calccardspacemini0">
                           <a
                             href="/exteriorcalculator"
@@ -135,8 +135,8 @@ export default {
                     <h5 class="font-bold">Select Space</h5>
                   </div>
                   <div class="calccardspacemini">
-                    <div class="grid grid-cols-2 sm:grid-cols-5 gap-4">
-                      <div class="row-span-6">
+                    <div class="grid grid-cols-3 sm:grid-cols-5 gap-4">
+                      <div class="row-span-66">
                         <div class="calccardspacemini0">
                           <div
                             class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-2xl"
@@ -150,7 +150,7 @@ export default {
                           </div>
                         </div>
                       </div>
-                      <div class="row-span-6">
+                      <div class="row-span-66">
                         <div class="calccardspacemini0">
                           <div
                             class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-2xl"
@@ -164,7 +164,7 @@ export default {
                           </div>
                         </div>
                       </div>
-                      <div class="row-span-6">
+                      <div class="row-span-66">
                         <div class="calccardspacemini0">
                           <div
                             class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-2xl"
@@ -178,7 +178,7 @@ export default {
                           </div>
                         </div>
                       </div>
-                      <div class="row-span-6">
+                      <div class="row-span-66">
                         <div class="calccardspacemini0">
                           <div
                             class="imgcalcdiv overflow-hidden align-center flex justify-center rounded-2xl"
@@ -274,7 +274,7 @@ export default {
                     <div
                       class="grid grid-cols- sm:grid-cols-2 md:grid-cols-3 gap-4"
                     >
-                      <div class="row-span-6">
+                      <div class="row-span-66">
                         <div
                           class="servccarddiv bg-white custshadow product-card rounded-md p-4"
                         >
@@ -307,7 +307,7 @@ export default {
                           </div>
                         </div>
                       </div>
-                      <div class="row-span-6">
+                      <div class="row-span-66">
                         <div
                           class="servccarddiv bg-white custshadow product-card rounded-md p-4"
                         >
@@ -340,7 +340,7 @@ export default {
                           </div>
                         </div>
                       </div>
-                      <div class="row-span-6">
+                      <div class="row-span-66">
                         <div
                           class="servccarddiv bg-white custshadow product-card rounded-md p-4"
                         >

@@ -10,7 +10,42 @@
         <div class="firstsecdiv">
           <div class="bg-white mainboxshadow rounded-2xl p-5">
             <div>
-              <div class="calcseccardsdiv">
+              <form action="" method="post">
+                <div class="sm:col-span-3">
+                  <label
+                    for="country"
+                    class="block text-sm/6 font-medium text-gray-900"
+                    >City</label
+                  >
+                  <div class="mt-2 grid grid-cols-1">
+                    <select
+                      id="country"
+                      name="country"
+                      autocomplete="country-name"
+                      class="col-start-1 row-start-1 w-full appearance-none rounded-md custsselect py-1.5 pl-3 pr-8 text-base text-gray-900 sm:text-sm/6"
+                    >
+                      <option>Select Your City</option>
+                      <option>United States</option>
+                      <option>Canada</option>
+                      <option>Mexico</option>
+                    </select>
+                    <svg
+                      class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      data-slot="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </form>
+              <div class="calcseccardsdiv mt-5">
                 <div class="calcspace">
                   <div class="calccardtitle mb-3">
                     <h5 class="font-bold">Select Space</h5>

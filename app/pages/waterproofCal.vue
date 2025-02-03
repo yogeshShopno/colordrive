@@ -31,30 +31,41 @@ export default {
 
 <template>
   <!-- main banner start -->
-  <section
-    id="blog-new"
-    class="py-100 px-3 mb-50px"
-    data-v-inspector="app/pages/blog.vue:5:3"
-    data-v-1bac7c7d=""
-  >
+  <div class="breadcrum ">
     <div
-      class="container mx-auto"
+      class="container mx-auto py-5 px-4"
       data-v-inspector="app/pages/blog.vue:6:5"
       data-v-1bac7c7d=""
     >
       <!-- <h1>Blog</h1> -->
       <div class="text-center">
-        <h2 class="text font-bold">Estimate Waterproofing cost</h2>
-        <div class="flex items-center gap-2 justify-center mt-3">
-          <a href="index.vue">
-            <p class="text-gray-500">Home</p>
+        <div class="flex items-center gap-2">
+          <a href="/texturepaint">
+            <p>Home</p>
           </a>
-          <i class="fa-solid fa-chevron-right text-gray-500"></i>
-          <p class="pink-txt">Estimate Waterproofing cost</p>
+          <i class="fa-solid fa-chevron-right" style="color: #000000"></i>
+          <p class="text-gray-500 pink-txt">Estimate Waterproofing cost</p>
         </div>
       </div>
     </div>
-  </section>
+    <section
+      id="breadcrumb-bg"
+      class="py-100 px-3 mb-50px"
+      data-v-inspector="app/pages/blog.vue:5:3"
+      data-v-1bac7c7d=""
+    >
+      <div
+        class="container mx-auto"
+        data-v-inspector="app/pages/blog.vue:6:5"
+        data-v-1bac7c7d=""
+      >
+        <!-- <h1>Blog</h1> -->
+        <div class="text-center">
+          <h2 class="text font-bold">Estimate Waterproofing cost</h2> 
+        </div>
+      </div>
+    </section>
+  </div>
   <!-- main banner end -->
   <div class="w-full maincomponent pb-200 mx-auto mt-9">
     <!-- Carousel Container -->

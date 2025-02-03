@@ -6,7 +6,7 @@
     <div class="container mx-auto">
       <div class="max-w-4xl mx-auto">
         <div class="firstsecdiv">
-          <div class="bg-white mainboxshadoww rounded-2xl p-0">
+          <div class="bg-white mainboxshadow rounded-2xl p-5">
             <div>
               <div class="calcseccardsdiv mt-5">
                 <div class="calcspace">

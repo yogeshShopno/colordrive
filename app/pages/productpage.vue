@@ -30,9 +30,9 @@
                         <div>
                             <div class="calcseccardsdiv">
                                 <div class="calcspace">
-                                    <div class="calccardspacemini">
+                                    <div class="calccardspacemini  max-w-md m-auto md:max-w-full">
                                         <div class="flex md:flex-row flex-col gap-5 sm:gap-5">
-                                            <div class="basis-2/2 max-w-md m-auto md:basis-1/2 md:max-w-full">
+                                            <div class="basis-2/2  md:basis-1/2">
                                                 <div class="calccardspacemini00 sticky top-32">
                                                     <div class="imgcalcdiv align-center rounded-md">
                                                         <img src="assets/images/calculator/cal3.png"
@@ -41,8 +41,8 @@
                                                     </div>
                                                     <div class="imgclprodimgslider mt-4">
                                                         <div
-                                                            class="grid grid-cols-4 sm:grid-cols-4 grid-flow-col gap-4">
-                                                            <div class="row-span-667">
+                                                            class="flex overflow-x-auto gap-4">
+                                                            <div class="row-span-667 basis-1/4">
                                                                 <div class="calccardspacemini0">
                                                                     <a href="/"
                                                                         class="imgcalcdiv align-center flex justify-center rounded-md">
@@ -57,7 +57,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="row-span-667">
+                                                            <div class="row-span-667 basis-1/4">
                                                                 <div class="calccardspacemini0">
                                                                     <a href="/"
                                                                         class="imgcalcdiv align-center flex justify-center rounded-md">
@@ -71,7 +71,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="row-span-667">
+                                                            <div class="row-span-667 basis-1/4">
                                                                 <div class="calccardspacemini0">
                                                                     <a href="/"
                                                                         class="imgcalcdiv align-center flex justify-center rounded-md">
@@ -86,7 +86,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="row-span-667">
+                                                            <div class="row-span-667 basis-1/4">
                                                                 <div class="calccardspacemini0">
                                                                     <a href="/"
                                                                         class="imgcalcdiv align-center flex justify-center rounded-md">
@@ -147,7 +147,7 @@
                                                 <div class="prodformpagediv sticky top-32">
                                                     <div class="prodpagetitle ">
                                                         <div class="calccardtitle mb-4">
-                                                            <h2 class="font-semibold">
+                                                            <h2 class="font-semibold text-2xl ">
                                                                 Fizz Wall Texture Painting Design
                                                             </h2>
                                                         </div>
@@ -262,7 +262,7 @@
                                         <div class="availabilit">
                                             <h3 class="text-xl font-semibold">Please call us to check the more
                                                 colour/shades availability.*</h3>
-                                            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-3">
+                                            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-3 px-5">
                                                 <div class="basis-4/5 sm:basis-1/5">
                                                     <div class="availcard">
                                                         <p class="pink-txt text-sm">Name:</p>
@@ -457,7 +457,7 @@
                                         <Swiper class="catalogue" :slides-per-view="1" :loop="true" :breakpoints="{
                                             0: { slidesPerView: 1 }, 
                                             425: { slidesPerView: 1 }, 
-                                            575: { slidesPerView: 2 }, 
+                                            575: { slidesPerView: 1.5 },  
                                             768: { slidesPerView: 2 },
                                             1024: { slidesPerView: 2 },
                                           }"
@@ -552,7 +552,8 @@
                                         <Swiper class="catalogue" :slides-per-view="1" :loop="true" :breakpoints="{
                                             0: { slidesPerView: 1 }, 
                                             425: { slidesPerView: 1 }, 
-                                            575: { slidesPerView: 2 }, 
+                                            575: { slidesPerView: 1.5 }, 
+                                            640: { slidesPerView: 2 }, 
                                             991: { slidesPerView: 3 },
                                             1024: { slidesPerView: 3 },
                                           }"
@@ -701,9 +702,10 @@
                                     </div>
                                     <div class="calccardspacemini sliderdiv text1">
                                         <Swiper class="catalogue" :slides-per-view="1" :loop="true" :breakpoints="{
-                                            0: { slidesPerView: 1 }, 
+                                           0: { slidesPerView: 1 }, 
                                             425: { slidesPerView: 1 }, 
-                                            575: { slidesPerView: 2 }, 
+                                            575: { slidesPerView: 1.5 }, 
+                                            640: { slidesPerView: 2 }, 
                                             991: { slidesPerView: 3 },
                                             1024: { slidesPerView: 3 },
                                           }" :modules="[
@@ -853,7 +855,8 @@
                                         <Swiper class="catalogue" :slides-per-view="1" :loop="true" :breakpoints="{
                                             0: { slidesPerView: 1 }, 
                                             425: { slidesPerView: 1 }, 
-                                            575: { slidesPerView: 2 }, 
+                                            575: { slidesPerView: 1.5 }, 
+                                            640: { slidesPerView: 2 }, 
                                             991: { slidesPerView: 3 },
                                             1024: { slidesPerView: 3 },
                                           }" :modules="[
@@ -1002,7 +1005,8 @@
                                         <Swiper class="catalogue" :slides-per-view="1" :loop="true" :breakpoints="{
                                             0: { slidesPerView: 1 }, 
                                             425: { slidesPerView: 1 }, 
-                                            575: { slidesPerView: 2 }, 
+                                            575: { slidesPerView: 1.5 }, 
+                                            640: { slidesPerView: 2 }, 
                                             991: { slidesPerView: 3 },
                                             1024: { slidesPerView: 3 },
                                           }" :modules="[
@@ -1151,7 +1155,8 @@
                                         <Swiper class="catalogue" :slides-per-view="1" :loop="true" :breakpoints="{
                                             0: { slidesPerView: 1 }, 
                                             425: { slidesPerView: 1 }, 
-                                            575: { slidesPerView: 2 }, 
+                                            575: { slidesPerView: 1.5 }, 
+                                            640: { slidesPerView: 2 }, 
                                             991: { slidesPerView: 3 },
                                             1024: { slidesPerView: 3 },
                                           }" :modules="[ 

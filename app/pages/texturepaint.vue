@@ -2,28 +2,41 @@
 
 <template>
   <!-- main banner start -->
-  <section
-    id="blog-new"
-    class="py-100 px-3 mb-50px"
-    data-v-inspector="app/pages/blog.vue:5:3"
-    data-v-1bac7c7d=""
-  >
+  <div class="breadcrum ">
     <div
-      class="container mx-auto"
+      class="container mx-auto py-5 px-4"
       data-v-inspector="app/pages/blog.vue:6:5"
       data-v-1bac7c7d=""
     >
       <!-- <h1>Blog</h1> -->
       <div class="text-center">
-        <h2 class="text font-bold">Wall Texture Painting Designs</h2>
-        <div class="flex items-center justify-center gap-2">
-          <a href="/texturepaint"> <p>Home</p></a>
+        <div class="flex items-center gap-2">
+          <a href="/texturepaint">
+            <p>Home</p>
+          </a>
           <i class="fa-solid fa-chevron-right" style="color: #000000"></i>
-          <p class="pink-txt">Texture Name</p>
+          <p class="text-gray-500 pink-txt">Texture Design Collection</p>
         </div>
       </div>
     </div>
-  </section>
+    <section
+      id="breadcrumb-bg"
+      class="py-100 px-3 mb-50px"
+      data-v-inspector="app/pages/blog.vue:5:3"
+      data-v-1bac7c7d=""
+    >
+      <div
+        class="container mx-auto"
+        data-v-inspector="app/pages/blog.vue:6:5"
+        data-v-1bac7c7d=""
+      >
+        <!-- <h1>Blog</h1> -->
+        <div class="text-center">
+          <h2 class="text font-bold">Wall Texture Painting Designs</h2> 
+        </div>
+      </div>
+    </section>
+  </div>
   <!-- main banner end -->
 
   <!-- service Post section start -->
