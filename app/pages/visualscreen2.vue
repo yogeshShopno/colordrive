@@ -1,23 +1,43 @@
 <script></script>
 
 <template>
-    <!-- main banner start -->
-    <section id="blog-new" class="py-100 px-3 mb-50px" data-v-inspector="app/pages/blog.vue:5:3" data-v-1bac7c7d="">
-        <div class="container mx-auto" data-v-inspector="app/pages/blog.vue:6:5" data-v-1bac7c7d="">
-            <!-- <h1>Blog</h1> -->
-            <div class="text-center">
-                <h2 class="text font-bold">Home Painting Colour Shades Visualizer</h2>
-                <div class="flex items-center justify-center gap-2">
-                    <a href="/texturepaint">
-                        <p>Home</p>
-                    </a>
-                    <i class="fa-solid fa-chevron-right" style="color: #000000"></i>
-                    <p class="text-gray-500">Home Painting Colour Shades Visualizer</p>
-                </div>
-            </div>
+ <!-- main banner start -->
+ <div class="breadcrum">
+    <div
+      class="container mx-auto py-5 px-4"
+      data-v-inspector="app/pages/blog.vue:6:5"
+      data-v-1bac7c7d=""
+    >
+      <!-- <h1>Blog</h1> -->
+      <div class="text-center">
+        <div class="flex items-center gap-2">
+          <a href="/texturepaint">
+            <p>Home</p>
+          </a>
+          <i class="fa-solid fa-chevron-right" style="color: #000000"></i>
+          <p class="text-gray-500 pink-txt">Home Painting Colour Shades Visualizer</p>
         </div>
+      </div>
+    </div>
+    <section
+      id="breadcrumb-bg"
+      class="py-100 px-3 mb-50px"
+      data-v-inspector="app/pages/blog.vue:5:3"
+      data-v-1bac7c7d=""
+    >
+      <div
+        class="container mx-auto"
+        data-v-inspector="app/pages/blog.vue:6:5"
+        data-v-1bac7c7d=""
+      >
+        <!-- <h1>Blog</h1> -->
+        <div class="text-center">
+          <h2 class="text font-bold">Home Painting Colour Shades Visualizer</h2>
+        </div>
+      </div>
     </section>
-    <!-- main banner end -->
+  </div>
+  <!-- main banner end -->
 
     <!-- service Post section start -->
     <section id="service-post" class="pb-200 mt-50px px-4 px-md-0">
@@ -165,8 +185,8 @@
                                             </div>
                                             <div class="basis-4/4 lg:basis-2/4">
                                                 <div class="proddetmaindibvcont">
-                                                    <h1 class="font-bold text-4xl mb-3">Guest Bedroom Azure Blues Colour
-                                                        Shades</h1>
+                                                    <h3 class="font-bold text-2xl mb-3">Guest Bedroom Azure Blues Colour
+                                                        Shades</h3>
                                                     <p class="text-gray-500">This colour associated with playfulness,
                                                         fun and lightheartedness. Bright shades of pink like magenta or
                                                         fuschia stand out, while being less alarming or threatening than
