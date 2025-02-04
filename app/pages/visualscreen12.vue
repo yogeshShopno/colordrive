@@ -34,30 +34,25 @@
                                                 <div
                                                     class="calccardspacemini sliderdiv justify-start xl:justify-center flex flex-row gap-2 text1 overflow-x-auto pb-1">
                                                     <div class="calccardspacemini00 whitespace-nowrap">
-                                                        <button class="btn rounded-lg btn-pink text-center px-3 py-2">Asian
-                                                            Shades</button>
+                                                        <button class="btn btn-rounded btn-pink text-center px-3 py-2">Living Room</button>
                                                     </div> 
                                                     <div class="calccardspacemini00 whitespace-nowrap">
-                                                        <button class="btn rounded-lg btn-pink-o text-center px-3 py-2">View
-                                                            All Colours</button>
+                                                        <button class="btn btn-rounded btn-pink-o text-center px-3 py-2">Master Bedroom</button>
                                                     </div>
                                                     <div class="calccardspacemini00 whitespace-nowrap">
-                                                        <button class="btn rounded-lg btn-pink-o text-center px-3 py-2">View
-                                                            All Colours</button>
+                                                        <button class="btn btn-rounded btn-pink-o text-center px-3 py-2">Kids Bedroom</button>
                                                     </div>
                                                     <div class="calccardspacemini00 whitespace-nowrap">
-                                                        <button class="btn rounded-lg btn-pink-o text-center px-3 py-2">View
-                                                            All Colours</button>
+                                                        <button class="btn btn-rounded btn-pink-o text-center px-3 py-2">Guest Bedroom</button>
                                                     </div>
                                                     <div class="calccardspacemini00 whitespace-nowrap">
-                                                        <button class="btn rounded-lg btn-pink-o text-center px-3 py-2">View
-                                                            All Colours</button>
+                                                        <button class="btn btn-rounded btn-pink-o text-center px-3 py-2">Kitchen</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="flex max-w-xl mx-auto lg:max-w-full lg:flex-row flex-col gap-4">
-                                            <div class="basis-4/4 lg:basis-3/4">
+                                        <div class="flex mx-auto md:max-w-full md:flex-row flex-col gap-4">
+                                            <div class="basis-4/4 md:basis-3/4">
                                                 <div class="calccardspacemini0 ">
                                                     <div class="cal3fordiv colosselectgdiv flex gap-4">
                                                         <div
@@ -67,63 +62,63 @@
                                                                 <!-- Color Option -->
                                                                 <div class="flex flex-col items-center">
                                                                     <div
-                                                                        class="w-10 h-10 rounded-full bg-pink-500 hover:shadow-md">
+                                                                        class="w-8 h-8 rounded-full bg-pink-500 hover:shadow-md">
                                                                     </div>
                                                                 </div>
 
                                                                 <!-- Red -->
                                                                 <div class="flex flex-col items-center">
                                                                     <div
-                                                                        class="w-10 h-10 rounded-full bg-red-600 hover:shadow-md">
+                                                                        class="w-8 h-8 rounded-full bg-red-600 hover:shadow-md">
                                                                     </div>
                                                                 </div>
 
                                                                 <!-- Green -->
                                                                 <div class="flex flex-col items-center">
                                                                     <div
-                                                                        class="w-10 h-10 rounded-full bg-green-600 hover:shadow-md">
+                                                                        class="w-8 h-8 rounded-full bg-green-600 hover:shadow-md">
                                                                     </div>
                                                                 </div>
 
                                                                 <!-- Blue -->
                                                                 <div class="flex flex-col items-center">
                                                                     <div
-                                                                        class="w-10 h-10 rounded-full bg-blue-400 hover:shadow-md">
+                                                                        class="w-8 h-8 rounded-full bg-blue-400 hover:shadow-md">
                                                                     </div>
                                                                 </div>
 
                                                                 <!-- Pastel -->
                                                                 <div class="flex flex-col items-center">
                                                                     <div
-                                                                        class="w-10 h-10 rounded-full bg-rose-200 hover:shadow-md">
+                                                                        class="w-8 h-8 rounded-full bg-rose-200 hover:shadow-md">
                                                                     </div>
                                                                 </div>
 
                                                                 <!-- Yellow -->
                                                                 <div class="flex flex-col items-center">
                                                                     <div
-                                                                        class="w-10 h-10 rounded-full bg-yellow-400 hover:shadow-md">
+                                                                        class="w-8 h-8 rounded-full bg-yellow-400 hover:shadow-md">
                                                                     </div>
                                                                 </div>
 
                                                                 <!-- Gray -->
                                                                 <div class="flex flex-col items-center">
                                                                     <div
-                                                                        class="w-10 h-10 rounded-full bg-gray-400 hover:shadow-md">
+                                                                        class="w-8 h-8 rounded-full bg-gray-400 hover:shadow-md">
                                                                     </div>
                                                                 </div>
 
                                                                 <!-- Purple -->
                                                                 <div class="flex flex-col items-center">
                                                                     <div
-                                                                        class="w-10 h-10 rounded-full bg-purple-500 hover:shadow-md">
+                                                                        class="w-8 h-8 rounded-full bg-purple-500 hover:shadow-md">
                                                                     </div>
                                                                 </div>
 
                                                                 <!-- Brown -->
                                                                 <div class="flex flex-col items-center">
                                                                     <div
-                                                                        class="w-10 h-10 rounded-full bg-amber-900 hover:shadow-md">
+                                                                        class="w-8 h-8 rounded-full bg-amber-900 hover:shadow-md">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -142,14 +137,14 @@
                                                                         <!-- Color Option -->
                                                                         <div class="flex flex-col items-center">
                                                                             <div
-                                                                                class="w-10 h-10 rounded-full bg-pink-500 hover:shadow-md">
+                                                                                class="w-8 h-8 rounded-full bg-pink-500 hover:shadow-md">
                                                                             </div>
                                                                         </div>
 
                                                                         <!-- Red -->
                                                                         <div class="flex flex-col items-center">
                                                                             <div
-                                                                                class="w-10 h-10 rounded-full bg-red-600 hover:shadow-md">
+                                                                                class="w-8 h-8 rounded-full bg-red-600 hover:shadow-md">
                                                                             </div>
                                                                         </div>
 
@@ -163,7 +158,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="basis-4/4 lg:basis-2/4">
+                                            <div class="basis-4/4 md:basis-2/4">
                                                 <div class="proddetmaindibvcont">
                                                     <h1 class="font-bold text-4xl mb-3">Guest Bedroom Azure Blues Colour
                                                         Shades</h1>
@@ -171,15 +166,21 @@
                                                         fun and lightheartedness. Bright shades of pink like magenta or
                                                         fuschia stand out, while being less alarming or threatening than
                                                         the colour red.</p>
+                                                        <div class="selectsizediv">
+                                                            <div class="h-16">
+
+                                                            </div>
+                                                            <p class="text-gray-500">Select this colour for your room</p>
+                                                        </div>
                                                     <div class="btnsdivmainnn mt-5 flex max-w-sm capitalize flex-col gap-4">
                                                         <button class="btn rounded-lg btn-pink text-center capitalize px-3 py-2">
                                                             apply
                                                         </button>
                                                         <button class="btn rounded-lg btn-pink-o text-center capitalize px-3 py-2">
-                                                            apply
+                                                            Estimate Painting Cost
                                                         </button>
                                                         <button class="btn rounded-lg btn-pink-o text-center capitalize px-3 py-2">
-                                                            apply
+                                                            view your cart
                                                         </button>
                                                     </div>
                                                 </div>

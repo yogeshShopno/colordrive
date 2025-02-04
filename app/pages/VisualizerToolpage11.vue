@@ -3,7 +3,7 @@
 <template>
   <!-- main banner start -->
   <section
-    class="py-100 px-3 mb-50px"
+    class="py-100 px-3"
     data-v-inspector="app/pages/blog.vue:5:3"
     data-v-1bac7c7d=""
   >
@@ -13,7 +13,7 @@
       data-v-1bac7c7d=""
     >
       <!-- <h1>Blog</h1> -->
-      <div class="imgcalcdivv border-none">
+      <div class="border-none imgcalcdivv max-w-4xl mx-auto">
         <img
           src="assets/images/calculator/visualize11main.png"
           alt="Interior Painting"
@@ -26,7 +26,7 @@
   <!-- main banner end -->
 
   <!-- service Post section start -->
-  <section id="service-post" class="pb-200 mt-50px px-4 px-md-0">
+  <section id="service-post" class="pb-200 px-4 px-md-0">
     <div class="container mx-auto">
       <div class="mx-auto">
         <div class="firstsecdiv">
