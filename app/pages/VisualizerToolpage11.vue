@@ -32,7 +32,7 @@
         <div class="firstsecdiv">
           <div class="tecctdiv">
             <div>
-              <h2 class="font-bold text-center text-xl">
+              <h2 class="font-bold text-center sm:text-2xl text-xl">
                 Wall Colour Ideas For Modern Houses In India 2023
               </h2>
               <p class="text-center text-gray-500 text-sm mt-5">

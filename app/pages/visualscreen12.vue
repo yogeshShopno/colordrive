@@ -51,14 +51,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="flex mx-auto md:max-w-full md:flex-row flex-col gap-4">
+                                        <div class="flex mx-auto mt-8 md:max-w-full md:flex-row flex-col gap-4">
                                             <div class="basis-4/4 md:basis-3/4">
                                                 <div class="calccardspacemini0 ">
-                                                    <div class="cal3fordiv colosselectgdiv flex gap-4">
+                                                    <div class="cal3fordiv colosselectgdiv flex gap-4 flex-col sm:flex-row">
                                                         <div
                                                             class="maxhdiv overflow-y-auto faqcustshadow p-4 rounded-lg">
                                                             <div
-                                                                class="flex items-center gap-2 flex-col justify-center">
+                                                                class="flex items-center gap-2 flex-row sm:flex-col justify-center">
                                                                 <!-- Color Option -->
                                                                 <div class="flex flex-col items-center">
                                                                     <div
@@ -160,8 +160,8 @@
                                             </div>
                                             <div class="basis-4/4 md:basis-2/4">
                                                 <div class="proddetmaindibvcont">
-                                                    <h1 class="font-bold text-4xl mb-3">Guest Bedroom Azure Blues Colour
-                                                        Shades</h1>
+                                                    <h3 class="font-bold text-2xl sm:text-3xl mb-3">Guest Bedroom Azure Blues Colour
+                                                        Shades</h3>
                                                     <p class="text-gray-500">This colour associated with playfulness,
                                                         fun and lightheartedness. Bright shades of pink like magenta or
                                                         fuschia stand out, while being less alarming or threatening than

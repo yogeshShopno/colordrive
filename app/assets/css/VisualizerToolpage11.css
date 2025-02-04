@@ -303,3 +303,52 @@
     min-width: 400px;
   }
   
+
+    /* container size change */
+    @media (min-width: 576px) {
+      .container {
+          max-width: 540px;
+      }
+  }
+  
+    @media (min-width: 768px) {
+      .container{
+          max-width: 720px;
+      }
+  }
+  
+    @media (min-width: 992px) {
+      .container{
+          max-width: 960px;
+      }
+  }
+  
+    @media (min-width: 1200px) {
+      .container {
+          max-width: 1140px;
+      }
+  }
+  
+    @media (min-width: 1400px) {
+      .container {
+          max-width: 1320px;
+      }
+  }
+  
+  @media (min-width: 640px) {
+    .sm\:text-2xl {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 2.75rem;
+}
+
+@media only screen and (max-width: 575px) {
+  .text-xl {
+      font-size: 26px !important;
+  }
+}

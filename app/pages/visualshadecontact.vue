@@ -26,8 +26,8 @@
                             <div class="calcseccardsdiv">
                                 <div class="calcspace">
                                     <div class="calccardspacemini">
-                                        <div class="flex sm:flex-row flex-col  gap-4">
-                                            <div class="basis-[55vw]">
+                                        <div class="flex md:flex-row flex-col  gap-4">
+                                            <div class="basis-1/2">
                                                 <div class="calccardspacemini00 sticky top-32 grid grid-cols-2 gap-4">
                                                     <div class="imgcalcdiv align-center rounded-md">
                                                         <img src="assets/images/calculator/colorshade1.png"
@@ -51,7 +51,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="basis-[45vw]">
+                                            <div class="basis-1/2">
                                                 <div class="calccardspacemini0 faqcustshadow p-4 rounded-lg">
                                                     <div class="calccardtitle mb-3">
                                                         <p class="font-bold text-md">Book Now</p>
